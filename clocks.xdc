@@ -32,3 +32,6 @@ set_input_delay -clock virt_clk -0.253 -min [get_ports ADC*_D*] -clock_fall -add
 # try to keep delays less than 5 ns
 set_max_delay 5 -from [get_clocks virt_clk] -to [get_clocks clk_out3_master_clk_wiz] -datapath_only
 set_max_delay 5 -to [get_clocks virt_clk] -from [get_clocks clk_out3_master_clk_wiz] -datapath_only
+
+set_max_delay 5 -from [get_clocks virt_clk] -to [get_clocks clk_out3_master_clk_wiz_1] -datapath_only
+set_max_delay 5 -to [get_clocks virt_clk] -from [get_clocks clk_out3_master_clk_wiz_1] -datapath_only
