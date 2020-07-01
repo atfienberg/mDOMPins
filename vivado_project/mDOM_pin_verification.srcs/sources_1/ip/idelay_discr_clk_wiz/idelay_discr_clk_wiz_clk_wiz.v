@@ -58,6 +58,7 @@
 //----------------------------------------------------------------------------
 // clk_out1___200.000______0.000______50.0______237.367____301.005
 // clk_out2___500.000______0.000______50.0______213.158____301.005
+// clk_out3___125.000______0.000______50.0______251.352____301.005
 //
 //----------------------------------------------------------------------------
 // Input Clock   Freq (MHz)    Input Jitter (UI)
@@ -72,6 +73,7 @@ module idelay_discr_clk_wiz_clk_wiz
   // Clock out ports
   output        clk_out1,
   output        clk_out2,
+  output        clk_out3,
   // Status and control signals
   input         reset,
   output        locked,
@@ -110,7 +112,6 @@ wire clk_in2_idelay_discr_clk_wiz;
   wire        clkfboutb_unused;
     wire clkout0b_unused;
    wire clkout1b_unused;
-   wire clkout2_unused;
    wire clkout2b_unused;
    wire clkout3_unused;
    wire clkout3b_unused;
@@ -138,6 +139,10 @@ wire clk_in2_idelay_discr_clk_wiz;
     .CLKOUT1_PHASE        (0.000),
     .CLKOUT1_DUTY_CYCLE   (0.500),
     .CLKOUT1_USE_FINE_PS  ("FALSE"),
+    .CLKOUT2_DIVIDE       (8),
+    .CLKOUT2_PHASE        (0.000),
+    .CLKOUT2_DUTY_CYCLE   (0.500),
+    .CLKOUT2_USE_FINE_PS  ("FALSE"),
     .CLKIN1_PERIOD        (50.000))
   mmcm_adv_inst
     // Output clocks
@@ -148,7 +153,7 @@ wire clk_in2_idelay_discr_clk_wiz;
     .CLKOUT0B            (clkout0b_unused),
     .CLKOUT1             (clk_out2_idelay_discr_clk_wiz),
     .CLKOUT1B            (clkout1b_unused),
-    .CLKOUT2             (clkout2_unused),
+    .CLKOUT2             (clk_out3_idelay_discr_clk_wiz),
     .CLKOUT2B            (clkout2b_unused),
     .CLKOUT3             (clkout3_unused),
     .CLKOUT3B            (clkout3b_unused),
@@ -205,6 +210,10 @@ wire clk_in2_idelay_discr_clk_wiz;
   BUFG clkout2_buf
    (.O   (clk_out2),
     .I   (clk_out2_idelay_discr_clk_wiz));
+
+  BUFG clkout3_buf
+   (.O   (clk_out3),
+    .I   (clk_out3_idelay_discr_clk_wiz));
 
 
 

@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Wed Jul  1 15:43:10 2020
+| Date         : Wed Jul  1 15:59:52 2020
 | Host         : LAPTOP-GBOUD091 running 64-bit major release  (build 9200)
 | Command      : report_drc -file mDOM_pin_verification_top_drc_routed.rpt -pb mDOM_pin_verification_top_drc_routed.pb -rpx mDOM_pin_verification_top_drc_routed.rpx
 | Design       : mDOM_pin_verification_top
@@ -24,14 +24,13 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 26
-+-----------+------------------+-----------------------------------------------------+------------+
-| Rule      | Severity         | Description                                         | Violations |
-+-----------+------------------+-----------------------------------------------------+------------+
-| NSTD-1    | Critical Warning | Unspecified I/O Standard                            | 1          |
-| CFGBVS-1  | Warning          | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
-| REQP-1580 | Warning          | Phase alignment                                     | 24         |
-+-----------+------------------+-----------------------------------------------------+------------+
+             Violations found: 2
++----------+------------------+-----------------------------------------------------+------------+
+| Rule     | Severity         | Description                                         | Violations |
++----------+------------------+-----------------------------------------------------+------------+
+| NSTD-1   | Critical Warning | Unspecified I/O Standard                            | 1          |
+| CFGBVS-1 | Warning          | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
++----------+------------------+-----------------------------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
@@ -51,126 +50,6 @@ Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_des
  #where value2 is the voltage provided to configuration bank 0
 
 Refer to the device configuration user guide for more information.
-Related violations: <none>
-
-REQP-1580#1 Warning
-Phase alignment  
-Unsupported clocking topology used for ISERDESE2 ADC_DISCR_0A/DISCR_SERDES/inst/pins[0].iserdese2_master. This can result in corrupted data. The ADC_DISCR_0A/DISCR_SERDES/inst/pins[0].iserdese2_master/CLK / ADC_DISCR_0A/DISCR_SERDES/inst/pins[0].iserdese2_master/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
-Related violations: <none>
-
-REQP-1580#2 Warning
-Phase alignment  
-Unsupported clocking topology used for ISERDESE2 ADC_DISCR_0B/DISCR_SERDES/inst/pins[0].iserdese2_master. This can result in corrupted data. The ADC_DISCR_0B/DISCR_SERDES/inst/pins[0].iserdese2_master/CLK / ADC_DISCR_0B/DISCR_SERDES/inst/pins[0].iserdese2_master/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
-Related violations: <none>
-
-REQP-1580#3 Warning
-Phase alignment  
-Unsupported clocking topology used for ISERDESE2 ADC_DISCR_0C/DISCR_SERDES/inst/pins[0].iserdese2_master. This can result in corrupted data. The ADC_DISCR_0C/DISCR_SERDES/inst/pins[0].iserdese2_master/CLK / ADC_DISCR_0C/DISCR_SERDES/inst/pins[0].iserdese2_master/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
-Related violations: <none>
-
-REQP-1580#4 Warning
-Phase alignment  
-Unsupported clocking topology used for ISERDESE2 ADC_DISCR_0D/DISCR_SERDES/inst/pins[0].iserdese2_master. This can result in corrupted data. The ADC_DISCR_0D/DISCR_SERDES/inst/pins[0].iserdese2_master/CLK / ADC_DISCR_0D/DISCR_SERDES/inst/pins[0].iserdese2_master/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
-Related violations: <none>
-
-REQP-1580#5 Warning
-Phase alignment  
-Unsupported clocking topology used for ISERDESE2 ADC_DISCR_1A/DISCR_SERDES/inst/pins[0].iserdese2_master. This can result in corrupted data. The ADC_DISCR_1A/DISCR_SERDES/inst/pins[0].iserdese2_master/CLK / ADC_DISCR_1A/DISCR_SERDES/inst/pins[0].iserdese2_master/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
-Related violations: <none>
-
-REQP-1580#6 Warning
-Phase alignment  
-Unsupported clocking topology used for ISERDESE2 ADC_DISCR_1B/DISCR_SERDES/inst/pins[0].iserdese2_master. This can result in corrupted data. The ADC_DISCR_1B/DISCR_SERDES/inst/pins[0].iserdese2_master/CLK / ADC_DISCR_1B/DISCR_SERDES/inst/pins[0].iserdese2_master/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
-Related violations: <none>
-
-REQP-1580#7 Warning
-Phase alignment  
-Unsupported clocking topology used for ISERDESE2 ADC_DISCR_1C/DISCR_SERDES/inst/pins[0].iserdese2_master. This can result in corrupted data. The ADC_DISCR_1C/DISCR_SERDES/inst/pins[0].iserdese2_master/CLK / ADC_DISCR_1C/DISCR_SERDES/inst/pins[0].iserdese2_master/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
-Related violations: <none>
-
-REQP-1580#8 Warning
-Phase alignment  
-Unsupported clocking topology used for ISERDESE2 ADC_DISCR_1D/DISCR_SERDES/inst/pins[0].iserdese2_master. This can result in corrupted data. The ADC_DISCR_1D/DISCR_SERDES/inst/pins[0].iserdese2_master/CLK / ADC_DISCR_1D/DISCR_SERDES/inst/pins[0].iserdese2_master/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
-Related violations: <none>
-
-REQP-1580#9 Warning
-Phase alignment  
-Unsupported clocking topology used for ISERDESE2 ADC_DISCR_2A/DISCR_SERDES/inst/pins[0].iserdese2_master. This can result in corrupted data. The ADC_DISCR_2A/DISCR_SERDES/inst/pins[0].iserdese2_master/CLK / ADC_DISCR_2A/DISCR_SERDES/inst/pins[0].iserdese2_master/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
-Related violations: <none>
-
-REQP-1580#10 Warning
-Phase alignment  
-Unsupported clocking topology used for ISERDESE2 ADC_DISCR_2B/DISCR_SERDES/inst/pins[0].iserdese2_master. This can result in corrupted data. The ADC_DISCR_2B/DISCR_SERDES/inst/pins[0].iserdese2_master/CLK / ADC_DISCR_2B/DISCR_SERDES/inst/pins[0].iserdese2_master/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
-Related violations: <none>
-
-REQP-1580#11 Warning
-Phase alignment  
-Unsupported clocking topology used for ISERDESE2 ADC_DISCR_2C/DISCR_SERDES/inst/pins[0].iserdese2_master. This can result in corrupted data. The ADC_DISCR_2C/DISCR_SERDES/inst/pins[0].iserdese2_master/CLK / ADC_DISCR_2C/DISCR_SERDES/inst/pins[0].iserdese2_master/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
-Related violations: <none>
-
-REQP-1580#12 Warning
-Phase alignment  
-Unsupported clocking topology used for ISERDESE2 ADC_DISCR_2D/DISCR_SERDES/inst/pins[0].iserdese2_master. This can result in corrupted data. The ADC_DISCR_2D/DISCR_SERDES/inst/pins[0].iserdese2_master/CLK / ADC_DISCR_2D/DISCR_SERDES/inst/pins[0].iserdese2_master/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
-Related violations: <none>
-
-REQP-1580#13 Warning
-Phase alignment  
-Unsupported clocking topology used for ISERDESE2 ADC_DISCR_3A/DISCR_SERDES/inst/pins[0].iserdese2_master. This can result in corrupted data. The ADC_DISCR_3A/DISCR_SERDES/inst/pins[0].iserdese2_master/CLK / ADC_DISCR_3A/DISCR_SERDES/inst/pins[0].iserdese2_master/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
-Related violations: <none>
-
-REQP-1580#14 Warning
-Phase alignment  
-Unsupported clocking topology used for ISERDESE2 ADC_DISCR_3B/DISCR_SERDES/inst/pins[0].iserdese2_master. This can result in corrupted data. The ADC_DISCR_3B/DISCR_SERDES/inst/pins[0].iserdese2_master/CLK / ADC_DISCR_3B/DISCR_SERDES/inst/pins[0].iserdese2_master/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
-Related violations: <none>
-
-REQP-1580#15 Warning
-Phase alignment  
-Unsupported clocking topology used for ISERDESE2 ADC_DISCR_3C/DISCR_SERDES/inst/pins[0].iserdese2_master. This can result in corrupted data. The ADC_DISCR_3C/DISCR_SERDES/inst/pins[0].iserdese2_master/CLK / ADC_DISCR_3C/DISCR_SERDES/inst/pins[0].iserdese2_master/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
-Related violations: <none>
-
-REQP-1580#16 Warning
-Phase alignment  
-Unsupported clocking topology used for ISERDESE2 ADC_DISCR_3D/DISCR_SERDES/inst/pins[0].iserdese2_master. This can result in corrupted data. The ADC_DISCR_3D/DISCR_SERDES/inst/pins[0].iserdese2_master/CLK / ADC_DISCR_3D/DISCR_SERDES/inst/pins[0].iserdese2_master/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
-Related violations: <none>
-
-REQP-1580#17 Warning
-Phase alignment  
-Unsupported clocking topology used for ISERDESE2 ADC_DISCR_4A/DISCR_SERDES/inst/pins[0].iserdese2_master. This can result in corrupted data. The ADC_DISCR_4A/DISCR_SERDES/inst/pins[0].iserdese2_master/CLK / ADC_DISCR_4A/DISCR_SERDES/inst/pins[0].iserdese2_master/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
-Related violations: <none>
-
-REQP-1580#18 Warning
-Phase alignment  
-Unsupported clocking topology used for ISERDESE2 ADC_DISCR_4B/DISCR_SERDES/inst/pins[0].iserdese2_master. This can result in corrupted data. The ADC_DISCR_4B/DISCR_SERDES/inst/pins[0].iserdese2_master/CLK / ADC_DISCR_4B/DISCR_SERDES/inst/pins[0].iserdese2_master/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
-Related violations: <none>
-
-REQP-1580#19 Warning
-Phase alignment  
-Unsupported clocking topology used for ISERDESE2 ADC_DISCR_4C/DISCR_SERDES/inst/pins[0].iserdese2_master. This can result in corrupted data. The ADC_DISCR_4C/DISCR_SERDES/inst/pins[0].iserdese2_master/CLK / ADC_DISCR_4C/DISCR_SERDES/inst/pins[0].iserdese2_master/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
-Related violations: <none>
-
-REQP-1580#20 Warning
-Phase alignment  
-Unsupported clocking topology used for ISERDESE2 ADC_DISCR_4D/DISCR_SERDES/inst/pins[0].iserdese2_master. This can result in corrupted data. The ADC_DISCR_4D/DISCR_SERDES/inst/pins[0].iserdese2_master/CLK / ADC_DISCR_4D/DISCR_SERDES/inst/pins[0].iserdese2_master/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
-Related violations: <none>
-
-REQP-1580#21 Warning
-Phase alignment  
-Unsupported clocking topology used for ISERDESE2 ADC_DISCR_5A/DISCR_SERDES/inst/pins[0].iserdese2_master. This can result in corrupted data. The ADC_DISCR_5A/DISCR_SERDES/inst/pins[0].iserdese2_master/CLK / ADC_DISCR_5A/DISCR_SERDES/inst/pins[0].iserdese2_master/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
-Related violations: <none>
-
-REQP-1580#22 Warning
-Phase alignment  
-Unsupported clocking topology used for ISERDESE2 ADC_DISCR_5B/DISCR_SERDES/inst/pins[0].iserdese2_master. This can result in corrupted data. The ADC_DISCR_5B/DISCR_SERDES/inst/pins[0].iserdese2_master/CLK / ADC_DISCR_5B/DISCR_SERDES/inst/pins[0].iserdese2_master/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
-Related violations: <none>
-
-REQP-1580#23 Warning
-Phase alignment  
-Unsupported clocking topology used for ISERDESE2 ADC_DISCR_5C/DISCR_SERDES/inst/pins[0].iserdese2_master. This can result in corrupted data. The ADC_DISCR_5C/DISCR_SERDES/inst/pins[0].iserdese2_master/CLK / ADC_DISCR_5C/DISCR_SERDES/inst/pins[0].iserdese2_master/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
-Related violations: <none>
-
-REQP-1580#24 Warning
-Phase alignment  
-Unsupported clocking topology used for ISERDESE2 ADC_DISCR_5D/DISCR_SERDES/inst/pins[0].iserdese2_master. This can result in corrupted data. The ADC_DISCR_5D/DISCR_SERDES/inst/pins[0].iserdese2_master/CLK / ADC_DISCR_5D/DISCR_SERDES/inst/pins[0].iserdese2_master/CLKDIV pins should be driven by the same source through the same buffer type or by a BUFIO / BUFR combination in order to have a proper phase relationship. Please refer to the Select I/O User Guide for supported clocking topologies of the chosen INTERFACE_TYPE mode.
 Related violations: <none>
 
 

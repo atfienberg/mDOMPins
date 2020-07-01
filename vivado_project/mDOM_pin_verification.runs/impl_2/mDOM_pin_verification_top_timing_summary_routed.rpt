@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Wed Jul  1 15:43:12 2020
+| Date         : Wed Jul  1 15:59:54 2020
 | Host         : LAPTOP-GBOUD091 running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file mDOM_pin_verification_top_timing_summary_routed.rpt -pb mDOM_pin_verification_top_timing_summary_routed.pb -rpx mDOM_pin_verification_top_timing_summary_routed.rpx -warn_on_violation
 | Design       : mDOM_pin_verification_top
@@ -70,7 +70,7 @@ Table of Contents
 --------------------------------------------
  There are 0 pins that are not constrained for maximum delay.
 
- There are 0 pins that are not constrained for maximum delay due to constant clock.
+ There are 48 pins that are not constrained for maximum delay due to constant clock. (MEDIUM)
 
 
 5. checking no_input_delay
@@ -82,7 +82,7 @@ Table of Contents
 
 6. checking no_output_delay
 ---------------------------
- There are 12 ports with no output delay specified. (HIGH)
+ There are 6 ports with no output delay specified. (HIGH)
 
  There are 0 ports with no output delay but user has a false path constraint
 
@@ -91,7 +91,7 @@ Table of Contents
 
 7. checking multiple_clock
 --------------------------
- There are 264 register/latch pins with multiple clocks. (HIGH)
+ There are 240 register/latch pins with multiple clocks. (HIGH)
 
 
 8. checking generated_clocks
@@ -127,7 +127,7 @@ Table of Contents
 
     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-      2.930        0.000                      0                   48           NA           NA                     NA                   NA        0.264        0.000                       0                   286  
+      2.930        0.000                      0                   48           NA           NA                     NA                   NA        0.264        0.000                       0                   262  
 
 
 All user specified timing constraints are met.
@@ -166,14 +166,14 @@ Clock                                  WNS(ns)      TNS(ns)  TNS Failing Endpoin
 -----                                  -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
 fpga_clk                                                                                                                                                                            15.000        0.000                       0                     3  
   clk_out1_idelay_discr_clk_wiz                                                                                                                                                      0.264        0.000                       0                     6  
-  clk_out1_lclk_adcclk_wiz                                                                                                                                                           5.640        0.000                       0                   122  
+  clk_out1_lclk_adcclk_wiz                                                                                                                                                           5.640        0.000                       0                    98  
   clk_out2_idelay_discr_clk_wiz                                                                                                                                                      0.408        0.000                       0                    50  
   clk_out2_lclk_adcclk_wiz                                                                                                                                                           1.074        0.000                       0                    98  
   clkfbout_idelay_discr_clk_wiz                                                                                                                                                     48.408        0.000                       0                     3  
   clkfbout_lclk_adcclk_wiz                                                                                                                                                          48.408        0.000                       0                     3  
 qosc_clk                                                                                                                                                                            15.000        0.000                       0                     3  
   clk_out1_idelay_discr_clk_wiz_1                                                                                                                                                    0.264        0.000                       0                     6  
-  clk_out1_lclk_adcclk_wiz_1                                                                                                                                                         5.640        0.000                       0                   122  
+  clk_out1_lclk_adcclk_wiz_1                                                                                                                                                         5.640        0.000                       0                    98  
   clk_out2_idelay_discr_clk_wiz_1                                                                                                                                                    0.408        0.000                       0                    50  
   clk_out2_lclk_adcclk_wiz_1                                                                                                                                                         1.074        0.000                       0                    98  
   clkfbout_idelay_discr_clk_wiz_1                                                                                                                                                   48.408        0.000                       0                     3  

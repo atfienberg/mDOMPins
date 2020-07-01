@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date             : Wed Jul  1 15:43:12 2020
+| Date             : Wed Jul  1 15:59:54 2020
 | Host             : LAPTOP-GBOUD091 running 64-bit major release  (build 9200)
 | Command          : report_power -file mDOM_pin_verification_top_power_routed.rpt -pb mDOM_pin_verification_top_power_summary_routed.pb -rpx mDOM_pin_verification_top_power_routed.rpx
 | Design           : mDOM_pin_verification_top
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.525        |
+| Total On-Chip Power (W)  | 0.524        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 0.422        |
@@ -60,7 +60,7 @@ Table of Contents
 | MMCM           |     0.239 |        2 |         8 |           25.00 |
 | I/O            |     0.165 |      231 |       400 |           57.75 |
 | Static Power   |     0.103 |          |           |                 |
-| Total          |     0.525 |          |           |                 |
+| Total          |     0.524 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -70,7 +70,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.065 |       0.050 |      0.015 |
+| Vccint    |       1.000 |     0.064 |       0.049 |      0.015 |
 | Vccaux    |       1.800 |     0.211 |       0.190 |      0.021 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |

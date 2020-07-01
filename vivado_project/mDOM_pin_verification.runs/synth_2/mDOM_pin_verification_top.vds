@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Wed Jul  1 15:41:21 2020
-# Process ID: 1092
+# Start of session at: Wed Jul  1 15:57:59 2020
+# Process ID: 10456
 # Current directory: C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2
 # Command line: vivado.exe -log mDOM_pin_verification_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mDOM_pin_verification_top.tcl
 # Log file: C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/mDOM_pin_verification_top.vds
@@ -16,59 +16,59 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7s100'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s100'
 INFO: [Device 21-403] Loading part xc7s100fgga676-2
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 12300 
+INFO: Helper process launched with PID 10692 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 716.234 ; gain = 177.016
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 716.980 ; gain = 178.102
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'mDOM_pin_verification_top' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:5]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:424]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:425]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:449]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:450]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:474]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:475]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:499]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:500]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:531]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:532]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:556]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:557]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:581]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:582]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:606]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:607]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:638]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:639]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:663]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:664]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:688]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:689]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:713]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:714]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:745]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:746]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:770]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:771]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:795]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:796]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:820]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:821]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:852]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:853]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:877]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:878]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:902]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:903]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:927]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:928]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:959]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:960]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:984]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:985]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:1009]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:1010]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:426]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:427]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:452]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:453]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:478]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:479]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:504]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:505]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:537]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:538]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:563]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:564]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:589]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:590]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:615]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:616]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:648]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:649]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:674]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:675]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:700]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:701]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:726]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:727]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:759]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:760]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:785]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:786]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:811]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:812]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:837]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:838]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:870]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:871]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:896]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:897]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:922]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:923]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:948]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:949]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:981]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:982]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:1007]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:1008]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:1033]
 INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:1034]
-INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:1035]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:1059]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:1060]
 INFO: [Synth 8-6157] synthesizing module 'IBUFGDS' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:33335]
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
 	Parameter DIFF_TERM bound to: FALSE - type: string 
@@ -140,16 +140,16 @@ INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2019.1/scripts
 INFO: [Synth 8-6155] done synthesizing module 'BUFG' (5#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
 INFO: [Synth 8-6155] done synthesizing module 'lclk_adcclk_wiz_clk_wiz' (6#1) [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz_clk_wiz.v:69]
 INFO: [Synth 8-6155] done synthesizing module 'lclk_adcclk_wiz' (7#1) [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz.v:71]
-INFO: [Synth 8-6157] synthesizing module 'idelay_discr_clk_wiz' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/.Xil/Vivado-1092-LAPTOP-GBOUD091/realtime/idelay_discr_clk_wiz_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'idelay_discr_clk_wiz' (8#1) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/.Xil/Vivado-1092-LAPTOP-GBOUD091/realtime/idelay_discr_clk_wiz_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'idelay_discr_clk_wiz' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/.Xil/Vivado-10456-LAPTOP-GBOUD091/realtime/idelay_discr_clk_wiz_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'idelay_discr_clk_wiz' (8#1) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/.Xil/Vivado-10456-LAPTOP-GBOUD091/realtime/idelay_discr_clk_wiz_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'IDELAYCTRL' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:34933]
 	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
 INFO: [Synth 8-6155] done synthesizing module 'IDELAYCTRL' (9#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:34933]
 INFO: [Synth 8-6157] synthesizing module 'adc_discr_channel' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/adc_discr_channel.v:5]
-INFO: [Synth 8-6157] synthesizing module 'ADC_SERDES' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/.Xil/Vivado-1092-LAPTOP-GBOUD091/realtime/ADC_SERDES_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'ADC_SERDES' (10#1) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/.Xil/Vivado-1092-LAPTOP-GBOUD091/realtime/ADC_SERDES_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'DISCR_SERDES' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/.Xil/Vivado-1092-LAPTOP-GBOUD091/realtime/DISCR_SERDES_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'DISCR_SERDES' (11#1) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/.Xil/Vivado-1092-LAPTOP-GBOUD091/realtime/DISCR_SERDES_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ADC_SERDES' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/.Xil/Vivado-10456-LAPTOP-GBOUD091/realtime/ADC_SERDES_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ADC_SERDES' (10#1) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/.Xil/Vivado-10456-LAPTOP-GBOUD091/realtime/ADC_SERDES_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'DISCR_SERDES' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/.Xil/Vivado-10456-LAPTOP-GBOUD091/realtime/DISCR_SERDES_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'DISCR_SERDES' (11#1) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/.Xil/Vivado-10456-LAPTOP-GBOUD091/realtime/DISCR_SERDES_stub.v:5]
 INFO: [Synth 8-6155] done synthesizing module 'adc_discr_channel' (12#1) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/adc_discr_channel.v:5]
 WARNING: [Synth 8-3848] Net ADC0_SEN in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:33]
 WARNING: [Synth 8-3848] Net ADC0_SYSRF_P in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:34]
@@ -237,6 +237,7 @@ WARNING: [Synth 8-3848] Net MON_ADC2_CSn in module/entity mDOM_pin_verification_
 WARNING: [Synth 8-3848] Net MON_ADC2_SCLK in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:347]
 WARNING: [Synth 8-3848] Net MON_ADC2_SDI in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:348]
 WARNING: [Synth 8-3848] Net QOSC_VC_ENA in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:356]
+WARNING: [Synth 8-3848] Net discr_fclk_100MHz in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:434]
 INFO: [Synth 8-6155] done synthesizing module 'mDOM_pin_verification_top' (13#1) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:5]
 WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port ADC0_SEN
 WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port ADC0_SYSRF_P
@@ -340,7 +341,7 @@ WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DD
 WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_DQ13
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 782.766 ; gain = 243.547
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 783.043 ; gain = 244.164
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -353,10 +354,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 782.766 ; gain = 243.547
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 783.043 ; gain = 244.164
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 782.766 ; gain = 243.547
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 783.043 ; gain = 244.164
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -534,14 +535,14 @@ Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_projec
 Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz_late.xdc] for cell 'LCLK_ADCCLK_WIZ_0/inst'
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 907.734 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 906.281 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 3 instances were transformed.
   BUFGMUX => BUFGCTRL (inverted pins: CE0): 1 instances
   IBUFGDS => IBUFDS: 1 instances
   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 1 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 907.734 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 906.281 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_0A/ADC_SERDES_0' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_0A/ADC_SERDES_1' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_0A/DISCR_SERDES' at clock pin 'clk_in' is different from the actual clock period '2.000', this can lead to different synthesis results.
@@ -615,14 +616,14 @@ WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context s
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_5D/ADC_SERDES_1' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_5D/DISCR_SERDES' at clock pin 'clk_in' is different from the actual clock period '2.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 907.734 ; gain = 368.516
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 906.281 ; gain = 367.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7s100fgga676-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 907.734 ; gain = 368.516
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 906.281 ; gain = 367.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -943,10 +944,10 @@ Applied set_property DONT_TOUCH = true for ADC_DISCR_5C/DISCR_SERDES. (constrain
 Applied set_property DONT_TOUCH = true for ADC_DISCR_5D/DISCR_SERDES. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for IDELAY_DISCR_CLK_WIZ_0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 907.734 ; gain = 368.516
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 906.281 ; gain = 367.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 907.734 ; gain = 368.516
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 906.281 ; gain = 367.402
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -982,7 +983,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 907.734 ; gain = 368.516
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 906.281 ; gain = 367.402
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -997,15 +998,17 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'IDELAY_DISCR_CLK_WIZ_0/cl
 INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'IDELAY_DISCR_CLK_WIZ_0/clk_in1' to 'LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKIN1'
 INFO: [Synth 8-5578] Moved timing constraint from pin 'IDELAY_DISCR_CLK_WIZ_0/clk_out2' to pin 'IDELAY_DISCR_CLK_WIZ_0/bbstub_clk_out2/O'
 INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'IDELAY_DISCR_CLK_WIZ_0/clk_in1' to 'LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKIN1'
-INFO: [Synth 8-5819] Moved 3 constraints on hierarchical pins to their respective driving/loading pins
+INFO: [Synth 8-5578] Moved timing constraint from pin 'IDELAY_DISCR_CLK_WIZ_0/clk_out3' to pin 'IDELAY_DISCR_CLK_WIZ_0/bbstub_clk_out3/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'IDELAY_DISCR_CLK_WIZ_0/clk_in1' to 'LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKIN1'
+INFO: [Synth 8-5819] Moved 4 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 907.734 ; gain = 368.516
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 906.281 ; gain = 367.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 907.734 ; gain = 368.516
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 906.281 ; gain = 367.402
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1017,7 +1020,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 907.734 ; gain = 368.516
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 906.281 ; gain = 367.402
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1041,7 +1044,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 907.734 ; gain = 368.516
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 906.281 ; gain = 367.402
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1054,7 +1057,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 907.734 ; gain = 368.516
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 906.281 ; gain = 367.402
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1066,25 +1069,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 907.734 ; gain = 368.516
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 906.281 ; gain = 367.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 907.734 ; gain = 368.516
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 906.281 ; gain = 367.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 907.734 ; gain = 368.516
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 906.281 ; gain = 367.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 907.734 ; gain = 368.516
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 906.281 ; gain = 367.402
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1195,7 +1198,7 @@ Report Instance Areas:
 +------+--------------------+------------------------------+------+
 |      |Instance            |Module                        |Cells |
 +------+--------------------+------------------------------+------+
-|1     |top                 |                              |   941|
+|1     |top                 |                              |   942|
 |2     |  LCLK_ADCCLK_WIZ_0 |lclk_adcclk_wiz               |     4|
 |3     |    inst            |lclk_adcclk_wiz_clk_wiz       |     4|
 |4     |  ADC_DISCR_0A      |adc_discr_channel__xdcDup__1  |    30|
@@ -1224,17 +1227,17 @@ Report Instance Areas:
 |27    |  ADC_DISCR_5D      |adc_discr_channel             |    30|
 +------+--------------------+------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 907.734 ; gain = 368.516
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 906.281 ; gain = 367.402
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 177 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 907.734 ; gain = 243.547
-Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 907.734 ; gain = 368.516
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 906.281 ; gain = 244.164
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 906.281 ; gain = 367.402
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 914.867 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 914.141 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 3 instances were transformed.
   BUFGMUX => BUFGCTRL (inverted pins: CE0): 1 instances
@@ -1242,12 +1245,12 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-98 Infos, 258 Warnings, 0 Critical Warnings and 0 Errors encountered.
+100 Infos, 259 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 914.867 ; gain = 614.410
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 914.867 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 914.141 ; gain = 613.141
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 914.141 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/mDOM_pin_verification_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file mDOM_pin_verification_top_utilization_synth.rpt -pb mDOM_pin_verification_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Jul  1 15:41:58 2020...
+INFO: [Common 17-206] Exiting Vivado at Wed Jul  1 15:58:32 2020...

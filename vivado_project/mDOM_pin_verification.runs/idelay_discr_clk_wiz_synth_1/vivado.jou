@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Wed Jul  1 15:24:34 2020
-# Process ID: 12132
+# Start of session at: Wed Jul  1 15:51:06 2020
+# Process ID: 8600
 # Current directory: C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/idelay_discr_clk_wiz_synth_1
 # Command line: vivado.exe -log idelay_discr_clk_wiz.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source idelay_discr_clk_wiz.tcl
 # Log file: C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/idelay_discr_clk_wiz_synth_1/idelay_discr_clk_wiz.vds

@@ -8,6 +8,7 @@ module adc_discr_channel
    input[1:0] adc_DN,
    input discr_out,
    input lclk,
+   input discr_fclk,
    input adc_dclk,
    input discr_dclk,
    
@@ -72,7 +73,7 @@ module adc_discr_channel
    .data_in_to_device(discr_bits),
    .bitslip(discr_bitslip),
    .clk_in(discr_dclk),
-   .clk_div_in(lclk),
+   .clk_div_in(discr_fclk),
    .io_reset(discr_io_reset)
   );
 

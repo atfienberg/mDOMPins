@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-// Date        : Wed Jul  1 15:51:40 2020
+// Date        : Wed Jul  1 15:51:39 2020
 // Host        : LAPTOP-GBOUD091 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
+//               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ idelay_discr_clk_wiz_sim_netlist.v
 // Design      : idelay_discr_clk_wiz
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -13,7 +13,7 @@
 `timescale 1 ps / 1 ps
 
 (* NotValidForBitStream *)
-module idelay_discr_clk_wiz
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix
    (clk_out1,
     clk_out2,
     clk_out3,
@@ -34,7 +34,7 @@ module idelay_discr_clk_wiz
   wire locked;
   wire reset;
 
-  idelay_discr_clk_wiz_idelay_discr_clk_wiz_clk_wiz inst
+  decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_idelay_discr_clk_wiz_clk_wiz inst
        (.clk_in1(clk_in1),
         .clk_out1(clk_out1),
         .clk_out2(clk_out2),
@@ -43,8 +43,7 @@ module idelay_discr_clk_wiz
         .reset(reset));
 endmodule
 
-(* ORIG_REF_NAME = "idelay_discr_clk_wiz_clk_wiz" *) 
-module idelay_discr_clk_wiz_idelay_discr_clk_wiz_clk_wiz
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_idelay_discr_clk_wiz_clk_wiz
    (clk_out1,
     clk_out2,
     clk_out3,
