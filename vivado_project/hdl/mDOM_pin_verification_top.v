@@ -422,7 +422,7 @@ wire io_reset = FMC_OEn;
 // ADC #0: channels 0-3
 
 (* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_0;
-(* DONT_TOUCH = "TRUE" *) wire[11:0] discr_bits_0;
+(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_0;
 adc_discr_channel ADC_DISCR_0A
   (
     .adc_DP({ADC0_DA1P, ADC0_DA0P}),
@@ -447,7 +447,7 @@ adc_discr_channel ADC_DISCR_0A
   );
 
 (* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_1;
-(* DONT_TOUCH = "TRUE" *) wire[11:0] discr_bits_1;
+(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_1;
 adc_discr_channel ADC_DISCR_0B
   (
     .adc_DP({ADC0_DB1P, ADC0_DB0P}),
@@ -472,7 +472,7 @@ adc_discr_channel ADC_DISCR_0B
   );
 
 (* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_2;
-(* DONT_TOUCH = "TRUE" *) wire[11:0] discr_bits_2;
+(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_2;
 adc_discr_channel ADC_DISCR_0C
   (
     .adc_DP({ADC0_DC1P, ADC0_DC0P}),
@@ -497,7 +497,7 @@ adc_discr_channel ADC_DISCR_0C
   );
 
 (* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_3;
-(* DONT_TOUCH = "TRUE" *) wire[11:0] discr_bits_3;
+(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_3;
 adc_discr_channel ADC_DISCR_0D
   (
     .adc_DP({ADC0_DD1P, ADC0_DD0P}),
@@ -529,7 +529,7 @@ assign DDR3_A1 = &discr_bits_0 && &discr_bits_1 && &discr_bits_2 && &discr_bits_
 // ADC #1; channels 4-7
 
 (* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_4;
-(* DONT_TOUCH = "TRUE" *) wire[11:0] discr_bits_4;
+(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_4;
 adc_discr_channel ADC_DISCR_1A
   (
     .adc_DP({ADC1_DA1P, ADC1_DA0P}),
@@ -554,7 +554,7 @@ adc_discr_channel ADC_DISCR_1A
   );
 
 (* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_5;
-(* DONT_TOUCH = "TRUE" *) wire[11:0] discr_bits_5;
+(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_5;
 adc_discr_channel ADC_DISCR_1B
   (
     .adc_DP({ADC1_DB1P, ADC1_DB0P}),
@@ -579,7 +579,7 @@ adc_discr_channel ADC_DISCR_1B
   );
 
 (* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_6;
-(* DONT_TOUCH = "TRUE" *) wire[11:0] discr_bits_6;
+(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_6;
 adc_discr_channel ADC_DISCR_1C
   (
     .adc_DP({ADC1_DC1P, ADC1_DC0P}),
@@ -604,7 +604,7 @@ adc_discr_channel ADC_DISCR_1C
   );
 
 (* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_7;
-(* DONT_TOUCH = "TRUE" *) wire[11:0] discr_bits_7;
+(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_7;
 adc_discr_channel ADC_DISCR_1D
   (
     .adc_DP({ADC1_DD1P, ADC1_DD0P}),
@@ -636,7 +636,7 @@ assign DDR3_A3 = &discr_bits_4 && &discr_bits_5 && &discr_bits_6 && &discr_bits_
 // ADC #2; channels 8-11
 
 (* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_8;
-(* DONT_TOUCH = "TRUE" *) wire[11:0] discr_bits_8;
+(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_8;
 adc_discr_channel ADC_DISCR_2A
   (
     .adc_DP({ADC2_DA1P, ADC2_DA0P}),
@@ -661,7 +661,7 @@ adc_discr_channel ADC_DISCR_2A
   );
 
 (* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_9;
-(* DONT_TOUCH = "TRUE" *) wire[11:0] discr_bits_9;
+(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_9;
 adc_discr_channel ADC_DISCR_2B
   (
     .adc_DP({ADC2_DB1P, ADC2_DB0P}),
@@ -686,7 +686,7 @@ adc_discr_channel ADC_DISCR_2B
   );
 
 (* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_10;
-(* DONT_TOUCH = "TRUE" *) wire[11:0] discr_bits_10;
+(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_10;
 adc_discr_channel ADC_DISCR_2C
   (
     .adc_DP({ADC2_DC1P, ADC2_DC0P}),
@@ -711,7 +711,7 @@ adc_discr_channel ADC_DISCR_2C
   );
 
 (* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_11;
-(* DONT_TOUCH = "TRUE" *) wire[11:0] discr_bits_11;
+(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_11;
 adc_discr_channel ADC_DISCR_2D
   (
     .adc_DP({ADC2_DD1P, ADC2_DD0P}),
@@ -743,7 +743,7 @@ assign DDR3_A5 = &discr_bits_8 && &discr_bits_9 && &discr_bits_10 && &discr_bits
 // ADC #3: channels 12-15
 
 (* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_12;
-(* DONT_TOUCH = "TRUE" *) wire[11:0] discr_bits_12;
+(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_12;
 adc_discr_channel ADC_DISCR_3A
   (
     .adc_DP({ADC3_DA1P, ADC3_DA0P}),
@@ -768,7 +768,7 @@ adc_discr_channel ADC_DISCR_3A
   );
 
 (* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_13;
-(* DONT_TOUCH = "TRUE" *) wire[11:0] discr_bits_13;
+(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_13;
 adc_discr_channel ADC_DISCR_3B
   (
     .adc_DP({ADC3_DB1P, ADC3_DB0P}),
@@ -793,7 +793,7 @@ adc_discr_channel ADC_DISCR_3B
   );
 
 (* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_14;
-(* DONT_TOUCH = "TRUE" *) wire[11:0] discr_bits_14;
+(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_14;
 adc_discr_channel ADC_DISCR_3C
   (
     .adc_DP({ADC3_DC1P, ADC3_DC0P}),
@@ -818,7 +818,7 @@ adc_discr_channel ADC_DISCR_3C
   );
 
 (* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_15;
-(* DONT_TOUCH = "TRUE" *) wire[11:0] discr_bits_15;
+(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_15;
 adc_discr_channel ADC_DISCR_3D
   (
     .adc_DP({ADC3_DD1P, ADC3_DD0P}),
@@ -850,7 +850,7 @@ assign DDR3_A7 = &discr_bits_12 && &discr_bits_13 && &discr_bits_14 && &discr_bi
 // ADC #4; channels 16-19
 
 (* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_16;
-(* DONT_TOUCH = "TRUE" *) wire[11:0] discr_bits_16;
+(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_16;
 adc_discr_channel ADC_DISCR_4A
   (
     .adc_DP({ADC4_DA1P, ADC4_DA0P}),
@@ -875,7 +875,7 @@ adc_discr_channel ADC_DISCR_4A
   );
 
 (* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_17;
-(* DONT_TOUCH = "TRUE" *) wire[11:0] discr_bits_17;
+(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_17;
 adc_discr_channel ADC_DISCR_4B
   (
     .adc_DP({ADC4_DB1P, ADC4_DB0P}),
@@ -900,7 +900,7 @@ adc_discr_channel ADC_DISCR_4B
   );
 
 (* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_18;
-(* DONT_TOUCH = "TRUE" *) wire[11:0] discr_bits_18;
+(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_18;
 adc_discr_channel ADC_DISCR_4C
   (
     .adc_DP({ADC4_DC1P, ADC4_DC0P}),
@@ -925,7 +925,7 @@ adc_discr_channel ADC_DISCR_4C
   );
 
 (* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_19;
-(* DONT_TOUCH = "TRUE" *) wire[11:0] discr_bits_19;
+(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_19;
 adc_discr_channel ADC_DISCR_4D
   (
     .adc_DP({ADC4_DD1P, ADC4_DD0P}),
@@ -957,7 +957,7 @@ assign DDR3_A9 = &discr_bits_16 && &discr_bits_17 && &discr_bits_18 && &discr_bi
 // ADC #5; channels 20-23
 
 (* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_20;
-(* DONT_TOUCH = "TRUE" *) wire[11:0] discr_bits_20;
+(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_20;
 adc_discr_channel ADC_DISCR_5A
   (
     .adc_DP({ADC5_DA1P, ADC5_DA0P}),
@@ -982,7 +982,7 @@ adc_discr_channel ADC_DISCR_5A
   );
 
 (* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_21;
-(* DONT_TOUCH = "TRUE" *) wire[11:0] discr_bits_21;
+(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_21;
 adc_discr_channel ADC_DISCR_5B
   (
     .adc_DP({ADC5_DB1P, ADC5_DB0P}),
@@ -1007,7 +1007,7 @@ adc_discr_channel ADC_DISCR_5B
   );
 
 (* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_22;
-(* DONT_TOUCH = "TRUE" *) wire[11:0] discr_bits_22;
+(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_22;
 adc_discr_channel ADC_DISCR_5C
   (
     .adc_DP({ADC5_DC1P, ADC5_DC0P}),
@@ -1032,7 +1032,7 @@ adc_discr_channel ADC_DISCR_5C
   );
 
 (* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_23;
-(* DONT_TOUCH = "TRUE" *) wire[11:0] discr_bits_23;
+(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_23;
 adc_discr_channel ADC_DISCR_5D
   (
     .adc_DP({ADC5_DD1P, ADC5_DD0P}),

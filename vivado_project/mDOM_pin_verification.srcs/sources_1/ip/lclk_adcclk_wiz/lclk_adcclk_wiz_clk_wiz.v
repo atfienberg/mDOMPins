@@ -81,9 +81,7 @@ module lclk_adcclk_wiz_clk_wiz
   //------------------------------------
 wire clk_in1_lclk_adcclk_wiz;
 wire clk_in2_lclk_adcclk_wiz;
-  BUFG clkin1_bufg
-   (.O (clk_in1_lclk_adcclk_wiz),
-    .I (clk_in1));
+  assign clk_in1_lclk_adcclk_wiz = clk_in1;
 
 
 

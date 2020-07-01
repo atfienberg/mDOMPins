@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-// Date        : Wed Jul  1 14:40:04 2020
+// Date        : Wed Jul  1 15:25:09 2020
 // Host        : LAPTOP-GBOUD091 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz_sim_netlist.v
+//               C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz_sim_netlist.v
 // Design      : idelay_discr_clk_wiz
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -53,7 +53,6 @@ module idelay_discr_clk_wiz_idelay_discr_clk_wiz_clk_wiz
   input clk_in1;
 
   wire clk_in1;
-  wire clk_in1_idelay_discr_clk_wiz;
   wire clk_out1;
   wire clk_out1_idelay_discr_clk_wiz;
   wire clk_out2;
@@ -82,10 +81,6 @@ module idelay_discr_clk_wiz_idelay_discr_clk_wiz_clk_wiz
   BUFG clkf_buf
        (.I(clkfbout_idelay_discr_clk_wiz),
         .O(clkfbout_buf_idelay_discr_clk_wiz));
-  (* BOX_TYPE = "PRIMITIVE" *) 
-  BUFG clkin1_bufg
-       (.I(clk_in1),
-        .O(clk_in1_idelay_discr_clk_wiz));
   (* BOX_TYPE = "PRIMITIVE" *) 
   BUFG clkout1_buf
        (.I(clk_out1_idelay_discr_clk_wiz),
@@ -131,7 +126,7 @@ module idelay_discr_clk_wiz_idelay_discr_clk_wiz_clk_wiz
     .CLKOUT6_DUTY_CYCLE(0.500000),
     .CLKOUT6_PHASE(0.000000),
     .CLKOUT6_USE_FINE_PS("FALSE"),
-    .COMPENSATION("BUF_IN"),
+    .COMPENSATION("ZHOLD"),
     .DIVCLK_DIVIDE(1),
     .IS_CLKINSEL_INVERTED(1'b0),
     .IS_PSEN_INVERTED(1'b0),
@@ -149,7 +144,7 @@ module idelay_discr_clk_wiz_idelay_discr_clk_wiz_clk_wiz
         .CLKFBOUT(clkfbout_idelay_discr_clk_wiz),
         .CLKFBOUTB(NLW_mmcm_adv_inst_CLKFBOUTB_UNCONNECTED),
         .CLKFBSTOPPED(NLW_mmcm_adv_inst_CLKFBSTOPPED_UNCONNECTED),
-        .CLKIN1(clk_in1_idelay_discr_clk_wiz),
+        .CLKIN1(clk_in1),
         .CLKIN2(1'b0),
         .CLKINSEL(1'b1),
         .CLKINSTOPPED(NLW_mmcm_adv_inst_CLKINSTOPPED_UNCONNECTED),

@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Wed Jul  1 14:58:41 2020
+| Date         : Wed Jul  1 15:42:29 2020
 | Host         : LAPTOP-GBOUD091 running 64-bit major release  (build 9200)
 | Command      : report_drc -file mDOM_pin_verification_top_drc_opted.rpt -pb mDOM_pin_verification_top_drc_opted.pb -rpx mDOM_pin_verification_top_drc_opted.rpx
 | Design       : mDOM_pin_verification_top
@@ -24,15 +24,14 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 28
-+-------------+------------------+-----------------------------------------------------+------------+
-| Rule        | Severity         | Description                                         | Violations |
-+-------------+------------------+-----------------------------------------------------+------------+
-| NSTD-1      | Critical Warning | Unspecified I/O Standard                            | 1          |
-| CFGBVS-1    | Warning          | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
-| PLBUFGOPT-1 | Warning          | Non-Optimal connections to BUFG                     | 2          |
-| REQP-1580   | Warning          | Phase alignment                                     | 24         |
-+-------------+------------------+-----------------------------------------------------+------------+
+             Violations found: 26
++-----------+------------------+-----------------------------------------------------+------------+
+| Rule      | Severity         | Description                                         | Violations |
++-----------+------------------+-----------------------------------------------------+------------+
+| NSTD-1    | Critical Warning | Unspecified I/O Standard                            | 1          |
+| CFGBVS-1  | Warning          | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
+| REQP-1580 | Warning          | Phase alignment                                     | 24         |
++-----------+------------------+-----------------------------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
@@ -52,16 +51,6 @@ Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_des
  #where value2 is the voltage provided to configuration bank 0
 
 Refer to the device configuration user guide for more information.
-Related violations: <none>
-
-PLBUFGOPT-1#1 Warning
-Non-Optimal connections to BUFG  
-A non-muxed BUFG IDELAY_DISCR_CLK_WIZ_0/inst/clkin1_bufg is driven by another global buffer BUFGMUX_0. Remove non-muxed BUFG if it is not desired
-Related violations: <none>
-
-PLBUFGOPT-1#2 Warning
-Non-Optimal connections to BUFG  
-A non-muxed BUFG LCLK_ADCCLK_WIZ_0/inst/clkin1_bufg is driven by another global buffer BUFGMUX_0. Remove non-muxed BUFG if it is not desired
 Related violations: <none>
 
 REQP-1580#1 Warning

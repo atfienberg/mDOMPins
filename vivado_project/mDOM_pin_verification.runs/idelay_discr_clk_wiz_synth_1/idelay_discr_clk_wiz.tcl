@@ -17,6 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param chipscope.maxJobs 2
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 create_project -in_memory -part xc7s100fgga676-2
@@ -32,10 +33,11 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_output_repo c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_ip -quiet c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz.xci
+read_ip -quiet C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz.xci
 set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz_late.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -90,32 +92,32 @@ write_checkpoint -force -noxdef idelay_discr_clk_wiz.dcp
 create_report "idelay_discr_clk_wiz_synth_1_synth_report_utilization_0" "report_utilization -file idelay_discr_clk_wiz_utilization_synth.rpt -pb idelay_discr_clk_wiz_utilization_synth.pb"
 
 if { [catch {
-  file copy -force C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/idelay_discr_clk_wiz_synth_1/idelay_discr_clk_wiz.dcp c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz.dcp
+  file copy -force C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/idelay_discr_clk_wiz_synth_1/idelay_discr_clk_wiz.dcp C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  write_verilog -force -mode synth_stub c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz_stub.v
+  write_verilog -force -mode synth_stub C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode synth_stub c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz_stub.vhdl
+  write_vhdl -force -mode synth_stub C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_verilog -force -mode funcsim c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz_sim_netlist.v
+  write_verilog -force -mode funcsim C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode funcsim c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz_sim_netlist.vhdl
+  write_vhdl -force -mode funcsim C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
@@ -125,32 +127,32 @@ if { [catch {
 
 
 if { [catch {
-  file copy -force C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/idelay_discr_clk_wiz_synth_1/idelay_discr_clk_wiz.dcp c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz.dcp
+  file copy -force C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/idelay_discr_clk_wiz_synth_1/idelay_discr_clk_wiz.dcp C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  file rename -force C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/idelay_discr_clk_wiz_synth_1/idelay_discr_clk_wiz_stub.v c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz_stub.v
+  file rename -force C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/idelay_discr_clk_wiz_synth_1/idelay_discr_clk_wiz_stub.v C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/idelay_discr_clk_wiz_synth_1/idelay_discr_clk_wiz_stub.vhdl c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz_stub.vhdl
+  file rename -force C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/idelay_discr_clk_wiz_synth_1/idelay_discr_clk_wiz_stub.vhdl C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/idelay_discr_clk_wiz_synth_1/idelay_discr_clk_wiz_sim_netlist.v c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz_sim_netlist.v
+  file rename -force C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/idelay_discr_clk_wiz_synth_1/idelay_discr_clk_wiz_sim_netlist.v C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/idelay_discr_clk_wiz_synth_1/idelay_discr_clk_wiz_sim_netlist.vhdl c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz_sim_netlist.vhdl
+  file rename -force C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/idelay_discr_clk_wiz_synth_1/idelay_discr_clk_wiz_sim_netlist.vhdl C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
@@ -159,13 +161,13 @@ if { [catch {
 
 if {[file isdir C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.ip_user_files/ip/idelay_discr_clk_wiz]} {
   catch { 
-    file copy -force c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz_stub.v C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.ip_user_files/ip/idelay_discr_clk_wiz
+    file copy -force C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz_stub.v C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.ip_user_files/ip/idelay_discr_clk_wiz
   }
 }
 
 if {[file isdir C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.ip_user_files/ip/idelay_discr_clk_wiz]} {
   catch { 
-    file copy -force c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz_stub.vhdl C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.ip_user_files/ip/idelay_discr_clk_wiz
+    file copy -force C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz_stub.vhdl C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.ip_user_files/ip/idelay_discr_clk_wiz
   }
 }
 file delete __synthesis_is_running__

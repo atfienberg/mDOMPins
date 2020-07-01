@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_2" LaunchPart="xc7s100fgga676-2" LaunchTime="1593629852">
+<GenRun Id="impl_2" LaunchPart="xc7s100fgga676-2" LaunchTime="1593632479">
   <File Type="BITSTR-BMM" Name="mDOM_pin_verification_top_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="mDOM_pin_verification_top_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="mDOM_pin_verification_top_timing_summary_init.rpt"/>
@@ -129,9 +129,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
@@ -142,7 +140,7 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="DISCR_SERDES"/>
-  <BlockFileSet Type="BlockSrcs" Name="idelay_discr_clk_wiz"/>
   <BlockFileSet Type="BlockSrcs" Name="ADC_SERDES"/>
+  <BlockFileSet Type="BlockSrcs" Name="idelay_discr_clk_wiz"/>
+  <BlockFileSet Type="BlockSrcs" Name="DISCR_SERDES"/>
 </GenRun>

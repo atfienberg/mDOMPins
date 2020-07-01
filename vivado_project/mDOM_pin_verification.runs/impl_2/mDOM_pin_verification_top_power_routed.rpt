@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date             : Wed Jul  1 14:59:27 2020
+| Date             : Wed Jul  1 15:43:12 2020
 | Host             : LAPTOP-GBOUD091 running 64-bit major release  (build 9200)
 | Command          : report_power -file mDOM_pin_verification_top_power_routed.rpt -pb mDOM_pin_verification_top_power_summary_routed.pb -rpx mDOM_pin_verification_top_power_routed.rpx
 | Design           : mDOM_pin_verification_top
@@ -33,7 +33,7 @@ Table of Contents
 | Total On-Chip Power (W)  | 0.525        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.423        |
+| Dynamic (W)              | 0.422        |
 | Device Static (W)        | 0.103        |
 | Effective TJA (C/W)      | 2.4          |
 | Max Ambient (C)          | 83.7         |
@@ -52,11 +52,11 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.019 |       17 |       --- |             --- |
-| Slice Logic    |    <0.001 |      421 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      216 |     64000 |            0.34 |
+| Clocks         |     0.018 |       17 |       --- |             --- |
+| Slice Logic    |    <0.001 |      307 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      106 |     64000 |            0.17 |
 |   Others       |     0.000 |      200 |       --- |             --- |
-| Signals        |    <0.001 |      830 |       --- |             --- |
+| Signals        |    <0.001 |      716 |       --- |             --- |
 | MMCM           |     0.239 |        2 |         8 |           25.00 |
 | I/O            |     0.165 |      231 |       400 |           57.75 |
 | Static Power   |     0.103 |          |           |                 |
@@ -150,7 +150,7 @@ Table of Contents
 +---------------------------+-----------+
 | Name                      | Power (W) |
 +---------------------------+-----------+
-| mDOM_pin_verification_top |     0.423 |
+| mDOM_pin_verification_top |     0.422 |
 |   ADC_DISCR_0A            |     0.006 |
 |     ADC_SERDES_0          |     0.003 |
 |       inst                |     0.003 |

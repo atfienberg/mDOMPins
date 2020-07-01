@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_2" LaunchPart="xc7s100fgga676-2" LaunchTime="1593629852">
+<GenRun Id="synth_2" LaunchPart="xc7s100fgga676-2" LaunchTime="1593632479">
   <File Type="PA-TCL" Name="mDOM_pin_verification_top.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="mDOM_pin_verification_top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="mDOM_pin_verification_top_reports.tcl"/>
@@ -69,12 +69,10 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="DISCR_SERDES"/>
-  <BlockFileSet Type="BlockSrcs" Name="idelay_discr_clk_wiz"/>
   <BlockFileSet Type="BlockSrcs" Name="ADC_SERDES"/>
+  <BlockFileSet Type="BlockSrcs" Name="idelay_discr_clk_wiz"/>
+  <BlockFileSet Type="BlockSrcs" Name="DISCR_SERDES"/>
 </GenRun>

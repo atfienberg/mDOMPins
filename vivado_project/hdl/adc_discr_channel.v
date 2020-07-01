@@ -61,7 +61,7 @@ module adc_discr_channel
      .bitslip(adc_bitslip[1]),
      .clk_in(adc_dclk),
      .clk_div_in(lclk),
-     .io_reset(adc_io_reset[0])
+     .io_reset(adc_io_reset[1])
    );
 
   assign adc_bits = {adc_bits_1, adc_bits_0};

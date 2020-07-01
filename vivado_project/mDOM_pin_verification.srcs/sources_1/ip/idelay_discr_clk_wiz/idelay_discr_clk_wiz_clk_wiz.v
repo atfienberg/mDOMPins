@@ -81,9 +81,7 @@ module idelay_discr_clk_wiz_clk_wiz
   //------------------------------------
 wire clk_in1_idelay_discr_clk_wiz;
 wire clk_in2_idelay_discr_clk_wiz;
-  BUFG clkin1_bufg
-   (.O (clk_in1_idelay_discr_clk_wiz),
-    .I (clk_in1));
+  assign clk_in1_idelay_discr_clk_wiz = clk_in1;
 
 
 

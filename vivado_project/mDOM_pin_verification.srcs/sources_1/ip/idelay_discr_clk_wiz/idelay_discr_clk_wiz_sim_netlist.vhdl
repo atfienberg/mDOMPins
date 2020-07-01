@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
--- Date        : Wed Jul  1 14:40:04 2020
+-- Date        : Wed Jul  1 15:25:09 2020
 -- Host        : LAPTOP-GBOUD091 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz_sim_netlist.vhdl
+--               C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz_sim_netlist.vhdl
 -- Design      : idelay_discr_clk_wiz
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -27,7 +27,6 @@ entity idelay_discr_clk_wiz_idelay_discr_clk_wiz_clk_wiz is
 end idelay_discr_clk_wiz_idelay_discr_clk_wiz_clk_wiz;
 
 architecture STRUCTURE of idelay_discr_clk_wiz_idelay_discr_clk_wiz_clk_wiz is
-  signal clk_in1_idelay_discr_clk_wiz : STD_LOGIC;
   signal clk_out1_idelay_discr_clk_wiz : STD_LOGIC;
   signal clk_out2_idelay_discr_clk_wiz : STD_LOGIC;
   signal clkfbout_buf_idelay_discr_clk_wiz : STD_LOGIC;
@@ -49,7 +48,6 @@ architecture STRUCTURE of idelay_discr_clk_wiz_idelay_discr_clk_wiz_clk_wiz is
   signal NLW_mmcm_adv_inst_DO_UNCONNECTED : STD_LOGIC_VECTOR ( 15 downto 0 );
   attribute BOX_TYPE : string;
   attribute BOX_TYPE of clkf_buf : label is "PRIMITIVE";
-  attribute BOX_TYPE of clkin1_bufg : label is "PRIMITIVE";
   attribute BOX_TYPE of clkout1_buf : label is "PRIMITIVE";
   attribute BOX_TYPE of clkout2_buf : label is "PRIMITIVE";
   attribute BOX_TYPE of mmcm_adv_inst : label is "PRIMITIVE";
@@ -58,11 +56,6 @@ clkf_buf: unisim.vcomponents.BUFG
      port map (
       I => clkfbout_idelay_discr_clk_wiz,
       O => clkfbout_buf_idelay_discr_clk_wiz
-    );
-clkin1_bufg: unisim.vcomponents.BUFG
-     port map (
-      I => clk_in1,
-      O => clk_in1_idelay_discr_clk_wiz
     );
 clkout1_buf: unisim.vcomponents.BUFG
      port map (
@@ -111,7 +104,7 @@ mmcm_adv_inst: unisim.vcomponents.MMCME2_ADV
       CLKOUT6_DUTY_CYCLE => 0.500000,
       CLKOUT6_PHASE => 0.000000,
       CLKOUT6_USE_FINE_PS => false,
-      COMPENSATION => "BUF_IN",
+      COMPENSATION => "ZHOLD",
       DIVCLK_DIVIDE => 1,
       IS_CLKINSEL_INVERTED => '0',
       IS_PSEN_INVERTED => '0',
@@ -130,7 +123,7 @@ mmcm_adv_inst: unisim.vcomponents.MMCME2_ADV
       CLKFBOUT => clkfbout_idelay_discr_clk_wiz,
       CLKFBOUTB => NLW_mmcm_adv_inst_CLKFBOUTB_UNCONNECTED,
       CLKFBSTOPPED => NLW_mmcm_adv_inst_CLKFBSTOPPED_UNCONNECTED,
-      CLKIN1 => clk_in1_idelay_discr_clk_wiz,
+      CLKIN1 => clk_in1,
       CLKIN2 => '0',
       CLKINSEL => '1',
       CLKINSTOPPED => NLW_mmcm_adv_inst_CLKINSTOPPED_UNCONNECTED,

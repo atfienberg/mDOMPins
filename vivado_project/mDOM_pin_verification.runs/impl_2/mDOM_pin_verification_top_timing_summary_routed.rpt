@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Wed Jul  1 14:59:27 2020
+| Date         : Wed Jul  1 15:43:12 2020
 | Host         : LAPTOP-GBOUD091 running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file mDOM_pin_verification_top_timing_summary_routed.rpt -pb mDOM_pin_verification_top_timing_summary_routed.pb -rpx mDOM_pin_verification_top_timing_summary_routed.rpx -warn_on_violation
 | Design       : mDOM_pin_verification_top
@@ -82,7 +82,7 @@ Table of Contents
 
 6. checking no_output_delay
 ---------------------------
- There are 6 ports with no output delay specified. (HIGH)
+ There are 12 ports with no output delay specified. (HIGH)
 
  There are 0 ports with no output delay but user has a false path constraint
 
@@ -127,7 +127,7 @@ Table of Contents
 
     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-      2.930        0.000                      0                   48           NA           NA                     NA                   NA        0.264        0.000                       0                   288  
+      2.930        0.000                      0                   48           NA           NA                     NA                   NA        0.264        0.000                       0                   286  
 
 
 All user specified timing constraints are met.
@@ -164,14 +164,14 @@ virt_clk                           {0.000 1.333}        2.667           374.953
 
 Clock                                  WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
 -----                                  -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-fpga_clk                                                                                                                                                                            15.000        0.000                       0                     5  
+fpga_clk                                                                                                                                                                            15.000        0.000                       0                     3  
   clk_out1_idelay_discr_clk_wiz                                                                                                                                                      0.264        0.000                       0                     6  
   clk_out1_lclk_adcclk_wiz                                                                                                                                                           5.640        0.000                       0                   122  
   clk_out2_idelay_discr_clk_wiz                                                                                                                                                      0.408        0.000                       0                    50  
   clk_out2_lclk_adcclk_wiz                                                                                                                                                           1.074        0.000                       0                    98  
   clkfbout_idelay_discr_clk_wiz                                                                                                                                                     48.408        0.000                       0                     3  
   clkfbout_lclk_adcclk_wiz                                                                                                                                                          48.408        0.000                       0                     3  
-qosc_clk                                                                                                                                                                            15.000        0.000                       0                     5  
+qosc_clk                                                                                                                                                                            15.000        0.000                       0                     3  
   clk_out1_idelay_discr_clk_wiz_1                                                                                                                                                    0.264        0.000                       0                     6  
   clk_out1_lclk_adcclk_wiz_1                                                                                                                                                         5.640        0.000                       0                   122  
   clk_out2_idelay_discr_clk_wiz_1                                                                                                                                                    0.408        0.000                       0                    50  
@@ -224,21 +224,19 @@ Period(ns):         50.000
 Sources:            { FPGA_CLOCK_P }
 
 Check Type        Corner  Lib Pin            Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
-Min Period        n/a     BUFG/I             n/a            1.592         50.000      48.408     BUFGCTRL_X0Y16   LCLK_ADCCLK_WIZ_0/inst/clkin1_bufg/I
-Min Period        n/a     BUFGCTRL/I1        n/a            1.592         50.000      48.408     BUFGCTRL_X0Y31   BUFGMUX_0/I1
-Min Period        n/a     BUFG/I             n/a            1.592         50.000      48.408     BUFGCTRL_X0Y30   IDELAY_DISCR_CLK_WIZ_0/inst/clkin1_bufg/I
+Min Period        n/a     BUFGCTRL/I1        n/a            1.592         50.000      48.408     BUFGCTRL_X0Y16   BUFGMUX_0/I1
+Min Period        n/a     MMCME2_ADV/CLKIN1  n/a            1.249         50.000      48.751     MMCME2_ADV_X0Y1  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKIN1
 Min Period        n/a     MMCME2_ADV/CLKIN1  n/a            1.249         50.000      48.751     MMCME2_ADV_X1Y0  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKIN1
-Min Period        n/a     MMCME2_ADV/CLKIN1  n/a            1.249         50.000      48.751     MMCME2_ADV_X0Y3  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKIN1
+Max Period        n/a     MMCME2_ADV/CLKIN1  n/a            100.000       50.000      50.000     MMCME2_ADV_X0Y1  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKIN1
 Max Period        n/a     MMCME2_ADV/CLKIN1  n/a            100.000       50.000      50.000     MMCME2_ADV_X1Y0  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKIN1
-Max Period        n/a     MMCME2_ADV/CLKIN1  n/a            100.000       50.000      50.000     MMCME2_ADV_X0Y3  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKIN1
 Low Pulse Width   Slow    MMCME2_ADV/CLKIN1  n/a            10.000        25.000      15.000     MMCME2_ADV_X1Y0  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKIN1
+Low Pulse Width   Slow    MMCME2_ADV/CLKIN1  n/a            10.000        25.000      15.000     MMCME2_ADV_X0Y1  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKIN1
+Low Pulse Width   Fast    MMCME2_ADV/CLKIN1  n/a            10.000        25.000      15.000     MMCME2_ADV_X0Y1  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKIN1
 Low Pulse Width   Fast    MMCME2_ADV/CLKIN1  n/a            10.000        25.000      15.000     MMCME2_ADV_X1Y0  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKIN1
-Low Pulse Width   Slow    MMCME2_ADV/CLKIN1  n/a            10.000        25.000      15.000     MMCME2_ADV_X0Y3  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKIN1
-Low Pulse Width   Fast    MMCME2_ADV/CLKIN1  n/a            10.000        25.000      15.000     MMCME2_ADV_X0Y3  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKIN1
-High Pulse Width  Fast    MMCME2_ADV/CLKIN1  n/a            10.000        25.000      15.000     MMCME2_ADV_X0Y3  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKIN1
-High Pulse Width  Slow    MMCME2_ADV/CLKIN1  n/a            10.000        25.000      15.000     MMCME2_ADV_X1Y0  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKIN1
 High Pulse Width  Fast    MMCME2_ADV/CLKIN1  n/a            10.000        25.000      15.000     MMCME2_ADV_X1Y0  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKIN1
-High Pulse Width  Slow    MMCME2_ADV/CLKIN1  n/a            10.000        25.000      15.000     MMCME2_ADV_X0Y3  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKIN1
+High Pulse Width  Slow    MMCME2_ADV/CLKIN1  n/a            10.000        25.000      15.000     MMCME2_ADV_X0Y1  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKIN1
+High Pulse Width  Fast    MMCME2_ADV/CLKIN1  n/a            10.000        25.000      15.000     MMCME2_ADV_X0Y1  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKIN1
+High Pulse Width  Slow    MMCME2_ADV/CLKIN1  n/a            10.000        25.000      15.000     MMCME2_ADV_X1Y0  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKIN1
 
 
 
@@ -264,13 +262,13 @@ Min Period  n/a     IDELAYCTRL/REFCLK   n/a            2.438         5.000      
 Min Period  n/a     IDELAYCTRL/REFCLK   n/a            2.438         5.000       2.562      IDELAYCTRL_X0Y1  delayctrl_REPLICATED_0/REFCLK
 Min Period  n/a     IDELAYCTRL/REFCLK   n/a            2.438         5.000       2.562      IDELAYCTRL_X0Y2  delayctrl_REPLICATED_0_2/REFCLK
 Min Period  n/a     IDELAYCTRL/REFCLK   n/a            2.438         5.000       2.562      IDELAYCTRL_X0Y3  delayctrl_REPLICATED_0_3/REFCLK
-Min Period  n/a     BUFG/I              n/a            1.592         5.000       3.408      BUFGCTRL_X0Y28   IDELAY_DISCR_CLK_WIZ_0/inst/clkout1_buf/I
-Min Period  n/a     MMCME2_ADV/CLKOUT0  n/a            1.249         5.000       3.751      MMCME2_ADV_X0Y3  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
+Min Period  n/a     BUFG/I              n/a            1.592         5.000       3.408      BUFGCTRL_X0Y3    IDELAY_DISCR_CLK_WIZ_0/inst/clkout1_buf/I
+Min Period  n/a     MMCME2_ADV/CLKOUT0  n/a            1.249         5.000       3.751      MMCME2_ADV_X0Y1  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
 Max Period  n/a     IDELAYCTRL/REFCLK   n/a            5.264         5.000       0.264      IDELAYCTRL_X0Y0  delayctrl/REFCLK
 Max Period  n/a     IDELAYCTRL/REFCLK   n/a            5.264         5.000       0.264      IDELAYCTRL_X0Y1  delayctrl_REPLICATED_0/REFCLK
 Max Period  n/a     IDELAYCTRL/REFCLK   n/a            5.264         5.000       0.264      IDELAYCTRL_X0Y2  delayctrl_REPLICATED_0_2/REFCLK
 Max Period  n/a     IDELAYCTRL/REFCLK   n/a            5.264         5.000       0.264      IDELAYCTRL_X0Y3  delayctrl_REPLICATED_0_3/REFCLK
-Max Period  n/a     MMCME2_ADV/CLKOUT0  n/a            213.360       5.000       208.360    MMCME2_ADV_X0Y3  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
+Max Period  n/a     MMCME2_ADV/CLKOUT0  n/a            213.360       5.000       208.360    MMCME2_ADV_X0Y1  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
 
 
 
@@ -324,7 +322,7 @@ Period(ns):         2.000
 Sources:            { IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT1 }
 
 Check Type  Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
-Min Period  n/a     BUFG/I              n/a            1.592         2.000       0.408      BUFGCTRL_X0Y27   IDELAY_DISCR_CLK_WIZ_0/inst/clkout2_buf/I
+Min Period  n/a     BUFG/I              n/a            1.592         2.000       0.408      BUFGCTRL_X0Y2    IDELAY_DISCR_CLK_WIZ_0/inst/clkout2_buf/I
 Min Period  n/a     ISERDESE2/CLK       n/a            1.471         2.000       0.529      ILOGIC_X1Y15     ADC_DISCR_0B/DISCR_SERDES/inst/pins[0].iserdese2_master/CLK
 Min Period  n/a     ISERDESE2/CLKB      n/a            1.471         2.000       0.529      ILOGIC_X1Y15     ADC_DISCR_0B/DISCR_SERDES/inst/pins[0].iserdese2_master/CLKB
 Min Period  n/a     ISERDESE2/CLK       n/a            1.471         2.000       0.529      ILOGIC_X1Y14     ADC_DISCR_0D/DISCR_SERDES/inst/pins[0].iserdese2_master/CLK
@@ -334,7 +332,7 @@ Min Period  n/a     ISERDESE2/CLKB      n/a            1.471         2.000      
 Min Period  n/a     ISERDESE2/CLK       n/a            1.471         2.000       0.529      ILOGIC_X1Y3      ADC_DISCR_2C/DISCR_SERDES/inst/pins[0].iserdese2_master/CLK
 Min Period  n/a     ISERDESE2/CLKB      n/a            1.471         2.000       0.529      ILOGIC_X1Y3      ADC_DISCR_2C/DISCR_SERDES/inst/pins[0].iserdese2_master/CLKB
 Min Period  n/a     ISERDESE2/CLK       n/a            1.471         2.000       0.529      ILOGIC_X1Y55     ADC_DISCR_3A/DISCR_SERDES/inst/pins[0].iserdese2_master/CLK
-Max Period  n/a     MMCME2_ADV/CLKOUT1  n/a            213.360       2.000       211.360    MMCME2_ADV_X0Y3  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT1
+Max Period  n/a     MMCME2_ADV/CLKOUT1  n/a            213.360       2.000       211.360    MMCME2_ADV_X0Y1  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT1
 
 
 
@@ -356,7 +354,7 @@ Period(ns):         2.667
 Sources:            { LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT1 }
 
 Check Type  Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
-Min Period  n/a     BUFG/I              n/a            1.592         2.667       1.074      BUFGCTRL_X0Y2    LCLK_ADCCLK_WIZ_0/inst/clkout2_buf/I
+Min Period  n/a     BUFG/I              n/a            1.592         2.667       1.074      BUFGCTRL_X0Y1    LCLK_ADCCLK_WIZ_0/inst/clkout2_buf/I
 Min Period  n/a     ISERDESE2/CLK       n/a            1.471         2.667       1.196      ILOGIC_X0Y12     ADC_DISCR_0B/ADC_SERDES_1/inst/pins[0].iserdese2_master/CLK
 Min Period  n/a     ISERDESE2/CLKB      n/a            1.471         2.667       1.196      ILOGIC_X0Y12     ADC_DISCR_0B/ADC_SERDES_1/inst/pins[0].iserdese2_master/CLKB
 Min Period  n/a     ISERDESE2/CLK       n/a            1.471         2.667       1.196      ILOGIC_X0Y20     ADC_DISCR_0D/ADC_SERDES_1/inst/pins[0].iserdese2_master/CLK
@@ -388,11 +386,11 @@ Period(ns):         50.000
 Sources:            { IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKFBOUT }
 
 Check Type  Corner  Lib Pin              Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
-Min Period  n/a     BUFG/I               n/a            1.592         50.000      48.408     BUFGCTRL_X0Y29   IDELAY_DISCR_CLK_WIZ_0/inst/clkf_buf/I
-Min Period  n/a     MMCME2_ADV/CLKFBOUT  n/a            1.249         50.000      48.751     MMCME2_ADV_X0Y3  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKFBOUT
-Min Period  n/a     MMCME2_ADV/CLKFBIN   n/a            1.249         50.000      48.751     MMCME2_ADV_X0Y3  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKFBIN
-Max Period  n/a     MMCME2_ADV/CLKFBIN   n/a            100.000       50.000      50.000     MMCME2_ADV_X0Y3  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKFBIN
-Max Period  n/a     MMCME2_ADV/CLKFBOUT  n/a            213.360       50.000      163.360    MMCME2_ADV_X0Y3  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKFBOUT
+Min Period  n/a     BUFG/I               n/a            1.592         50.000      48.408     BUFGCTRL_X0Y4    IDELAY_DISCR_CLK_WIZ_0/inst/clkf_buf/I
+Min Period  n/a     MMCME2_ADV/CLKFBOUT  n/a            1.249         50.000      48.751     MMCME2_ADV_X0Y1  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKFBOUT
+Min Period  n/a     MMCME2_ADV/CLKFBIN   n/a            1.249         50.000      48.751     MMCME2_ADV_X0Y1  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKFBIN
+Max Period  n/a     MMCME2_ADV/CLKFBIN   n/a            100.000       50.000      50.000     MMCME2_ADV_X0Y1  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKFBIN
+Max Period  n/a     MMCME2_ADV/CLKFBOUT  n/a            213.360       50.000      163.360    MMCME2_ADV_X0Y1  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKFBOUT
 
 
 
@@ -414,7 +412,7 @@ Period(ns):         50.000
 Sources:            { LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKFBOUT }
 
 Check Type  Corner  Lib Pin              Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
-Min Period  n/a     BUFG/I               n/a            1.592         50.000      48.408     BUFGCTRL_X0Y0    LCLK_ADCCLK_WIZ_0/inst/clkf_buf/I
+Min Period  n/a     BUFG/I               n/a            1.592         50.000      48.408     BUFGCTRL_X0Y5    LCLK_ADCCLK_WIZ_0/inst/clkf_buf/I
 Min Period  n/a     MMCME2_ADV/CLKFBOUT  n/a            1.249         50.000      48.751     MMCME2_ADV_X1Y0  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKFBOUT
 Min Period  n/a     MMCME2_ADV/CLKFBIN   n/a            1.249         50.000      48.751     MMCME2_ADV_X1Y0  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKFBIN
 Max Period  n/a     MMCME2_ADV/CLKFBIN   n/a            100.000       50.000      50.000     MMCME2_ADV_X1Y0  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKFBIN
@@ -440,20 +438,18 @@ Period(ns):         50.000
 Sources:            { QOSC_CLK }
 
 Check Type        Corner  Lib Pin            Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
-Min Period        n/a     BUFG/I             n/a            1.592         50.000      48.408     BUFGCTRL_X0Y16   LCLK_ADCCLK_WIZ_0/inst/clkin1_bufg/I
-Min Period        n/a     BUFGCTRL/I0        n/a            1.592         50.000      48.408     BUFGCTRL_X0Y31   BUFGMUX_0/I0
-Min Period        n/a     BUFG/I             n/a            1.592         50.000      48.408     BUFGCTRL_X0Y30   IDELAY_DISCR_CLK_WIZ_0/inst/clkin1_bufg/I
+Min Period        n/a     BUFGCTRL/I0        n/a            1.592         50.000      48.408     BUFGCTRL_X0Y16   BUFGMUX_0/I0
+Min Period        n/a     MMCME2_ADV/CLKIN1  n/a            1.249         50.000      48.751     MMCME2_ADV_X0Y1  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKIN1
 Min Period        n/a     MMCME2_ADV/CLKIN1  n/a            1.249         50.000      48.751     MMCME2_ADV_X1Y0  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKIN1
-Min Period        n/a     MMCME2_ADV/CLKIN1  n/a            1.249         50.000      48.751     MMCME2_ADV_X0Y3  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKIN1
+Max Period        n/a     MMCME2_ADV/CLKIN1  n/a            100.000       50.000      50.000     MMCME2_ADV_X0Y1  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKIN1
 Max Period        n/a     MMCME2_ADV/CLKIN1  n/a            100.000       50.000      50.000     MMCME2_ADV_X1Y0  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKIN1
-Max Period        n/a     MMCME2_ADV/CLKIN1  n/a            100.000       50.000      50.000     MMCME2_ADV_X0Y3  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKIN1
+Low Pulse Width   Fast    MMCME2_ADV/CLKIN1  n/a            10.000        25.000      15.000     MMCME2_ADV_X0Y1  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKIN1
 Low Pulse Width   Fast    MMCME2_ADV/CLKIN1  n/a            10.000        25.000      15.000     MMCME2_ADV_X1Y0  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKIN1
+Low Pulse Width   Slow    MMCME2_ADV/CLKIN1  n/a            10.000        25.000      15.000     MMCME2_ADV_X0Y1  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKIN1
 Low Pulse Width   Slow    MMCME2_ADV/CLKIN1  n/a            10.000        25.000      15.000     MMCME2_ADV_X1Y0  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKIN1
-Low Pulse Width   Slow    MMCME2_ADV/CLKIN1  n/a            10.000        25.000      15.000     MMCME2_ADV_X0Y3  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKIN1
-Low Pulse Width   Fast    MMCME2_ADV/CLKIN1  n/a            10.000        25.000      15.000     MMCME2_ADV_X0Y3  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKIN1
+High Pulse Width  Slow    MMCME2_ADV/CLKIN1  n/a            10.000        25.000      15.000     MMCME2_ADV_X0Y1  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKIN1
+High Pulse Width  Fast    MMCME2_ADV/CLKIN1  n/a            10.000        25.000      15.000     MMCME2_ADV_X0Y1  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKIN1
 High Pulse Width  Slow    MMCME2_ADV/CLKIN1  n/a            10.000        25.000      15.000     MMCME2_ADV_X1Y0  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKIN1
-High Pulse Width  Slow    MMCME2_ADV/CLKIN1  n/a            10.000        25.000      15.000     MMCME2_ADV_X0Y3  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKIN1
-High Pulse Width  Fast    MMCME2_ADV/CLKIN1  n/a            10.000        25.000      15.000     MMCME2_ADV_X0Y3  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKIN1
 High Pulse Width  Fast    MMCME2_ADV/CLKIN1  n/a            10.000        25.000      15.000     MMCME2_ADV_X1Y0  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKIN1
 
 
@@ -480,13 +476,13 @@ Min Period  n/a     IDELAYCTRL/REFCLK   n/a            2.438         5.000      
 Min Period  n/a     IDELAYCTRL/REFCLK   n/a            2.438         5.000       2.562      IDELAYCTRL_X0Y1  delayctrl_REPLICATED_0/REFCLK
 Min Period  n/a     IDELAYCTRL/REFCLK   n/a            2.438         5.000       2.562      IDELAYCTRL_X0Y2  delayctrl_REPLICATED_0_2/REFCLK
 Min Period  n/a     IDELAYCTRL/REFCLK   n/a            2.438         5.000       2.562      IDELAYCTRL_X0Y3  delayctrl_REPLICATED_0_3/REFCLK
-Min Period  n/a     BUFG/I              n/a            1.592         5.000       3.408      BUFGCTRL_X0Y28   IDELAY_DISCR_CLK_WIZ_0/inst/clkout1_buf/I
-Min Period  n/a     MMCME2_ADV/CLKOUT0  n/a            1.249         5.000       3.751      MMCME2_ADV_X0Y3  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
+Min Period  n/a     BUFG/I              n/a            1.592         5.000       3.408      BUFGCTRL_X0Y3    IDELAY_DISCR_CLK_WIZ_0/inst/clkout1_buf/I
+Min Period  n/a     MMCME2_ADV/CLKOUT0  n/a            1.249         5.000       3.751      MMCME2_ADV_X0Y1  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
 Max Period  n/a     IDELAYCTRL/REFCLK   n/a            5.264         5.000       0.264      IDELAYCTRL_X0Y0  delayctrl/REFCLK
 Max Period  n/a     IDELAYCTRL/REFCLK   n/a            5.264         5.000       0.264      IDELAYCTRL_X0Y1  delayctrl_REPLICATED_0/REFCLK
 Max Period  n/a     IDELAYCTRL/REFCLK   n/a            5.264         5.000       0.264      IDELAYCTRL_X0Y2  delayctrl_REPLICATED_0_2/REFCLK
 Max Period  n/a     IDELAYCTRL/REFCLK   n/a            5.264         5.000       0.264      IDELAYCTRL_X0Y3  delayctrl_REPLICATED_0_3/REFCLK
-Max Period  n/a     MMCME2_ADV/CLKOUT0  n/a            213.360       5.000       208.360    MMCME2_ADV_X0Y3  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
+Max Period  n/a     MMCME2_ADV/CLKOUT0  n/a            213.360       5.000       208.360    MMCME2_ADV_X0Y1  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT0
 
 
 
@@ -540,7 +536,7 @@ Period(ns):         2.000
 Sources:            { IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT1 }
 
 Check Type  Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
-Min Period  n/a     BUFG/I              n/a            1.592         2.000       0.408      BUFGCTRL_X0Y27   IDELAY_DISCR_CLK_WIZ_0/inst/clkout2_buf/I
+Min Period  n/a     BUFG/I              n/a            1.592         2.000       0.408      BUFGCTRL_X0Y2    IDELAY_DISCR_CLK_WIZ_0/inst/clkout2_buf/I
 Min Period  n/a     ISERDESE2/CLK       n/a            1.471         2.000       0.529      ILOGIC_X1Y15     ADC_DISCR_0B/DISCR_SERDES/inst/pins[0].iserdese2_master/CLK
 Min Period  n/a     ISERDESE2/CLKB      n/a            1.471         2.000       0.529      ILOGIC_X1Y15     ADC_DISCR_0B/DISCR_SERDES/inst/pins[0].iserdese2_master/CLKB
 Min Period  n/a     ISERDESE2/CLK       n/a            1.471         2.000       0.529      ILOGIC_X1Y14     ADC_DISCR_0D/DISCR_SERDES/inst/pins[0].iserdese2_master/CLK
@@ -550,7 +546,7 @@ Min Period  n/a     ISERDESE2/CLKB      n/a            1.471         2.000      
 Min Period  n/a     ISERDESE2/CLK       n/a            1.471         2.000       0.529      ILOGIC_X1Y3      ADC_DISCR_2C/DISCR_SERDES/inst/pins[0].iserdese2_master/CLK
 Min Period  n/a     ISERDESE2/CLKB      n/a            1.471         2.000       0.529      ILOGIC_X1Y3      ADC_DISCR_2C/DISCR_SERDES/inst/pins[0].iserdese2_master/CLKB
 Min Period  n/a     ISERDESE2/CLK       n/a            1.471         2.000       0.529      ILOGIC_X1Y55     ADC_DISCR_3A/DISCR_SERDES/inst/pins[0].iserdese2_master/CLK
-Max Period  n/a     MMCME2_ADV/CLKOUT1  n/a            213.360       2.000       211.360    MMCME2_ADV_X0Y3  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT1
+Max Period  n/a     MMCME2_ADV/CLKOUT1  n/a            213.360       2.000       211.360    MMCME2_ADV_X0Y1  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT1
 
 
 
@@ -572,7 +568,7 @@ Period(ns):         2.667
 Sources:            { LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKOUT1 }
 
 Check Type  Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
-Min Period  n/a     BUFG/I              n/a            1.592         2.667       1.074      BUFGCTRL_X0Y2    LCLK_ADCCLK_WIZ_0/inst/clkout2_buf/I
+Min Period  n/a     BUFG/I              n/a            1.592         2.667       1.074      BUFGCTRL_X0Y1    LCLK_ADCCLK_WIZ_0/inst/clkout2_buf/I
 Min Period  n/a     ISERDESE2/CLK       n/a            1.471         2.667       1.196      ILOGIC_X0Y12     ADC_DISCR_0B/ADC_SERDES_1/inst/pins[0].iserdese2_master/CLK
 Min Period  n/a     ISERDESE2/CLKB      n/a            1.471         2.667       1.196      ILOGIC_X0Y12     ADC_DISCR_0B/ADC_SERDES_1/inst/pins[0].iserdese2_master/CLKB
 Min Period  n/a     ISERDESE2/CLK       n/a            1.471         2.667       1.196      ILOGIC_X0Y20     ADC_DISCR_0D/ADC_SERDES_1/inst/pins[0].iserdese2_master/CLK
@@ -604,11 +600,11 @@ Period(ns):         50.000
 Sources:            { IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKFBOUT }
 
 Check Type  Corner  Lib Pin              Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
-Min Period  n/a     BUFG/I               n/a            1.592         50.000      48.408     BUFGCTRL_X0Y29   IDELAY_DISCR_CLK_WIZ_0/inst/clkf_buf/I
-Min Period  n/a     MMCME2_ADV/CLKFBOUT  n/a            1.249         50.000      48.751     MMCME2_ADV_X0Y3  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKFBOUT
-Min Period  n/a     MMCME2_ADV/CLKFBIN   n/a            1.249         50.000      48.751     MMCME2_ADV_X0Y3  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKFBIN
-Max Period  n/a     MMCME2_ADV/CLKFBIN   n/a            100.000       50.000      50.000     MMCME2_ADV_X0Y3  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKFBIN
-Max Period  n/a     MMCME2_ADV/CLKFBOUT  n/a            213.360       50.000      163.360    MMCME2_ADV_X0Y3  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKFBOUT
+Min Period  n/a     BUFG/I               n/a            1.592         50.000      48.408     BUFGCTRL_X0Y4    IDELAY_DISCR_CLK_WIZ_0/inst/clkf_buf/I
+Min Period  n/a     MMCME2_ADV/CLKFBOUT  n/a            1.249         50.000      48.751     MMCME2_ADV_X0Y1  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKFBOUT
+Min Period  n/a     MMCME2_ADV/CLKFBIN   n/a            1.249         50.000      48.751     MMCME2_ADV_X0Y1  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKFBIN
+Max Period  n/a     MMCME2_ADV/CLKFBIN   n/a            100.000       50.000      50.000     MMCME2_ADV_X0Y1  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKFBIN
+Max Period  n/a     MMCME2_ADV/CLKFBOUT  n/a            213.360       50.000      163.360    MMCME2_ADV_X0Y1  IDELAY_DISCR_CLK_WIZ_0/inst/mmcm_adv_inst/CLKFBOUT
 
 
 
@@ -630,7 +626,7 @@ Period(ns):         50.000
 Sources:            { LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKFBOUT }
 
 Check Type  Corner  Lib Pin              Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
-Min Period  n/a     BUFG/I               n/a            1.592         50.000      48.408     BUFGCTRL_X0Y0    LCLK_ADCCLK_WIZ_0/inst/clkf_buf/I
+Min Period  n/a     BUFG/I               n/a            1.592         50.000      48.408     BUFGCTRL_X0Y5    LCLK_ADCCLK_WIZ_0/inst/clkf_buf/I
 Min Period  n/a     MMCME2_ADV/CLKFBOUT  n/a            1.249         50.000      48.751     MMCME2_ADV_X1Y0  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKFBOUT
 Min Period  n/a     MMCME2_ADV/CLKFBIN   n/a            1.249         50.000      48.751     MMCME2_ADV_X1Y0  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKFBIN
 Max Period  n/a     MMCME2_ADV/CLKFBIN   n/a            100.000       50.000      50.000     MMCME2_ADV_X1Y0  LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKFBIN
