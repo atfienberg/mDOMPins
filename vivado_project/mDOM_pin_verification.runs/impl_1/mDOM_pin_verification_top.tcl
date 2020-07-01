@@ -80,6 +80,7 @@ set rc [catch {
   read_ip -quiet C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/master_clk_wiz/master_clk_wiz.xci
   read_xdc C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/mDOM_mb_1_jun29.xdc
   read_xdc C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/clocks.xdc
+  read_xdc C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/io_standards.xdc
   link_design -top mDOM_pin_verification_top -part xc7s100fgga676-1
   close_msg_db -file init_design.pb
 } RESULT]

@@ -1,14 +1,14 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-// Date        : Mon Jun 29 18:40:33 2020
+// Date        : Wed Jul  1 14:50:45 2020
 // Host        : LAPTOP-GBOUD091 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES_sim_netlist.v
 // Design      : DISCR_SERDES
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
-// Device      : xc7s100fgga676-1
+// Device      : xc7s100fgga676-2
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
@@ -31,7 +31,7 @@ module DISCR_SERDES
   wire [0:0]bitslip;
   wire clk_div_in;
   wire clk_in;
-  (* IBUF_LOW_PWR *) (* IOSTANDARD = "SSTL135" *) wire [0:0]data_in_from_pins;
+  (* IBUF_LOW_PWR *) (* IOSTANDARD = "SSTL135_R" *) wire [0:0]data_in_from_pins;
   wire [7:0]data_in_to_device;
   wire io_reset;
 
@@ -84,7 +84,7 @@ module DISCR_SERDES_DISCR_SERDES_selectio_wiz
   (* BOX_TYPE = "PRIMITIVE" *) 
   (* OPT_MODIFIED = "MLO" *) 
   ISERDESE2 #(
-    .DATA_RATE("DDR"),
+    .DATA_RATE("SDR"),
     .DATA_WIDTH(8),
     .DYN_CLKDIV_INV_EN("FALSE"),
     .DYN_CLK_INV_EN("FALSE"),

@@ -627,11 +627,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Jun 29 22:39:47 UTC 2020</spirit:value>
+            <spirit:value>Wed Jul 01 18:50:09 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:d5921fec</spirit:value>
+            <spirit:value>9:1c536521</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -647,11 +647,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Jun 29 22:39:58 UTC 2020</spirit:value>
+            <spirit:value>Wed Jul 01 18:50:09 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:d5921fec</spirit:value>
+            <spirit:value>9:1c536521</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -662,7 +662,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:d5921fec</spirit:value>
+            <spirit:value>9:1c536521</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -678,11 +678,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Jun 29 22:39:58 UTC 2020</spirit:value>
+            <spirit:value>Wed Jul 01 18:50:09 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:d5921fec</spirit:value>
+            <spirit:value>9:1c536521</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -698,11 +698,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Jun 29 22:39:58 UTC 2020</spirit:value>
+            <spirit:value>Wed Jul 01 18:50:09 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:3315a400</spirit:value>
+            <spirit:value>9:fc92a50a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -718,11 +718,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Jun 29 22:39:58 UTC 2020</spirit:value>
+            <spirit:value>Wed Jul 01 18:50:09 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:3315a400</spirit:value>
+            <spirit:value>9:fc92a50a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -736,11 +736,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Jun 29 22:39:58 UTC 2020</spirit:value>
+            <spirit:value>Wed Jul 01 18:50:09 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:d5921fec</spirit:value>
+            <spirit:value>9:1c536521</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -754,11 +754,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Jun 29 22:40:33 UTC 2020</spirit:value>
+            <spirit:value>Wed Jul 01 18:50:45 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:d5921fec</spirit:value>
+            <spirit:value>9:1c536521</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2127,7 +2127,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="string">
         <spirit:name>C_BUS_IO_STD</spirit:name>
-        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_BUS_IO_STD" spirit:order="48">SSTL135</spirit:value>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_BUS_IO_STD" spirit:order="48">SSTL135_R</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="string">
         <spirit:name>C_USE_SERIALIZATION</spirit:name>
@@ -2211,7 +2211,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="string">
         <spirit:name>C_SELIO_CLK_IO_STD</spirit:name>
-        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SELIO_CLK_IO_STD" spirit:order="69">SSTL135</spirit:value>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SELIO_CLK_IO_STD" spirit:order="69">SSTL135_R</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="string">
         <spirit:name>C_CLK_BUF</spirit:name>
@@ -2227,7 +2227,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="string">
         <spirit:name>C_SELIO_ACTIVE_EDGE</spirit:name>
-        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SELIO_ACTIVE_EDGE" spirit:order="73">DDR</spirit:value>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SELIO_ACTIVE_EDGE" spirit:order="73">SDR</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="string">
         <spirit:name>C_INTERFACE_TYPE</spirit:name>
@@ -2299,7 +2299,7 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="string">
         <spirit:name>C_CLK_FWD_IO_STD</spirit:name>
-        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_CLK_FWD_IO_STD" spirit:order="91">SSTL135</spirit:value>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_CLK_FWD_IO_STD" spirit:order="91">SSTL135_R</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="string">
         <spirit:name>C_CONFIG_CLK_FWD</spirit:name>
@@ -2326,17 +2326,19 @@
       <spirit:enumeration>LVCMOS18</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
+      <spirit:name>choice_list_4c0213cd</spirit:name>
+      <spirit:enumeration>2</spirit:enumeration>
+      <spirit:enumeration>3</spirit:enumeration>
+      <spirit:enumeration>4</spirit:enumeration>
+      <spirit:enumeration>5</spirit:enumeration>
+      <spirit:enumeration>6</spirit:enumeration>
+      <spirit:enumeration>7</spirit:enumeration>
+      <spirit:enumeration>8</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
       <spirit:name>choice_list_8d71bae4</spirit:name>
       <spirit:enumeration>SYNC</spirit:enumeration>
       <spirit:enumeration>ASYNC</spirit:enumeration>
-    </spirit:choice>
-    <spirit:choice>
-      <spirit:name>choice_list_9b5fec69</spirit:name>
-      <spirit:enumeration>4</spirit:enumeration>
-      <spirit:enumeration>6</spirit:enumeration>
-      <spirit:enumeration>8</spirit:enumeration>
-      <spirit:enumeration>10</spirit:enumeration>
-      <spirit:enumeration>14</spirit:enumeration>
     </spirit:choice>
     <spirit:choice>
       <spirit:name>choice_list_9cb1a9b4</spirit:name>
@@ -2580,7 +2582,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>BUS_IO_STD</spirit:name>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.BUS_IO_STD" spirit:choiceRef="choice_pairs_45573aba" spirit:order="6">SSTL135</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.BUS_IO_STD" spirit:choiceRef="choice_pairs_45573aba" spirit:order="6">SSTL135_R</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>USE_PHASE_DETECTOR</spirit:name>
@@ -2588,7 +2590,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SELIO_ACTIVE_EDGE</spirit:name>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.SELIO_ACTIVE_EDGE" spirit:choiceRef="choice_list_9cb1a9b4" spirit:order="8">DDR</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.SELIO_ACTIVE_EDGE" spirit:choiceRef="choice_list_9cb1a9b4" spirit:order="8">SDR</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>USE_SERIALIZATION</spirit:name>
@@ -2597,7 +2599,7 @@
     <spirit:parameter>
       <spirit:name>SERIALIZATION_FACTOR</spirit:name>
       <spirit:displayName>Serialization Factor</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SERIALIZATION_FACTOR" spirit:choiceRef="choice_list_9b5fec69" spirit:order="10">8</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SERIALIZATION_FACTOR" spirit:choiceRef="choice_list_4c0213cd" spirit:order="10">8</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>ENABLE_BITSLIP</spirit:name>
@@ -2677,7 +2679,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SELIO_CLK_IO_STD</spirit:name>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.SELIO_CLK_IO_STD" spirit:choiceRef="choice_pairs_45573aba" spirit:order="30">SSTL135</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.SELIO_CLK_IO_STD" spirit:choiceRef="choice_pairs_45573aba" spirit:order="30">SSTL135_R</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>CLK_BUF</spirit:name>
@@ -2747,7 +2749,7 @@
     <spirit:parameter>
       <spirit:name>CLK_FWD_IO_STD</spirit:name>
       <spirit:displayName>Standard</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.CLK_FWD_IO_STD" spirit:choiceRef="choice_pairs_45573aba" spirit:order="46">SSTL135</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.CLK_FWD_IO_STD" spirit:choiceRef="choice_pairs_45573aba" spirit:order="46">LVCMOS18</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>DDR_CLK_BUF</spirit:name>
@@ -2776,8 +2778,6 @@
       <xilinx:coreRevision>13</xilinx:coreRevision>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.BUS_IO_STD" xilinx:valueSource="user"/>
-        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.CLK_FWD_IO_STD" xilinx:valueSource="user"/>
-        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.SELIO_ACTIVE_EDGE" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.SELIO_CLK_BUF" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.SELIO_CLK_IO_STD" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.SELIO_INTERFACE_TYPE" xilinx:valueSource="user"/>

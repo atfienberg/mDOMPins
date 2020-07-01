@@ -15,9 +15,9 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7s100'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s100'
 INFO: [Device 21-403] Loading part xc7s100fgga676-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 1064 
+INFO: Helper process launched with PID 15244 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 716.219 ; gain = 177.070
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 716.730 ; gain = 177.438
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'mDOM_pin_verification_top' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:5]
 INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:417]
@@ -83,16 +83,16 @@ INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (2#1) [C:/Xilinx/Vivado/2
 INFO: [Synth 8-6157] synthesizing module 'BUFGMUX' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1175]
 	Parameter CLK_SEL_TYPE bound to: SYNC - type: string 
 INFO: [Synth 8-6155] done synthesizing module 'BUFGMUX' (3#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1175]
-INFO: [Synth 8-6157] synthesizing module 'master_clk_wiz' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_1/.Xil/Vivado-14104-LAPTOP-GBOUD091/realtime/master_clk_wiz_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'master_clk_wiz' (4#1) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_1/.Xil/Vivado-14104-LAPTOP-GBOUD091/realtime/master_clk_wiz_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'master_clk_wiz' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_1/.Xil/Vivado-13412-LAPTOP-GBOUD091/realtime/master_clk_wiz_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'master_clk_wiz' (4#1) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_1/.Xil/Vivado-13412-LAPTOP-GBOUD091/realtime/master_clk_wiz_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'IDELAYCTRL' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:34933]
 	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
 INFO: [Synth 8-6155] done synthesizing module 'IDELAYCTRL' (5#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:34933]
 INFO: [Synth 8-6157] synthesizing module 'adc_discr_channel' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/adc_discr_channel.v:5]
-INFO: [Synth 8-6157] synthesizing module 'ADC_SERDES' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_1/.Xil/Vivado-14104-LAPTOP-GBOUD091/realtime/ADC_SERDES_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'ADC_SERDES' (6#1) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_1/.Xil/Vivado-14104-LAPTOP-GBOUD091/realtime/ADC_SERDES_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'DISCR_SERDES' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_1/.Xil/Vivado-14104-LAPTOP-GBOUD091/realtime/DISCR_SERDES_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'DISCR_SERDES' (7#1) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_1/.Xil/Vivado-14104-LAPTOP-GBOUD091/realtime/DISCR_SERDES_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ADC_SERDES' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_1/.Xil/Vivado-13412-LAPTOP-GBOUD091/realtime/ADC_SERDES_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ADC_SERDES' (6#1) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_1/.Xil/Vivado-13412-LAPTOP-GBOUD091/realtime/ADC_SERDES_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'DISCR_SERDES' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_1/.Xil/Vivado-13412-LAPTOP-GBOUD091/realtime/DISCR_SERDES_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'DISCR_SERDES' (7#1) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_1/.Xil/Vivado-13412-LAPTOP-GBOUD091/realtime/DISCR_SERDES_stub.v:5]
 INFO: [Synth 8-6155] done synthesizing module 'adc_discr_channel' (8#1) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/adc_discr_channel.v:5]
 WARNING: [Synth 8-689] width (12) of port connection 'discr_bits' does not match port width (8) of module 'adc_discr_channel' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:435]
 WARNING: [Synth 8-689] width (12) of port connection 'discr_bits' does not match port width (8) of module 'adc_discr_channel' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:460]
@@ -307,7 +307,7 @@ WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DD
 WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_DQ12
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 781.238 ; gain = 242.090
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 781.344 ; gain = 242.051
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -320,10 +320,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 781.238 ; gain = 242.090
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 781.344 ; gain = 242.051
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 781.238 ; gain = 242.090
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 781.344 ; gain = 242.051
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -486,16 +486,18 @@ INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as o
 Finished Parsing XDC File [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/clocks.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mDOM_pin_verification_top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/mDOM_pin_verification_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/io_standards.xdc]
+Finished Parsing XDC File [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/io_standards.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 908.898 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 906.559 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 3 instances were transformed.
   BUFGMUX => BUFGCTRL (inverted pins: CE0): 1 instances
   IBUFGDS => IBUFDS: 1 instances
   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 1 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 908.898 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 906.559 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_0A/ADC_SERDES_0' at clock pin 'clk_in' is different from the actual clock period '3.333', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_0A/ADC_SERDES_1' at clock pin 'clk_in' is different from the actual clock period '3.333', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_0A/DISCR_SERDES' at clock pin 'clk_in' is different from the actual clock period '2.500', this can lead to different synthesis results.
@@ -569,14 +571,14 @@ WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context s
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_5D/ADC_SERDES_1' at clock pin 'clk_in' is different from the actual clock period '3.333', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_5D/DISCR_SERDES' at clock pin 'clk_in' is different from the actual clock period '2.500', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 908.898 ; gain = 369.750
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 906.668 ; gain = 367.375
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7s100fgga676-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 908.898 ; gain = 369.750
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 906.668 ; gain = 367.375
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -895,10 +897,10 @@ Applied set_property DONT_TOUCH = true for ADC_DISCR_5C/DISCR_SERDES. (constrain
 Applied set_property DONT_TOUCH = true for ADC_DISCR_5D/DISCR_SERDES. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for MASTER_CLK_WIZ. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 908.898 ; gain = 369.750
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 906.668 ; gain = 367.375
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 908.898 ; gain = 369.750
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 906.668 ; gain = 367.375
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -934,7 +936,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 908.898 ; gain = 369.750
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 906.668 ; gain = 367.375
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -955,13 +957,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'MASTER_CLK_WIZ/clk_out4' 
 INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'MASTER_CLK_WIZ/clk_in1' to 'TRIG_OUT'
 INFO: [Synth 8-5819] Moved 5 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 908.898 ; gain = 369.750
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 906.668 ; gain = 367.375
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 908.898 ; gain = 369.750
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 906.668 ; gain = 367.375
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -973,7 +975,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 908.898 ; gain = 369.750
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 906.668 ; gain = 367.375
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -997,7 +999,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 908.898 ; gain = 369.750
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 906.668 ; gain = 367.375
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1010,7 +1012,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 908.898 ; gain = 369.750
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 906.668 ; gain = 367.375
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1022,25 +1024,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 908.898 ; gain = 369.750
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 906.668 ; gain = 367.375
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 908.898 ; gain = 369.750
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 906.668 ; gain = 367.375
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 908.898 ; gain = 369.750
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 906.668 ; gain = 367.375
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 908.898 ; gain = 369.750
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 906.668 ; gain = 367.375
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1175,17 +1177,17 @@ Report Instance Areas:
 |25    |  ADC_DISCR_5D |adc_discr_channel             |    30|
 +------+---------------+------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 908.898 ; gain = 369.750
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 906.668 ; gain = 367.375
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 177 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 908.898 ; gain = 242.090
-Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 908.898 ; gain = 369.750
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 906.668 ; gain = 242.051
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 906.668 ; gain = 367.375
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 912.438 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 908.531 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 3 instances were transformed.
   BUFGMUX => BUFGCTRL (inverted pins: CE0): 1 instances
@@ -1195,10 +1197,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 92 Infos, 282 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 912.438 ; gain = 611.902
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 912.438 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 908.531 ; gain = 607.395
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 908.531 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_1/mDOM_pin_verification_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file mDOM_pin_verification_top_utilization_synth.rpt -pb mDOM_pin_verification_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Jun 30 16:16:20 2020...
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 30 18:14:22 2020...

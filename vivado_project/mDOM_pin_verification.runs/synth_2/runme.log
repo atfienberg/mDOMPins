@@ -1,0 +1,1273 @@
+
+*** Running vivado
+    with args -log mDOM_pin_verification_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mDOM_pin_verification_top.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source mDOM_pin_verification_top.tcl -notrace
+Command: synth_design -top mDOM_pin_verification_top -part xc7s100fgga676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s100'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s100'
+INFO: [Device 21-403] Loading part xc7s100fgga676-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5568 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 717.113 ; gain = 177.844
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mDOM_pin_verification_top' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:5]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:424]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:425]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:449]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:450]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:474]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:475]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:499]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:500]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:531]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:532]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:556]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:557]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:581]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:582]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:606]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:607]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:638]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:639]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:663]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:664]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:688]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:689]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:713]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:714]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:745]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:746]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:770]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:771]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:795]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:796]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:820]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:821]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:852]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:853]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:877]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:878]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:902]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:903]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:927]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:928]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:959]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:960]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:984]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:985]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:1009]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:1010]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:1034]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:1035]
+INFO: [Synth 8-6157] synthesizing module 'IBUFGDS' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:33335]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFGDS' (1#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:33335]
+INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:46012]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (2#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:46012]
+INFO: [Synth 8-6157] synthesizing module 'BUFGMUX' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1175]
+	Parameter CLK_SEL_TYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'BUFGMUX' (3#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1175]
+INFO: [Synth 8-6157] synthesizing module 'lclk_adcclk_wiz' [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz.v:71]
+INFO: [Synth 8-6157] synthesizing module 'lclk_adcclk_wiz_clk_wiz' [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz_clk_wiz.v:69]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (4#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39813]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 56.250000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 50.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 9.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 3 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (5#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39813]
+INFO: [Synth 8-6155] done synthesizing module 'lclk_adcclk_wiz_clk_wiz' (6#1) [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz_clk_wiz.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'lclk_adcclk_wiz' (7#1) [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz.v:71]
+INFO: [Synth 8-6157] synthesizing module 'idelay_discr_clk_wiz' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/.Xil/Vivado-8064-LAPTOP-GBOUD091/realtime/idelay_discr_clk_wiz_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'idelay_discr_clk_wiz' (8#1) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/.Xil/Vivado-8064-LAPTOP-GBOUD091/realtime/idelay_discr_clk_wiz_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYCTRL' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:34933]
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYCTRL' (9#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:34933]
+INFO: [Synth 8-6157] synthesizing module 'adc_discr_channel' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/adc_discr_channel.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ADC_SERDES' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/.Xil/Vivado-8064-LAPTOP-GBOUD091/realtime/ADC_SERDES_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ADC_SERDES' (10#1) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/.Xil/Vivado-8064-LAPTOP-GBOUD091/realtime/ADC_SERDES_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'DISCR_SERDES' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/.Xil/Vivado-8064-LAPTOP-GBOUD091/realtime/DISCR_SERDES_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'DISCR_SERDES' (11#1) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/.Xil/Vivado-8064-LAPTOP-GBOUD091/realtime/DISCR_SERDES_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'adc_discr_channel' (12#1) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/adc_discr_channel.v:5]
+WARNING: [Synth 8-689] width (12) of port connection 'discr_bits' does not match port width (8) of module 'adc_discr_channel' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:442]
+WARNING: [Synth 8-689] width (12) of port connection 'discr_bits' does not match port width (8) of module 'adc_discr_channel' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:467]
+WARNING: [Synth 8-689] width (12) of port connection 'discr_bits' does not match port width (8) of module 'adc_discr_channel' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:492]
+WARNING: [Synth 8-689] width (12) of port connection 'discr_bits' does not match port width (8) of module 'adc_discr_channel' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:517]
+WARNING: [Synth 8-689] width (12) of port connection 'discr_bits' does not match port width (8) of module 'adc_discr_channel' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:549]
+WARNING: [Synth 8-689] width (12) of port connection 'discr_bits' does not match port width (8) of module 'adc_discr_channel' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:574]
+WARNING: [Synth 8-689] width (12) of port connection 'discr_bits' does not match port width (8) of module 'adc_discr_channel' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:599]
+WARNING: [Synth 8-689] width (12) of port connection 'discr_bits' does not match port width (8) of module 'adc_discr_channel' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:624]
+WARNING: [Synth 8-689] width (12) of port connection 'discr_bits' does not match port width (8) of module 'adc_discr_channel' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:656]
+WARNING: [Synth 8-689] width (12) of port connection 'discr_bits' does not match port width (8) of module 'adc_discr_channel' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:681]
+WARNING: [Synth 8-689] width (12) of port connection 'discr_bits' does not match port width (8) of module 'adc_discr_channel' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:706]
+WARNING: [Synth 8-689] width (12) of port connection 'discr_bits' does not match port width (8) of module 'adc_discr_channel' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:731]
+WARNING: [Synth 8-689] width (12) of port connection 'discr_bits' does not match port width (8) of module 'adc_discr_channel' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:763]
+WARNING: [Synth 8-689] width (12) of port connection 'discr_bits' does not match port width (8) of module 'adc_discr_channel' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:788]
+WARNING: [Synth 8-689] width (12) of port connection 'discr_bits' does not match port width (8) of module 'adc_discr_channel' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:813]
+WARNING: [Synth 8-689] width (12) of port connection 'discr_bits' does not match port width (8) of module 'adc_discr_channel' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:838]
+WARNING: [Synth 8-689] width (12) of port connection 'discr_bits' does not match port width (8) of module 'adc_discr_channel' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:870]
+WARNING: [Synth 8-689] width (12) of port connection 'discr_bits' does not match port width (8) of module 'adc_discr_channel' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:895]
+WARNING: [Synth 8-689] width (12) of port connection 'discr_bits' does not match port width (8) of module 'adc_discr_channel' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:920]
+WARNING: [Synth 8-689] width (12) of port connection 'discr_bits' does not match port width (8) of module 'adc_discr_channel' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:945]
+WARNING: [Synth 8-689] width (12) of port connection 'discr_bits' does not match port width (8) of module 'adc_discr_channel' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:977]
+WARNING: [Synth 8-689] width (12) of port connection 'discr_bits' does not match port width (8) of module 'adc_discr_channel' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:1002]
+WARNING: [Synth 8-689] width (12) of port connection 'discr_bits' does not match port width (8) of module 'adc_discr_channel' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:1027]
+WARNING: [Synth 8-689] width (12) of port connection 'discr_bits' does not match port width (8) of module 'adc_discr_channel' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:1052]
+WARNING: [Synth 8-3848] Net ADC0_SEN in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:33]
+WARNING: [Synth 8-3848] Net ADC0_SYSRF_P in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:34]
+WARNING: [Synth 8-3848] Net ADC0_SYSRF_M in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:35]
+WARNING: [Synth 8-3848] Net ADC1_CLOCK_P in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:36]
+WARNING: [Synth 8-3848] Net ADC1_CLOCK_M in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:37]
+WARNING: [Synth 8-3848] Net ADC1_SEN in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:58]
+WARNING: [Synth 8-3848] Net ADC1_SYSRF_P in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:59]
+WARNING: [Synth 8-3848] Net ADC1_SYSRF_M in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:60]
+WARNING: [Synth 8-3848] Net ADC2_CLOCK_P in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:61]
+WARNING: [Synth 8-3848] Net ADC2_CLOCK_M in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:62]
+WARNING: [Synth 8-3848] Net ADC2_SEN in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:83]
+WARNING: [Synth 8-3848] Net ADC2_SYSRF_P in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:84]
+WARNING: [Synth 8-3848] Net ADC2_SYSRF_M in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:85]
+WARNING: [Synth 8-3848] Net ADC3_CLOCK_P in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:86]
+WARNING: [Synth 8-3848] Net ADC3_CLOCK_M in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:87]
+WARNING: [Synth 8-3848] Net ADC3_SEN in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:108]
+WARNING: [Synth 8-3848] Net ADC3_SYSRF_P in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:109]
+WARNING: [Synth 8-3848] Net ADC3_SYSRF_M in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:110]
+WARNING: [Synth 8-3848] Net ADC4_CLOCK_P in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:111]
+WARNING: [Synth 8-3848] Net ADC4_CLOCK_M in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:112]
+WARNING: [Synth 8-3848] Net ADC4_SEN in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:133]
+WARNING: [Synth 8-3848] Net ADC4_SYSRF_P in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:134]
+WARNING: [Synth 8-3848] Net ADC4_SYSRF_M in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:135]
+WARNING: [Synth 8-3848] Net ADC5_CLOCK_P in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:136]
+WARNING: [Synth 8-3848] Net ADC5_CLOCK_M in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:137]
+WARNING: [Synth 8-3848] Net ADC5_SEN in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:158]
+WARNING: [Synth 8-3848] Net ADC5_SYSRF_P in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:159]
+WARNING: [Synth 8-3848] Net ADC5_SYSRF_M in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:160]
+WARNING: [Synth 8-3848] Net ADC_RESET in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:161]
+WARNING: [Synth 8-3848] Net ADC_SCLKR in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:162]
+WARNING: [Synth 8-3848] Net DAC0_DIN in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:167]
+WARNING: [Synth 8-3848] Net DAC0_nSYNC0 in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:168]
+WARNING: [Synth 8-3848] Net DAC0_nSYNC1 in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:169]
+WARNING: [Synth 8-3848] Net DAC0_nSYNC2 in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:170]
+WARNING: [Synth 8-3848] Net DAC0_SCLK in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:171]
+WARNING: [Synth 8-3848] Net DAC1_DIN in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:172]
+WARNING: [Synth 8-3848] Net DAC1_nSYNC0 in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:173]
+WARNING: [Synth 8-3848] Net DAC1_nSYNC1 in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:174]
+WARNING: [Synth 8-3848] Net DAC1_nSYNC2 in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:175]
+WARNING: [Synth 8-3848] Net DAC1_SCLK in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:176]
+WARNING: [Synth 8-3848] Net DAC2_DIN in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:177]
+WARNING: [Synth 8-3848] Net DAC2_nSYNC0 in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:178]
+WARNING: [Synth 8-3848] Net DAC2_nSYNC1 in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:179]
+WARNING: [Synth 8-3848] Net DAC2_nSYNC2 in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:180]
+WARNING: [Synth 8-3848] Net DAC2_SCLK in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:181]
+WARNING: [Synth 8-3848] Net DDR3_A12 in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:197]
+WARNING: [Synth 8-3848] Net DDR3_A13 in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:198]
+WARNING: [Synth 8-3848] Net DDR3_BA0 in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:199]
+WARNING: [Synth 8-3848] Net DDR3_BA1 in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:200]
+WARNING: [Synth 8-3848] Net DDR3_BA2 in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:201]
+WARNING: [Synth 8-3848] Net DDR3_CK_P in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:202]
+WARNING: [Synth 8-3848] Net DDR3_CK_N in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:203]
+WARNING: [Synth 8-3848] Net DDR3_CKE in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:204]
+WARNING: [Synth 8-3848] Net DDR3_LDM in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:221]
+WARNING: [Synth 8-3848] Net DDR3_nCAS in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:224]
+WARNING: [Synth 8-3848] Net DDR3_nCS in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:225]
+WARNING: [Synth 8-3848] Net DDR3_nRAS in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:226]
+WARNING: [Synth 8-3848] Net DDR3_nRESET in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:227]
+WARNING: [Synth 8-3848] Net DDR3_nWE in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:228]
+WARNING: [Synth 8-3848] Net DDR3_ODT in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:229]
+WARNING: [Synth 8-3848] Net DDR3_UDM in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:230]
+WARNING: [Synth 8-3848] Net DDR3_VTT_S3 in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:233]
+WARNING: [Synth 8-3848] Net DDR3_VTT_S5 in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:234]
+WARNING: [Synth 8-3848] Net FMC_IRQ0 in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:295]
+WARNING: [Synth 8-3848] Net FMC_IRQ1 in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:296]
+WARNING: [Synth 8-3848] Net FMC_IRQ2 in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:297]
+WARNING: [Synth 8-3848] Net FMC_IRQ3 in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:298]
+WARNING: [Synth 8-3848] Net FPGA_CAL_TRIG_P in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:306]
+WARNING: [Synth 8-3848] Net FPGA_CAL_TRIG_N in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:307]
+WARNING: [Synth 8-3848] Net FPGA_FLASH_CSn in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:311]
+WARNING: [Synth 8-3848] Net FPGA_GPIO_1 in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:313]
+WARNING: [Synth 8-3848] Net FPGA_MOSI in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:322]
+WARNING: [Synth 8-3848] Net FPGA_UART_RTS in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:327]
+WARNING: [Synth 8-3848] Net FPGA_UART_TX in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:329]
+WARNING: [Synth 8-3848] Net FTD_UART_CTSn in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:333]
+WARNING: [Synth 8-3848] Net FTD_UART_RXD in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:335]
+WARNING: [Synth 8-3848] Net MCU_USART6_RX in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:338]
+WARNING: [Synth 8-3848] Net MON_ADC1_CONVn in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:340]
+WARNING: [Synth 8-3848] Net MON_ADC1_CSn in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:341]
+WARNING: [Synth 8-3848] Net MON_ADC1_SCLK in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:342]
+WARNING: [Synth 8-3848] Net MON_ADC1_SDI in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:343]
+WARNING: [Synth 8-3848] Net MON_ADC2_CONVn in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:345]
+WARNING: [Synth 8-3848] Net MON_ADC2_CSn in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:346]
+WARNING: [Synth 8-3848] Net MON_ADC2_SCLK in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:347]
+WARNING: [Synth 8-3848] Net MON_ADC2_SDI in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:348]
+WARNING: [Synth 8-3848] Net QOSC_VC_ENA in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:356]
+INFO: [Synth 8-6155] done synthesizing module 'mDOM_pin_verification_top' (13#1) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:5]
+WARNING: [Synth 8-3331] design adc_discr_channel has unconnected port adc_io_reset[1]
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port ADC0_SEN
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port ADC0_SYSRF_P
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port ADC0_SYSRF_M
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port ADC1_CLOCK_P
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port ADC1_CLOCK_M
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port ADC1_SEN
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port ADC1_SYSRF_P
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port ADC1_SYSRF_M
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port ADC2_CLOCK_P
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port ADC2_CLOCK_M
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port ADC2_SEN
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port ADC2_SYSRF_P
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port ADC2_SYSRF_M
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port ADC3_CLOCK_P
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port ADC3_CLOCK_M
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port ADC3_SEN
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port ADC3_SYSRF_P
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port ADC3_SYSRF_M
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port ADC4_CLOCK_P
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port ADC4_CLOCK_M
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port ADC4_SEN
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port ADC4_SYSRF_P
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port ADC4_SYSRF_M
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port ADC5_CLOCK_P
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port ADC5_CLOCK_M
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port ADC5_SEN
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port ADC5_SYSRF_P
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port ADC5_SYSRF_M
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port ADC_RESET
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port ADC_SCLKR
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DAC0_DIN
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DAC0_nSYNC0
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DAC0_nSYNC1
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DAC0_nSYNC2
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DAC0_SCLK
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DAC1_DIN
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DAC1_nSYNC0
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DAC1_nSYNC1
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DAC1_nSYNC2
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DAC1_SCLK
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DAC2_DIN
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DAC2_nSYNC0
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DAC2_nSYNC1
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DAC2_nSYNC2
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DAC2_SCLK
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_A12
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_A13
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_BA0
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_BA1
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_BA2
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_CK_P
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_CK_N
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_CKE
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_LDM
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_nCAS
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_nCS
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_nRAS
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_nRESET
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_nWE
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_ODT
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_UDM
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_VTT_S3
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_VTT_S5
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port FMC_IRQ0
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port FMC_IRQ1
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port FMC_IRQ2
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port FMC_IRQ3
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port FPGA_CAL_TRIG_P
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port FPGA_CAL_TRIG_N
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port FPGA_FLASH_CSn
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port FPGA_GPIO_1
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port FPGA_MOSI
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port FPGA_UART_RTS
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port FPGA_UART_TX
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port FTD_UART_CTSn
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port FTD_UART_RXD
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port MCU_USART6_RX
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port MON_ADC1_CONVn
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port MON_ADC1_CSn
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port MON_ADC1_SCLK
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port MON_ADC1_SDI
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port MON_ADC2_CONVn
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port MON_ADC2_CSn
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port MON_ADC2_SCLK
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port MON_ADC2_SDI
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port QOSC_VC_ENA
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_DQ0
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_DQ1
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_DQ2
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_DQ3
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_DQ4
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_DQ5
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_DQ6
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_DQ7
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_DQ8
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_DQ9
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_DQ10
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_DQ11
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_DQ12
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 783.293 ; gain = 244.023
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 783.293 ; gain = 244.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 783.293 ; gain = 244.023
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz/idelay_discr_clk_wiz_in_context.xdc] for cell 'IDELAY_DISCR_CLK_WIZ_0'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz/idelay_discr_clk_wiz_in_context.xdc] for cell 'IDELAY_DISCR_CLK_WIZ_0'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_0A/ADC_SERDES_0'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_0A/ADC_SERDES_0'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_0A/ADC_SERDES_1'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_0A/ADC_SERDES_1'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_0B/ADC_SERDES_0'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_0B/ADC_SERDES_0'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_0B/ADC_SERDES_1'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_0B/ADC_SERDES_1'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_0C/ADC_SERDES_0'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_0C/ADC_SERDES_0'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_0C/ADC_SERDES_1'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_0C/ADC_SERDES_1'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_0D/ADC_SERDES_0'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_0D/ADC_SERDES_0'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_0D/ADC_SERDES_1'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_0D/ADC_SERDES_1'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_1A/ADC_SERDES_0'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_1A/ADC_SERDES_0'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_1A/ADC_SERDES_1'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_1A/ADC_SERDES_1'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_1B/ADC_SERDES_0'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_1B/ADC_SERDES_0'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_1B/ADC_SERDES_1'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_1B/ADC_SERDES_1'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_1C/ADC_SERDES_0'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_1C/ADC_SERDES_0'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_1C/ADC_SERDES_1'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_1C/ADC_SERDES_1'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_1D/ADC_SERDES_0'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_1D/ADC_SERDES_0'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_1D/ADC_SERDES_1'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_1D/ADC_SERDES_1'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_2A/ADC_SERDES_0'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_2A/ADC_SERDES_0'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_2A/ADC_SERDES_1'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_2A/ADC_SERDES_1'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_2B/ADC_SERDES_0'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_2B/ADC_SERDES_0'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_2B/ADC_SERDES_1'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_2B/ADC_SERDES_1'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_2C/ADC_SERDES_0'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_2C/ADC_SERDES_0'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_2C/ADC_SERDES_1'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_2C/ADC_SERDES_1'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_2D/ADC_SERDES_0'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_2D/ADC_SERDES_0'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_2D/ADC_SERDES_1'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_2D/ADC_SERDES_1'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_3A/ADC_SERDES_0'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_3A/ADC_SERDES_0'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_3A/ADC_SERDES_1'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_3A/ADC_SERDES_1'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_3B/ADC_SERDES_0'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_3B/ADC_SERDES_0'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_3B/ADC_SERDES_1'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_3B/ADC_SERDES_1'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_3C/ADC_SERDES_0'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_3C/ADC_SERDES_0'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_3C/ADC_SERDES_1'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_3C/ADC_SERDES_1'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_3D/ADC_SERDES_0'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_3D/ADC_SERDES_0'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_3D/ADC_SERDES_1'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_3D/ADC_SERDES_1'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_4A/ADC_SERDES_0'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_4A/ADC_SERDES_0'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_4A/ADC_SERDES_1'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_4A/ADC_SERDES_1'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_4B/ADC_SERDES_0'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_4B/ADC_SERDES_0'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_4B/ADC_SERDES_1'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_4B/ADC_SERDES_1'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_4C/ADC_SERDES_0'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_4C/ADC_SERDES_0'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_4C/ADC_SERDES_1'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_4C/ADC_SERDES_1'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_4D/ADC_SERDES_0'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_4D/ADC_SERDES_0'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_4D/ADC_SERDES_1'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_4D/ADC_SERDES_1'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_5A/ADC_SERDES_0'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_5A/ADC_SERDES_0'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_5A/ADC_SERDES_1'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_5A/ADC_SERDES_1'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_5B/ADC_SERDES_0'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_5B/ADC_SERDES_0'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_5B/ADC_SERDES_1'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_5B/ADC_SERDES_1'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_5C/ADC_SERDES_0'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_5C/ADC_SERDES_0'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_5C/ADC_SERDES_1'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_5C/ADC_SERDES_1'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_5D/ADC_SERDES_0'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_5D/ADC_SERDES_0'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_5D/ADC_SERDES_1'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc] for cell 'ADC_DISCR_5D/ADC_SERDES_1'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_0A/DISCR_SERDES'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_0A/DISCR_SERDES'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_0B/DISCR_SERDES'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_0B/DISCR_SERDES'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_0C/DISCR_SERDES'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_0C/DISCR_SERDES'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_0D/DISCR_SERDES'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_0D/DISCR_SERDES'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_1A/DISCR_SERDES'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_1A/DISCR_SERDES'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_1B/DISCR_SERDES'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_1B/DISCR_SERDES'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_1C/DISCR_SERDES'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_1C/DISCR_SERDES'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_1D/DISCR_SERDES'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_1D/DISCR_SERDES'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_2A/DISCR_SERDES'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_2A/DISCR_SERDES'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_2B/DISCR_SERDES'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_2B/DISCR_SERDES'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_2C/DISCR_SERDES'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_2C/DISCR_SERDES'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_2D/DISCR_SERDES'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_2D/DISCR_SERDES'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_3A/DISCR_SERDES'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_3A/DISCR_SERDES'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_3B/DISCR_SERDES'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_3B/DISCR_SERDES'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_3C/DISCR_SERDES'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_3C/DISCR_SERDES'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_3D/DISCR_SERDES'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_3D/DISCR_SERDES'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_4A/DISCR_SERDES'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_4A/DISCR_SERDES'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_4B/DISCR_SERDES'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_4B/DISCR_SERDES'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_4C/DISCR_SERDES'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_4C/DISCR_SERDES'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_4D/DISCR_SERDES'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_4D/DISCR_SERDES'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_5A/DISCR_SERDES'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_5A/DISCR_SERDES'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_5B/DISCR_SERDES'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_5B/DISCR_SERDES'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_5C/DISCR_SERDES'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_5C/DISCR_SERDES'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_5D/DISCR_SERDES'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc] for cell 'ADC_DISCR_5D/DISCR_SERDES'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz_board.xdc] for cell 'LCLK_ADCCLK_WIZ_0/inst'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz_board.xdc] for cell 'LCLK_ADCCLK_WIZ_0/inst'
+Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz.xdc] for cell 'LCLK_ADCCLK_WIZ_0/inst'
+Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz.xdc] for cell 'LCLK_ADCCLK_WIZ_0/inst'
+Parsing XDC File [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/mDOM_mb_1_jun29.xdc]
+Finished Parsing XDC File [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/mDOM_mb_1_jun29.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/mDOM_mb_1_jun29.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mDOM_pin_verification_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mDOM_pin_verification_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/clocks.xdc]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'virt_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/clocks.xdc:14]
+Finished Parsing XDC File [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/clocks.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mDOM_pin_verification_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mDOM_pin_verification_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/io_standards.xdc]
+Finished Parsing XDC File [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/io_standards.xdc]
+Parsing XDC File [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mDOM_pin_verification_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mDOM_pin_verification_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 908.391 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  BUFGMUX => BUFGCTRL (inverted pins: CE0): 1 instances
+  IBUFGDS => IBUFDS: 1 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 1 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 908.391 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_0A/ADC_SERDES_0' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_0A/ADC_SERDES_1' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_0A/DISCR_SERDES' at clock pin 'clk_in' is different from the actual clock period '2.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_0B/ADC_SERDES_0' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_0B/ADC_SERDES_1' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_0B/DISCR_SERDES' at clock pin 'clk_in' is different from the actual clock period '2.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_0C/ADC_SERDES_0' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_0C/ADC_SERDES_1' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_0C/DISCR_SERDES' at clock pin 'clk_in' is different from the actual clock period '2.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_0D/ADC_SERDES_0' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_0D/ADC_SERDES_1' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_0D/DISCR_SERDES' at clock pin 'clk_in' is different from the actual clock period '2.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_1A/ADC_SERDES_0' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_1A/ADC_SERDES_1' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_1A/DISCR_SERDES' at clock pin 'clk_in' is different from the actual clock period '2.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_1B/ADC_SERDES_0' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_1B/ADC_SERDES_1' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_1B/DISCR_SERDES' at clock pin 'clk_in' is different from the actual clock period '2.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_1C/ADC_SERDES_0' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_1C/ADC_SERDES_1' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_1C/DISCR_SERDES' at clock pin 'clk_in' is different from the actual clock period '2.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_1D/ADC_SERDES_0' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_1D/ADC_SERDES_1' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_1D/DISCR_SERDES' at clock pin 'clk_in' is different from the actual clock period '2.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_2A/ADC_SERDES_0' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_2A/ADC_SERDES_1' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_2A/DISCR_SERDES' at clock pin 'clk_in' is different from the actual clock period '2.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_2B/ADC_SERDES_0' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_2B/ADC_SERDES_1' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_2B/DISCR_SERDES' at clock pin 'clk_in' is different from the actual clock period '2.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_2C/ADC_SERDES_0' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_2C/ADC_SERDES_1' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_2C/DISCR_SERDES' at clock pin 'clk_in' is different from the actual clock period '2.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_2D/ADC_SERDES_0' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_2D/ADC_SERDES_1' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_2D/DISCR_SERDES' at clock pin 'clk_in' is different from the actual clock period '2.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_3A/ADC_SERDES_0' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_3A/ADC_SERDES_1' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_3A/DISCR_SERDES' at clock pin 'clk_in' is different from the actual clock period '2.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_3B/ADC_SERDES_0' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_3B/ADC_SERDES_1' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_3B/DISCR_SERDES' at clock pin 'clk_in' is different from the actual clock period '2.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_3C/ADC_SERDES_0' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_3C/ADC_SERDES_1' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_3C/DISCR_SERDES' at clock pin 'clk_in' is different from the actual clock period '2.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_3D/ADC_SERDES_0' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_3D/ADC_SERDES_1' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_3D/DISCR_SERDES' at clock pin 'clk_in' is different from the actual clock period '2.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_4A/ADC_SERDES_0' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_4A/ADC_SERDES_1' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_4A/DISCR_SERDES' at clock pin 'clk_in' is different from the actual clock period '2.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_4B/ADC_SERDES_0' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_4B/ADC_SERDES_1' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_4B/DISCR_SERDES' at clock pin 'clk_in' is different from the actual clock period '2.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_4C/ADC_SERDES_0' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_4C/ADC_SERDES_1' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_4C/DISCR_SERDES' at clock pin 'clk_in' is different from the actual clock period '2.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_4D/ADC_SERDES_0' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_4D/ADC_SERDES_1' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_4D/DISCR_SERDES' at clock pin 'clk_in' is different from the actual clock period '2.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_5A/ADC_SERDES_0' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_5A/ADC_SERDES_1' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_5A/DISCR_SERDES' at clock pin 'clk_in' is different from the actual clock period '2.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_5B/ADC_SERDES_0' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_5B/ADC_SERDES_1' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_5B/DISCR_SERDES' at clock pin 'clk_in' is different from the actual clock period '2.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_5C/ADC_SERDES_0' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_5C/ADC_SERDES_1' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_5C/DISCR_SERDES' at clock pin 'clk_in' is different from the actual clock period '2.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_5D/ADC_SERDES_0' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_5D/ADC_SERDES_1' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_5D/DISCR_SERDES' at clock pin 'clk_in' is different from the actual clock period '2.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 908.391 ; gain = 369.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s100fgga676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 908.391 ; gain = 369.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for ADC0_DA0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC0_DA0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC0_DA0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC0_DA0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC0_DA1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC0_DA1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC0_DA1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC0_DA1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC0_DB0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC0_DB0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC0_DB0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC0_DB0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC0_DB1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC0_DB1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC0_DB1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC0_DB1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC0_DC0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC0_DC0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC0_DC0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC0_DC0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC0_DC1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC0_DC1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC0_DC1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC0_DC1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC0_DD0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC0_DD0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC0_DD0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC0_DD0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC0_DD1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC0_DD1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC0_DD1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC0_DD1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC1_DA0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC1_DA0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC1_DA0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC1_DA0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC1_DA1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC1_DA1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC1_DA1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC1_DA1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC1_DB0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC1_DB0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC1_DB0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC1_DB0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC1_DB1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC1_DB1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC1_DB1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC1_DB1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC1_DC0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC1_DC0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC1_DC0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC1_DC0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC1_DC1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC1_DC1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC1_DC1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC1_DC1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC1_DD0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC1_DD0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC1_DD0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC1_DD0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC1_DD1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC1_DD1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC1_DD1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC1_DD1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC2_DA0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC2_DA0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC2_DA0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC2_DA0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC2_DA1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC2_DA1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC2_DA1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC2_DA1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC2_DB0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC2_DB0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC2_DB0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC2_DB0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC2_DB1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC2_DB1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC2_DB1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC2_DB1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC2_DC0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC2_DC0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC2_DC0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC2_DC0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC2_DC1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC2_DC1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC2_DC1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC2_DC1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC2_DD0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC2_DD0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC2_DD0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC2_DD0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC2_DD1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC2_DD1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC2_DD1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC2_DD1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC3_DA0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC3_DA0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC3_DA0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC3_DA0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC3_DA1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC3_DA1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC3_DA1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC3_DA1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC3_DB0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC3_DB0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC3_DB0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC3_DB0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC3_DB1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC3_DB1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC3_DB1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC3_DB1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC3_DC0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC3_DC0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC3_DC0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC3_DC0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC3_DC1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC3_DC1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC3_DC1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC3_DC1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC3_DD0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC3_DD0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC3_DD0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC3_DD0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC3_DD1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC3_DD1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC3_DD1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC3_DD1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC4_DA0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC4_DA0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC4_DA0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC4_DA0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC4_DA1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC4_DA1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC4_DA1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC4_DA1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC4_DB0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC4_DB0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC4_DB0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC4_DB0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC4_DB1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC4_DB1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC4_DB1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC4_DB1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC4_DC0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC4_DC0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC4_DC0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC4_DC0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC4_DC1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC4_DC1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC4_DC1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC4_DC1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC4_DD0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC4_DD0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC4_DD0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC4_DD0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC4_DD1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC4_DD1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC4_DD1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC4_DD1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC5_DA0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC5_DA0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC5_DA0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC5_DA0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC5_DA1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC5_DA1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC5_DA1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC5_DA1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC5_DB0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC5_DB0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC5_DB0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC5_DB0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC5_DB1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC5_DB1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC5_DB1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC5_DB1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC5_DC0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC5_DC0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC5_DC0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC5_DC0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC5_DC1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC5_DC1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC5_DC1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC5_DC1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC5_DD0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC5_DD0M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC5_DD0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC5_DD0P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC5_DD1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC5_DD1M. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for ADC5_DD1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ADC5_DD1P. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES/ADC_SERDES_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for DISCR_OUT0. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DISCR_OUT0. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for DISCR_OUT1. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DISCR_OUT1. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for DISCR_OUT2. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DISCR_OUT2. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for DISCR_OUT3. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DISCR_OUT3. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for DISCR_OUT4. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DISCR_OUT4. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for DISCR_OUT5. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DISCR_OUT5. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for DISCR_OUT6. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DISCR_OUT6. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for DISCR_OUT7. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DISCR_OUT7. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for DISCR_OUT8. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DISCR_OUT8. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for DISCR_OUT9. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DISCR_OUT9. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for DISCR_OUT10. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DISCR_OUT10. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for DISCR_OUT11. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DISCR_OUT11. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for DISCR_OUT12. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DISCR_OUT12. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for DISCR_OUT13. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DISCR_OUT13. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for DISCR_OUT14. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DISCR_OUT14. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for DISCR_OUT15. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DISCR_OUT15. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for DISCR_OUT16. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DISCR_OUT16. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for DISCR_OUT17. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DISCR_OUT17. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for DISCR_OUT18. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DISCR_OUT18. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for DISCR_OUT19. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DISCR_OUT19. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for DISCR_OUT20. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DISCR_OUT20. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for DISCR_OUT21. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DISCR_OUT21. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for DISCR_OUT22. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DISCR_OUT22. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for DISCR_OUT23. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DISCR_OUT23. (constraint file  c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES/DISCR_SERDES_in_context.xdc, line 2).
+Applied set_property DONT_TOUCH = true for LCLK_ADCCLK_WIZ_0/inst. (constraint file  C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/dont_touch.xdc, line 14).
+Applied set_property DONT_TOUCH = true for LCLK_ADCCLK_WIZ_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for IDELAY_DISCR_CLK_WIZ_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_0A/ADC_SERDES_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_0B/ADC_SERDES_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_0C/ADC_SERDES_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_0D/ADC_SERDES_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_1A/ADC_SERDES_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_1B/ADC_SERDES_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_1C/ADC_SERDES_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_1D/ADC_SERDES_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_2A/ADC_SERDES_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_2B/ADC_SERDES_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_2C/ADC_SERDES_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_2D/ADC_SERDES_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_3A/ADC_SERDES_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_3B/ADC_SERDES_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_3C/ADC_SERDES_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_3D/ADC_SERDES_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_4A/ADC_SERDES_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_4B/ADC_SERDES_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_4C/ADC_SERDES_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_4D/ADC_SERDES_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_5A/ADC_SERDES_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_5B/ADC_SERDES_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_5C/ADC_SERDES_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_5D/ADC_SERDES_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_0A/ADC_SERDES_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_0B/ADC_SERDES_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_0C/ADC_SERDES_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_0D/ADC_SERDES_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_1A/ADC_SERDES_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_1B/ADC_SERDES_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_1C/ADC_SERDES_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_1D/ADC_SERDES_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_2A/ADC_SERDES_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_2B/ADC_SERDES_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_2C/ADC_SERDES_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_2D/ADC_SERDES_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_3A/ADC_SERDES_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_3B/ADC_SERDES_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_3C/ADC_SERDES_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_3D/ADC_SERDES_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_4A/ADC_SERDES_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_4B/ADC_SERDES_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_4C/ADC_SERDES_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_4D/ADC_SERDES_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_5A/ADC_SERDES_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_5B/ADC_SERDES_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_5C/ADC_SERDES_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_5D/ADC_SERDES_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_0A/DISCR_SERDES. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_0B/DISCR_SERDES. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_0C/DISCR_SERDES. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_0D/DISCR_SERDES. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_1A/DISCR_SERDES. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_1B/DISCR_SERDES. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_1C/DISCR_SERDES. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_1D/DISCR_SERDES. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_2A/DISCR_SERDES. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_2B/DISCR_SERDES. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_2C/DISCR_SERDES. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_2D/DISCR_SERDES. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_3A/DISCR_SERDES. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_3B/DISCR_SERDES. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_3C/DISCR_SERDES. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_3D/DISCR_SERDES. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_4A/DISCR_SERDES. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_4B/DISCR_SERDES. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_4C/DISCR_SERDES. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_4D/DISCR_SERDES. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_5A/DISCR_SERDES. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_5B/DISCR_SERDES. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_5C/DISCR_SERDES. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ADC_DISCR_5D/DISCR_SERDES. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 908.391 ; gain = 369.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 908.391 ; gain = 369.121
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 160 (col length:80)
+BRAMs: 240 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 908.391 ; gain = 369.121
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'IDELAY_DISCR_CLK_WIZ_0/clk_out1' to pin 'IDELAY_DISCR_CLK_WIZ_0/bbstub_clk_out1/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'IDELAY_DISCR_CLK_WIZ_0/clk_in1' to 'LCLK_ADCCLK_WIZ_0/inst/clkin1_bufg/I'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'IDELAY_DISCR_CLK_WIZ_0/clk_out2' to pin 'IDELAY_DISCR_CLK_WIZ_0/bbstub_clk_out2/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'IDELAY_DISCR_CLK_WIZ_0/clk_in1' to 'LCLK_ADCCLK_WIZ_0/inst/clkin1_bufg/I'
+INFO: [Synth 8-5819] Moved 3 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 908.391 ; gain = 369.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 908.391 ; gain = 369.121
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 908.391 ; gain = 369.121
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 908.391 ; gain = 369.121
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 908.391 ; gain = 369.121
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 908.391 ; gain = 369.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 908.391 ; gain = 369.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 908.391 ; gain = 369.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 908.391 ; gain = 369.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------+----------+
+|      |BlackBox name        |Instances |
++------+---------------------+----------+
+|1     |idelay_discr_clk_wiz |         1|
+|2     |ADC_SERDES           |        48|
+|3     |DISCR_SERDES         |        24|
++------+---------------------+----------+
+
+Report Cell Usage: 
++------+---------------------+------+
+|      |Cell                 |Count |
++------+---------------------+------+
+|1     |ADC_SERDES           |     1|
+|2     |ADC_SERDES__48       |     1|
+|3     |ADC_SERDES__49       |     1|
+|4     |ADC_SERDES__50       |     1|
+|5     |ADC_SERDES__51       |     1|
+|6     |ADC_SERDES__52       |     1|
+|7     |ADC_SERDES__53       |     1|
+|8     |ADC_SERDES__54       |     1|
+|9     |ADC_SERDES__55       |     1|
+|10    |ADC_SERDES__56       |     1|
+|11    |ADC_SERDES__57       |     1|
+|12    |ADC_SERDES__58       |     1|
+|13    |ADC_SERDES__59       |     1|
+|14    |ADC_SERDES__60       |     1|
+|15    |ADC_SERDES__61       |     1|
+|16    |ADC_SERDES__62       |     1|
+|17    |ADC_SERDES__63       |     1|
+|18    |ADC_SERDES__64       |     1|
+|19    |ADC_SERDES__65       |     1|
+|20    |ADC_SERDES__66       |     1|
+|21    |ADC_SERDES__67       |     1|
+|22    |ADC_SERDES__68       |     1|
+|23    |ADC_SERDES__69       |     1|
+|24    |ADC_SERDES__70       |     1|
+|25    |ADC_SERDES__71       |     1|
+|26    |ADC_SERDES__72       |     1|
+|27    |ADC_SERDES__73       |     1|
+|28    |ADC_SERDES__74       |     1|
+|29    |ADC_SERDES__75       |     1|
+|30    |ADC_SERDES__76       |     1|
+|31    |ADC_SERDES__77       |     1|
+|32    |ADC_SERDES__78       |     1|
+|33    |ADC_SERDES__79       |     1|
+|34    |ADC_SERDES__80       |     1|
+|35    |ADC_SERDES__81       |     1|
+|36    |ADC_SERDES__82       |     1|
+|37    |ADC_SERDES__83       |     1|
+|38    |ADC_SERDES__84       |     1|
+|39    |ADC_SERDES__85       |     1|
+|40    |ADC_SERDES__86       |     1|
+|41    |ADC_SERDES__87       |     1|
+|42    |ADC_SERDES__88       |     1|
+|43    |ADC_SERDES__89       |     1|
+|44    |ADC_SERDES__90       |     1|
+|45    |ADC_SERDES__91       |     1|
+|46    |ADC_SERDES__92       |     1|
+|47    |ADC_SERDES__93       |     1|
+|48    |ADC_SERDES__94       |     1|
+|49    |DISCR_SERDES         |     1|
+|50    |DISCR_SERDES__24     |     1|
+|51    |DISCR_SERDES__25     |     1|
+|52    |DISCR_SERDES__26     |     1|
+|53    |DISCR_SERDES__27     |     1|
+|54    |DISCR_SERDES__28     |     1|
+|55    |DISCR_SERDES__29     |     1|
+|56    |DISCR_SERDES__30     |     1|
+|57    |DISCR_SERDES__31     |     1|
+|58    |DISCR_SERDES__32     |     1|
+|59    |DISCR_SERDES__33     |     1|
+|60    |DISCR_SERDES__34     |     1|
+|61    |DISCR_SERDES__35     |     1|
+|62    |DISCR_SERDES__36     |     1|
+|63    |DISCR_SERDES__37     |     1|
+|64    |DISCR_SERDES__38     |     1|
+|65    |DISCR_SERDES__39     |     1|
+|66    |DISCR_SERDES__40     |     1|
+|67    |DISCR_SERDES__41     |     1|
+|68    |DISCR_SERDES__42     |     1|
+|69    |DISCR_SERDES__43     |     1|
+|70    |DISCR_SERDES__44     |     1|
+|71    |DISCR_SERDES__45     |     1|
+|72    |DISCR_SERDES__46     |     1|
+|73    |idelay_discr_clk_wiz |     1|
+|74    |BUFG                 |     4|
+|75    |BUFGMUX              |     1|
+|76    |IDELAYCTRL           |     1|
+|77    |LUT1                 |    97|
+|78    |LUT3                 |    12|
+|79    |LUT6                 |   108|
+|80    |MMCME2_ADV           |     1|
+|81    |IBUF                 |     7|
+|82    |IBUFGDS              |     1|
+|83    |OBUF                 |    14|
+|84    |OBUFDS               |     1|
+|85    |OBUFT                |    86|
++------+---------------------+------+
+
+Report Instance Areas: 
++------+--------------------+------------------------------+------+
+|      |Instance            |Module                        |Cells |
++------+--------------------+------------------------------+------+
+|1     |top                 |                              |  1056|
+|2     |  LCLK_ADCCLK_WIZ_0 |lclk_adcclk_wiz               |     5|
+|3     |    inst            |lclk_adcclk_wiz_clk_wiz       |     5|
+|4     |  ADC_DISCR_0A      |adc_discr_channel__xdcDup__1  |    30|
+|5     |  ADC_DISCR_0B      |adc_discr_channel__xdcDup__2  |    30|
+|6     |  ADC_DISCR_0C      |adc_discr_channel__xdcDup__3  |    30|
+|7     |  ADC_DISCR_0D      |adc_discr_channel__xdcDup__4  |    30|
+|8     |  ADC_DISCR_1A      |adc_discr_channel__xdcDup__5  |    30|
+|9     |  ADC_DISCR_1B      |adc_discr_channel__xdcDup__6  |    30|
+|10    |  ADC_DISCR_1C      |adc_discr_channel__xdcDup__7  |    30|
+|11    |  ADC_DISCR_1D      |adc_discr_channel__xdcDup__8  |    30|
+|12    |  ADC_DISCR_2A      |adc_discr_channel__xdcDup__9  |    30|
+|13    |  ADC_DISCR_2B      |adc_discr_channel__xdcDup__10 |    30|
+|14    |  ADC_DISCR_2C      |adc_discr_channel__xdcDup__11 |    30|
+|15    |  ADC_DISCR_2D      |adc_discr_channel__xdcDup__12 |    30|
+|16    |  ADC_DISCR_3A      |adc_discr_channel__xdcDup__13 |    30|
+|17    |  ADC_DISCR_3B      |adc_discr_channel__xdcDup__14 |    30|
+|18    |  ADC_DISCR_3C      |adc_discr_channel__xdcDup__15 |    30|
+|19    |  ADC_DISCR_3D      |adc_discr_channel__xdcDup__16 |    30|
+|20    |  ADC_DISCR_4A      |adc_discr_channel__xdcDup__17 |    30|
+|21    |  ADC_DISCR_4B      |adc_discr_channel__xdcDup__18 |    30|
+|22    |  ADC_DISCR_4C      |adc_discr_channel__xdcDup__19 |    30|
+|23    |  ADC_DISCR_4D      |adc_discr_channel__xdcDup__20 |    30|
+|24    |  ADC_DISCR_5A      |adc_discr_channel__xdcDup__21 |    30|
+|25    |  ADC_DISCR_5B      |adc_discr_channel__xdcDup__22 |    30|
+|26    |  ADC_DISCR_5C      |adc_discr_channel__xdcDup__23 |    30|
+|27    |  ADC_DISCR_5D      |adc_discr_channel             |    30|
++------+--------------------+------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 908.391 ; gain = 369.121
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 177 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 908.391 ; gain = 244.023
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 908.391 ; gain = 369.121
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 913.918 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  BUFGMUX => BUFGCTRL (inverted pins: CE0): 1 instances
+  IBUFGDS => IBUFDS: 1 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+98 Infos, 282 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 913.918 ; gain = 620.199
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 913.918 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/mDOM_pin_verification_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mDOM_pin_verification_top_utilization_synth.rpt -pb mDOM_pin_verification_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jul  1 14:58:09 2020...

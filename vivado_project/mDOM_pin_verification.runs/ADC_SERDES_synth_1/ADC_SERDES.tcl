@@ -17,10 +17,9 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param chipscope.maxJobs 2
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
-create_project -in_memory -part xc7s100fgga676-1
+create_project -in_memory -part xc7s100fgga676-2
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
@@ -53,7 +52,7 @@ set cached_ip [config_ip_cache -export -no_bom  -dir C:/Users/atfie/IceCube/mDOM
 if { $cached_ip eq {} } {
 close [open __synthesis_is_running__ w]
 
-synth_design -top ADC_SERDES -part xc7s100fgga676-1 -mode out_of_context
+synth_design -top ADC_SERDES -part xc7s100fgga676-2 -mode out_of_context
 
 #---------------------------------------------------------
 # Generate Checkpoint/Stub/Simulation Files For IP Cache

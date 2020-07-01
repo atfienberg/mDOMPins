@@ -20,7 +20,7 @@ proc create_report { reportName command } {
 set_param chipscope.maxJobs 2
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
-create_project -in_memory -part xc7s100fgga676-1
+create_project -in_memory -part xc7s100fgga676-2
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
@@ -28,6 +28,7 @@ set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.cache/wt [current_project]
 set_property parent.project_path C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.xpr [current_project]
+set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_output_repo c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.cache/ip [current_project]
@@ -53,7 +54,7 @@ set cached_ip [config_ip_cache -export -no_bom  -dir C:/Users/atfie/IceCube/mDOM
 if { $cached_ip eq {} } {
 close [open __synthesis_is_running__ w]
 
-synth_design -top DISCR_SERDES -part xc7s100fgga676-1 -mode out_of_context
+synth_design -top DISCR_SERDES -part xc7s100fgga676-2 -mode out_of_context
 
 #---------------------------------------------------------
 # Generate Checkpoint/Stub/Simulation Files For IP Cache

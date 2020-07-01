@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date             : Tue Jun 30 16:17:35 2020
+| Date             : Tue Jun 30 18:15:35 2020
 | Host             : LAPTOP-GBOUD091 running 64-bit major release  (build 9200)
 | Command          : report_power -file mDOM_pin_verification_top_power_routed.rpt -pb mDOM_pin_verification_top_power_summary_routed.pb -rpx mDOM_pin_verification_top_power_routed.rpx
 | Design           : mDOM_pin_verification_top
@@ -30,11 +30,11 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.361        |
+| Total On-Chip Power (W)  | 0.388        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.264        |
-| Device Static (W)        | 0.097        |
+| Dynamic (W)              | 0.285        |
+| Device Static (W)        | 0.102        |
 | Effective TJA (C/W)      | 2.4          |
 | Max Ambient (C)          | 84.1         |
 | Junction Temperature (C) | 25.9         |
@@ -58,9 +58,9 @@ Table of Contents
 |   Others       |     0.000 |      198 |       --- |             --- |
 | Signals        |    <0.001 |      830 |       --- |             --- |
 | PLL            |     0.112 |        1 |         8 |           12.50 |
-| I/O            |     0.137 |      231 |       400 |           57.75 |
-| Static Power   |     0.097 |          |           |                 |
-| Total          |     0.361 |          |           |                 |
+| I/O            |     0.158 |      231 |       400 |           57.75 |
+| Static Power   |     0.102 |          |           |                 |
+| Total          |     0.388 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -76,7 +76,7 @@ Table of Contents
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.009 |       0.005 |      0.004 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
-| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.020 |       0.016 |      0.004 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vccbram   |       1.000 |     0.001 |       0.000 |      0.001 |
@@ -148,7 +148,7 @@ Table of Contents
 +---------------------------+-----------+
 | Name                      | Power (W) |
 +---------------------------+-----------+
-| mDOM_pin_verification_top |     0.264 |
+| mDOM_pin_verification_top |     0.285 |
 |   ADC_DISCR_0A            |     0.006 |
 |     ADC_SERDES_0          |     0.003 |
 |       inst                |     0.003 |

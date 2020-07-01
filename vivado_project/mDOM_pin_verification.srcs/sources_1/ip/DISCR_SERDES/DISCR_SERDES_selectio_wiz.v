@@ -89,7 +89,7 @@ module DISCR_SERDES_selectio_wiz
     ////------------------------------
     // Instantiate a buffer for every bit of the data bus
     IBUF
-      #(.IOSTANDARD ("SSTL135"))
+      #(.IOSTANDARD ("SSTL135_R"))
      ibuf_inst
        (.I          (data_in_from_pins    [pin_count]),
         .O          (data_in_from_pins_int[pin_count]));
@@ -112,7 +112,7 @@ module DISCR_SERDES_selectio_wiz
      // declare the iserdes
      ISERDESE2
        # (
-         .DATA_RATE         ("DDR"),
+         .DATA_RATE         ("SDR"),
          .DATA_WIDTH        (8),
          .INTERFACE_TYPE    ("NETWORKING"), 
          .DYN_CLKDIV_INV_EN ("FALSE"),

@@ -10,8 +10,8 @@ create_clock -name qosc_clk -period 50.000 [get_ports {QOSC_CLK}]
 
 # Below I'll try to define some reasonable constraints given this situation
 
-# 300 MHz launch clock
-create_clock -name virt_clk -period 3.333
+# 375 MHz launch clock
+create_clock -name virt_clk -period 2.667
 
 # setup and hold from datasheet page 17:
 # https://www.ti.com/lit/ds/symlink/adc3424.pdf?ts=1593536289216&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FADC3424
@@ -30,8 +30,8 @@ set_input_delay -clock virt_clk -0.253 -min [get_ports ADC*_D*] -clock_fall -add
 # https://forums.xilinx.com/t5/Vivado-TCL-Community/How-to-set-timing-constraint-in-this-case/td-p/510641
 
 # try to keep delays less than 5 ns
-set_max_delay 5 -from [get_clocks virt_clk] -to [get_clocks clk_out3_master_clk_wiz] -datapath_only
-set_max_delay 5 -to [get_clocks virt_clk] -from [get_clocks clk_out3_master_clk_wiz] -datapath_only
+set_max_delay 5 -from [get_clocks virt_clk] -to [get_clocks clk_out2_lclk_adcclk_wiz] -datapath_only
+set_max_delay 5 -to [get_clocks virt_clk] -from [get_clocks clk_out2_lclk_adcclk_wiz] -datapath_only
 
-set_max_delay 5 -from [get_clocks virt_clk] -to [get_clocks clk_out3_master_clk_wiz_1] -datapath_only
-set_max_delay 5 -to [get_clocks virt_clk] -from [get_clocks clk_out3_master_clk_wiz_1] -datapath_only
+set_max_delay 5 -from [get_clocks virt_clk] -to [get_clocks clk_out2_lclk_adcclk_wiz_1] -datapath_only
+set_max_delay 5 -to [get_clocks virt_clk] -from [get_clocks clk_out2_lclk_adcclk_wiz_1] -datapath_only

@@ -63,6 +63,9 @@ set_property used_in_implementation false [get_files C:/Users/atfie/IceCube/mDOM
 read_xdc C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/clocks.xdc
 set_property used_in_implementation false [get_files C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/clocks.xdc]
 
+read_xdc C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/io_standards.xdc
+set_property used_in_implementation false [get_files C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/io_standards.xdc]
+
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
