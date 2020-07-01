@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Wed Jul  1 15:59:53 2020
+| Date         : Wed Jul  1 17:12:29 2020
 | Host         : LAPTOP-GBOUD091 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file mDOM_pin_verification_top_methodology_drc_routed.rpt -pb mDOM_pin_verification_top_methodology_drc_routed.pb -rpx mDOM_pin_verification_top_methodology_drc_routed.rpx
 | Design       : mDOM_pin_verification_top
@@ -23,17 +23,38 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 77
-+-----------+----------+------------------------------------------------------+------------+
-| Rule      | Severity | Description                                          | Violations |
-+-----------+----------+------------------------------------------------------+------------+
-| TIMING-18 | Warning  | Missing input or output delay                        | 1          |
-| TIMING-28 | Warning  | Auto-derived clock referenced by a timing constraint | 4          |
-| REQP-1959 | Advisory | connects_SERDES_RST_driver_not_FF                    | 72         |
-+-----------+----------+------------------------------------------------------+------------+
+             Violations found: 81
++-----------+------------------+------------------------------------------------------+------------+
+| Rule      | Severity         | Description                                          | Violations |
++-----------+------------------+------------------------------------------------------+------------+
+| TIMING-6  | Critical Warning | No common primary clock between related clocks       | 4          |
+| TIMING-18 | Warning          | Missing input or output delay                        | 1          |
+| TIMING-28 | Warning          | Auto-derived clock referenced by a timing constraint | 4          |
+| REQP-1959 | Advisory         | connects_SERDES_RST_driver_not_FF                    | 72         |
++-----------+------------------+------------------------------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
+TIMING-6#1 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_out1_lclk_adcclk_wiz and clk_out1_lclk_adcclk_wiz_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_lclk_adcclk_wiz] -to [get_clocks clk_out1_lclk_adcclk_wiz_1]
+Related violations: <none>
+
+TIMING-6#2 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_out1_lclk_adcclk_wiz_1 and clk_out1_lclk_adcclk_wiz are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out1_lclk_adcclk_wiz_1] -to [get_clocks clk_out1_lclk_adcclk_wiz]
+Related violations: <none>
+
+TIMING-6#3 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_out3_idelay_discr_clk_wiz and clk_out1_lclk_adcclk_wiz_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out3_idelay_discr_clk_wiz] -to [get_clocks clk_out1_lclk_adcclk_wiz_1]
+Related violations: <none>
+
+TIMING-6#4 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_out3_idelay_discr_clk_wiz_1 and clk_out1_lclk_adcclk_wiz are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_out3_idelay_discr_clk_wiz_1] -to [get_clocks clk_out1_lclk_adcclk_wiz]
+Related violations: <none>
+
 TIMING-18#1 Warning
 Missing input or output delay  
 An input delay is missing on ADC0_SDOUT relative to clock(s) fpga_clk, qosc_clk

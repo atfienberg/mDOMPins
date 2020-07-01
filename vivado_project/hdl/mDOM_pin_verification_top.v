@@ -423,15 +423,22 @@ wire io_reset = FMC_OEn;
 
 // ADC #0: channels 0-3
 
-(* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_0;
-(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_0;
+wire[11:0] adc_bits_0;
+reg[11:0] prev_adc_bits_0;
+wire[7:0] discr_bits_0;
+reg[7:0] prev_discr_bits_0;
+// register discr and adc bits
+always @(posedge lclk) begin
+  prev_adc_bits_0 <= adc_bits_0;
+  prev_discr_bits_0 <= discr_bits_0;
+end
 adc_discr_channel ADC_DISCR_0A
   (
     .adc_DP({ADC0_DA1P, ADC0_DA0P}),
     .adc_DN({ADC0_DA1M, ADC0_DA0M}),
     .discr_out(DISCR_OUT0),
     .lclk(lclk),
-    .discr_fclk(discr_fclk_100MHz),
+    .discr_fclk(discr_fclk_125MHz),
     .adc_dclk(clk_375MHz),
     .discr_dclk(clk_500MHz),
     .in_delay_reset({in_delay_reset, in_delay_reset}),
@@ -449,15 +456,22 @@ adc_discr_channel ADC_DISCR_0A
     .delay_tap_out_1()
   );
 
-(* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_1;
-(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_1;
+wire[11:0] adc_bits_1;
+reg[11:0] prev_adc_bits_1;
+wire[7:0] discr_bits_1;
+reg[7:0] prev_discr_bits_1;
+// register discr and adc bits
+always @(posedge lclk) begin
+  prev_adc_bits_1 <= adc_bits_1;
+  prev_discr_bits_1 <= discr_bits_1;
+end
 adc_discr_channel ADC_DISCR_0B
   (
     .adc_DP({ADC0_DB1P, ADC0_DB0P}),
     .adc_DN({ADC0_DB1M, ADC0_DB0M}),
     .discr_out(DISCR_OUT1),
     .lclk(lclk),
-    .discr_fclk(discr_fclk_100MHz),
+    .discr_fclk(discr_fclk_125MHz),
     .adc_dclk(clk_375MHz),
     .discr_dclk(clk_500MHz),
     .in_delay_reset({in_delay_reset, in_delay_reset}),
@@ -475,15 +489,22 @@ adc_discr_channel ADC_DISCR_0B
     .delay_tap_out_1()
   );
 
-(* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_2;
-(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_2;
+wire[11:0] adc_bits_2;
+reg[11:0] prev_adc_bits_2;
+wire[7:0] discr_bits_2;
+reg[7:0] prev_discr_bits_2;
+// register discr and adc bits
+always @(posedge lclk) begin
+  prev_adc_bits_2 <= adc_bits_2;
+  prev_discr_bits_2 <= discr_bits_2;
+end
 adc_discr_channel ADC_DISCR_0C
   (
     .adc_DP({ADC0_DC1P, ADC0_DC0P}),
     .adc_DN({ADC0_DC1M, ADC0_DC0M}),
     .discr_out(DISCR_OUT2),
     .lclk(lclk),
-    .discr_fclk(discr_fclk_100MHz),
+    .discr_fclk(discr_fclk_125MHz),
     .adc_dclk(clk_375MHz),
     .discr_dclk(clk_500MHz),
     .in_delay_reset({in_delay_reset, in_delay_reset}),
@@ -501,15 +522,22 @@ adc_discr_channel ADC_DISCR_0C
     .delay_tap_out_1()
   );
 
-(* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_3;
-(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_3;
+wire[11:0] adc_bits_3;
+reg[11:0] prev_adc_bits_3;
+wire[7:0] discr_bits_3;
+reg[7:0] prev_discr_bits_3;
+// register discr and adc bits
+always @(posedge lclk) begin
+  prev_adc_bits_3 <= adc_bits_3;
+  prev_discr_bits_3 <= discr_bits_3;
+end
 adc_discr_channel ADC_DISCR_0D
   (
     .adc_DP({ADC0_DD1P, ADC0_DD0P}),
     .adc_DN({ADC0_DD1M, ADC0_DD0M}),
     .discr_out(DISCR_OUT3),
     .lclk(lclk),
-    .discr_fclk(discr_fclk_100MHz),
+    .discr_fclk(discr_fclk_125MHz),
     .adc_dclk(clk_375MHz),
     .discr_dclk(clk_500MHz),
     .in_delay_reset({in_delay_reset, in_delay_reset}),
@@ -529,20 +557,27 @@ adc_discr_channel ADC_DISCR_0D
 
 // send the outputs somewhere to make sure they are kept
 // the below use all bits of the adc words and the discriminator words  
-assign DDR3_A0 = &adc_bits_0 && &adc_bits_1 && &adc_bits_2 && &adc_bits_3;
-assign DDR3_A1 = &discr_bits_0 && &discr_bits_1 && &discr_bits_2 && &discr_bits_3;
+assign DDR3_A0 = &prev_adc_bits_0 && &prev_adc_bits_1 && &prev_adc_bits_2 && &prev_adc_bits_3;
+assign DDR3_A1 = &prev_discr_bits_0 && &prev_discr_bits_1 && &prev_discr_bits_2 && &prev_discr_bits_3;
 
 // ADC #1; channels 4-7
 
-(* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_4;
-(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_4;
+wire[11:0] adc_bits_4;
+reg[11:0] prev_adc_bits_4;
+wire[7:0] discr_bits_4;
+reg[7:0] prev_discr_bits_4;
+// register discr and adc bits
+always @(posedge lclk) begin
+  prev_adc_bits_4 <= adc_bits_4;
+  prev_discr_bits_4 <= discr_bits_4;
+end
 adc_discr_channel ADC_DISCR_1A
   (
     .adc_DP({ADC1_DA1P, ADC1_DA0P}),
     .adc_DN({ADC1_DA1M, ADC1_DA0M}),
     .discr_out(DISCR_OUT4),
     .lclk(lclk),
-    .discr_fclk(discr_fclk_100MHz),
+    .discr_fclk(discr_fclk_125MHz),
     .adc_dclk(clk_375MHz),
     .discr_dclk(clk_500MHz),
     .in_delay_reset({in_delay_reset, in_delay_reset}),
@@ -560,15 +595,22 @@ adc_discr_channel ADC_DISCR_1A
     .delay_tap_out_1()
   );
 
-(* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_5;
-(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_5;
+wire[11:0] adc_bits_5;
+reg[11:0] prev_adc_bits_5;
+wire[7:0] discr_bits_5;
+reg[7:0] prev_discr_bits_5;
+// register discr and adc bits
+always @(posedge lclk) begin
+  prev_adc_bits_5 <= adc_bits_5;
+  prev_discr_bits_5 <= discr_bits_5;
+end
 adc_discr_channel ADC_DISCR_1B
   (
     .adc_DP({ADC1_DB1P, ADC1_DB0P}),
     .adc_DN({ADC1_DB1M, ADC1_DB0M}),
     .discr_out(DISCR_OUT5),
     .lclk(lclk),
-    .discr_fclk(discr_fclk_100MHz),
+    .discr_fclk(discr_fclk_125MHz),
     .adc_dclk(clk_375MHz),
     .discr_dclk(clk_500MHz),
     .in_delay_reset({in_delay_reset, in_delay_reset}),
@@ -586,15 +628,22 @@ adc_discr_channel ADC_DISCR_1B
     .delay_tap_out_1()
   );
 
-(* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_6;
-(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_6;
+wire[11:0] adc_bits_6;
+reg[11:0] prev_adc_bits_6;
+wire[7:0] discr_bits_6;
+reg[7:0] prev_discr_bits_6;
+// register discr and adc bits
+always @(posedge lclk) begin
+  prev_adc_bits_6 <= adc_bits_6;
+  prev_discr_bits_6 <= discr_bits_6;
+end
 adc_discr_channel ADC_DISCR_1C
   (
     .adc_DP({ADC1_DC1P, ADC1_DC0P}),
     .adc_DN({ADC1_DC1M, ADC1_DC0M}),
     .discr_out(DISCR_OUT6),
     .lclk(lclk),
-    .discr_fclk(discr_fclk_100MHz),
+    .discr_fclk(discr_fclk_125MHz),
     .adc_dclk(clk_375MHz),
     .discr_dclk(clk_500MHz),
     .in_delay_reset({in_delay_reset, in_delay_reset}),
@@ -612,15 +661,22 @@ adc_discr_channel ADC_DISCR_1C
     .delay_tap_out_1()
   );
 
-(* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_7;
-(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_7;
+wire[11:0] adc_bits_7;
+reg[11:0] prev_adc_bits_7;
+wire[7:0] discr_bits_7;
+reg[7:0] prev_discr_bits_7;
+// register discr and adc bits
+always @(posedge lclk) begin
+  prev_adc_bits_7 <= adc_bits_7;
+  prev_discr_bits_7 <= discr_bits_7;
+end
 adc_discr_channel ADC_DISCR_1D
   (
     .adc_DP({ADC1_DD1P, ADC1_DD0P}),
     .adc_DN({ADC1_DD1M, ADC1_DD0M}),
     .discr_out(DISCR_OUT7),
     .lclk(lclk),
-    .discr_fclk(discr_fclk_100MHz),
+    .discr_fclk(discr_fclk_125MHz),
     .adc_dclk(clk_375MHz),
     .discr_dclk(clk_500MHz),
     .in_delay_reset({in_delay_reset, in_delay_reset}),
@@ -640,20 +696,27 @@ adc_discr_channel ADC_DISCR_1D
 
 // send the outputs somewhere to make sure they are kept
 // the below use all bits of the adc words and the discriminator words  
-assign DDR3_A2 = &adc_bits_4 && &adc_bits_5 && &adc_bits_6 && &adc_bits_7;
-assign DDR3_A3 = &discr_bits_4 && &discr_bits_5 && &discr_bits_6 && &discr_bits_7;
+assign DDR3_A2 = &prev_adc_bits_4 && &prev_adc_bits_5 && &prev_adc_bits_6 && &prev_adc_bits_7;
+assign DDR3_A3 = &prev_discr_bits_4 && &prev_discr_bits_5 && &prev_discr_bits_6 && &prev_discr_bits_7;
 
 // ADC #2; channels 8-11
 
-(* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_8;
-(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_8;
+wire[11:0] adc_bits_8;
+reg[11:0] prev_adc_bits_8;
+wire[7:0] discr_bits_8;
+reg[7:0] prev_discr_bits_8;
+// register discr and adc bits
+always @(posedge lclk) begin
+  prev_adc_bits_8 <= adc_bits_8;
+  prev_discr_bits_8 <= discr_bits_8;
+end
 adc_discr_channel ADC_DISCR_2A
   (
     .adc_DP({ADC2_DA1P, ADC2_DA0P}),
     .adc_DN({ADC2_DA1M, ADC2_DA0M}),
     .discr_out(DISCR_OUT8),
     .lclk(lclk),
-    .discr_fclk(discr_fclk_100MHz),
+    .discr_fclk(discr_fclk_125MHz),
     .adc_dclk(clk_375MHz),
     .discr_dclk(clk_500MHz),
     .in_delay_reset({in_delay_reset, in_delay_reset}),
@@ -671,15 +734,22 @@ adc_discr_channel ADC_DISCR_2A
     .delay_tap_out_1()
   );
 
-(* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_9;
-(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_9;
+wire[11:0] adc_bits_9;
+reg[11:0] prev_adc_bits_9;
+wire[7:0] discr_bits_9;
+reg[7:0] prev_discr_bits_9;
+// register discr and adc bits
+always @(posedge lclk) begin
+  prev_adc_bits_9 <= adc_bits_9;
+  prev_discr_bits_9 <= discr_bits_9;
+end
 adc_discr_channel ADC_DISCR_2B
   (
     .adc_DP({ADC2_DB1P, ADC2_DB0P}),
     .adc_DN({ADC2_DB1M, ADC2_DB0M}),
     .discr_out(DISCR_OUT9),
     .lclk(lclk),
-    .discr_fclk(discr_fclk_100MHz),
+    .discr_fclk(discr_fclk_125MHz),
     .adc_dclk(clk_375MHz),
     .discr_dclk(clk_500MHz),
     .in_delay_reset({in_delay_reset, in_delay_reset}),
@@ -697,15 +767,22 @@ adc_discr_channel ADC_DISCR_2B
     .delay_tap_out_1()
   );
 
-(* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_10;
-(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_10;
+wire[11:0] adc_bits_10;
+reg[11:0] prev_adc_bits_10;
+wire[7:0] discr_bits_10;
+reg[7:0] prev_discr_bits_10;
+// register discr and adc bits
+always @(posedge lclk) begin
+  prev_adc_bits_10 <= adc_bits_10;
+  prev_discr_bits_10 <= discr_bits_10;
+end
 adc_discr_channel ADC_DISCR_2C
   (
     .adc_DP({ADC2_DC1P, ADC2_DC0P}),
     .adc_DN({ADC2_DC1M, ADC2_DC0M}),
     .discr_out(DISCR_OUT10),
     .lclk(lclk),
-    .discr_fclk(discr_fclk_100MHz),
+    .discr_fclk(discr_fclk_125MHz),
     .adc_dclk(clk_375MHz),
     .discr_dclk(clk_500MHz),
     .in_delay_reset({in_delay_reset, in_delay_reset}),
@@ -723,15 +800,22 @@ adc_discr_channel ADC_DISCR_2C
     .delay_tap_out_1()
   );
 
-(* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_11;
-(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_11;
+wire[11:0] adc_bits_11;
+reg[11:0] prev_adc_bits_11;
+wire[7:0] discr_bits_11;
+reg[7:0] prev_discr_bits_11;
+// register discr and adc bits
+always @(posedge lclk) begin
+  prev_adc_bits_11 <= adc_bits_11;
+  prev_discr_bits_11 <= discr_bits_11;
+end
 adc_discr_channel ADC_DISCR_2D
   (
     .adc_DP({ADC2_DD1P, ADC2_DD0P}),
     .adc_DN({ADC2_DD1M, ADC2_DD0M}),
     .discr_out(DISCR_OUT11),
     .lclk(lclk),
-    .discr_fclk(discr_fclk_100MHz),
+    .discr_fclk(discr_fclk_125MHz),
     .adc_dclk(clk_375MHz),
     .discr_dclk(clk_500MHz),
     .in_delay_reset({in_delay_reset, in_delay_reset}),
@@ -751,20 +835,27 @@ adc_discr_channel ADC_DISCR_2D
 
 // send the outputs somewhere to make sure they are kept
 // the below use all bits of the adc words and the discriminator words  
-assign DDR3_A4 = &adc_bits_8 && &adc_bits_9 && &adc_bits_10 && &adc_bits_11;
-assign DDR3_A5 = &discr_bits_8 && &discr_bits_9 && &discr_bits_10 && &discr_bits_11;
+assign DDR3_A4 = &prev_adc_bits_8 && &prev_adc_bits_9 && &prev_adc_bits_10 && &prev_adc_bits_11;
+assign DDR3_A5 = &prev_discr_bits_8 && &prev_discr_bits_9 && &prev_discr_bits_10 && &prev_discr_bits_11;
 
 // ADC #3: channels 12-15
 
-(* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_12;
-(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_12;
+wire[11:0] adc_bits_12;
+reg[11:0] prev_adc_bits_12;
+wire[7:0] discr_bits_12;
+reg[7:0] prev_discr_bits_12;
+// register discr and adc bits
+always @(posedge lclk) begin
+  prev_adc_bits_12 <= adc_bits_12;
+  prev_discr_bits_12 <= discr_bits_12;
+end
 adc_discr_channel ADC_DISCR_3A
   (
     .adc_DP({ADC3_DA1P, ADC3_DA0P}),
     .adc_DN({ADC3_DA1M, ADC3_DA0M}),
     .discr_out(DISCR_OUT12),
     .lclk(lclk),
-    .discr_fclk(discr_fclk_100MHz),
+    .discr_fclk(discr_fclk_125MHz),
     .adc_dclk(clk_375MHz),
     .discr_dclk(clk_500MHz),
     .in_delay_reset({in_delay_reset, in_delay_reset}),
@@ -782,15 +873,22 @@ adc_discr_channel ADC_DISCR_3A
     .delay_tap_out_1()
   );
 
-(* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_13;
-(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_13;
+wire[11:0] adc_bits_13;
+reg[11:0] prev_adc_bits_13;
+wire[7:0] discr_bits_13;
+reg[7:0] prev_discr_bits_13;
+// register discr and adc bits
+always @(posedge lclk) begin
+  prev_adc_bits_13 <= adc_bits_13;
+  prev_discr_bits_13 <= discr_bits_13;
+end
 adc_discr_channel ADC_DISCR_3B
   (
     .adc_DP({ADC3_DB1P, ADC3_DB0P}),
     .adc_DN({ADC3_DB1M, ADC3_DB0M}),
     .discr_out(DISCR_OUT13),
     .lclk(lclk),
-    .discr_fclk(discr_fclk_100MHz),
+    .discr_fclk(discr_fclk_125MHz),
     .adc_dclk(clk_375MHz),
     .discr_dclk(clk_500MHz),
     .in_delay_reset({in_delay_reset, in_delay_reset}),
@@ -808,15 +906,22 @@ adc_discr_channel ADC_DISCR_3B
     .delay_tap_out_1()
   );
 
-(* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_14;
-(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_14;
+wire[11:0] adc_bits_14;
+reg[11:0] prev_adc_bits_14;
+wire[7:0] discr_bits_14;
+reg[7:0] prev_discr_bits_14;
+// register discr and adc bits
+always @(posedge lclk) begin
+  prev_adc_bits_14 <= adc_bits_14;
+  prev_discr_bits_14 <= discr_bits_14;
+end
 adc_discr_channel ADC_DISCR_3C
   (
     .adc_DP({ADC3_DC1P, ADC3_DC0P}),
     .adc_DN({ADC3_DC1M, ADC3_DC0M}),
     .discr_out(DISCR_OUT14),
     .lclk(lclk),
-    .discr_fclk(discr_fclk_100MHz),
+    .discr_fclk(discr_fclk_125MHz),
     .adc_dclk(clk_375MHz),
     .discr_dclk(clk_500MHz),
     .in_delay_reset({in_delay_reset, in_delay_reset}),
@@ -834,15 +939,22 @@ adc_discr_channel ADC_DISCR_3C
     .delay_tap_out_1()
   );
 
-(* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_15;
-(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_15;
+wire[11:0] adc_bits_15;
+reg[11:0] prev_adc_bits_15;
+wire[7:0] discr_bits_15;
+reg[7:0] prev_discr_bits_15;
+// register discr and adc bits
+always @(posedge lclk) begin
+  prev_adc_bits_15 <= adc_bits_15;
+  prev_discr_bits_15 <= discr_bits_15;
+end
 adc_discr_channel ADC_DISCR_3D
   (
     .adc_DP({ADC3_DD1P, ADC3_DD0P}),
     .adc_DN({ADC3_DD1M, ADC3_DD0M}),
     .discr_out(DISCR_OUT15),
     .lclk(lclk),
-    .discr_fclk(discr_fclk_100MHz),
+    .discr_fclk(discr_fclk_125MHz),
     .adc_dclk(clk_375MHz),
     .discr_dclk(clk_500MHz),
     .in_delay_reset({in_delay_reset, in_delay_reset}),
@@ -862,20 +974,27 @@ adc_discr_channel ADC_DISCR_3D
 
 // send the outputs somewhere to make sure they are kept
 // the below use all bits of the adc words and the discriminator words  
-assign DDR3_A6 = &adc_bits_12 && &adc_bits_13 && &adc_bits_14 && &adc_bits_15;
-assign DDR3_A7 = &discr_bits_12 && &discr_bits_13 && &discr_bits_14 && &discr_bits_15;
+assign DDR3_A6 = &prev_adc_bits_12 && &prev_adc_bits_13 && &prev_adc_bits_14 && &prev_adc_bits_15;
+assign DDR3_A7 = &prev_discr_bits_12 && &prev_discr_bits_13 && &prev_discr_bits_14 && &prev_discr_bits_15;
 
 // ADC #4; channels 16-19
 
-(* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_16;
-(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_16;
+wire[11:0] adc_bits_16;
+reg[11:0] prev_adc_bits_16;
+wire[7:0] discr_bits_16;
+reg[7:0] prev_discr_bits_16;
+// register discr and adc bits
+always @(posedge lclk) begin
+  prev_adc_bits_16 <= adc_bits_16;
+  prev_discr_bits_16 <= discr_bits_16;
+end
 adc_discr_channel ADC_DISCR_4A
   (
     .adc_DP({ADC4_DA1P, ADC4_DA0P}),
     .adc_DN({ADC4_DA1M, ADC4_DA0M}),
     .discr_out(DISCR_OUT16),
     .lclk(lclk),
-    .discr_fclk(discr_fclk_100MHz),
+    .discr_fclk(discr_fclk_125MHz),
     .adc_dclk(clk_375MHz),
     .discr_dclk(clk_500MHz),
     .in_delay_reset({in_delay_reset, in_delay_reset}),
@@ -893,15 +1012,22 @@ adc_discr_channel ADC_DISCR_4A
     .delay_tap_out_1()
   );
 
-(* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_17;
-(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_17;
+wire[11:0] adc_bits_17;
+reg[11:0] prev_adc_bits_17;
+wire[7:0] discr_bits_17;
+reg[7:0] prev_discr_bits_17;
+// register discr and adc bits
+always @(posedge lclk) begin
+  prev_adc_bits_17 <= adc_bits_17;
+  prev_discr_bits_17 <= discr_bits_17;
+end
 adc_discr_channel ADC_DISCR_4B
   (
     .adc_DP({ADC4_DB1P, ADC4_DB0P}),
     .adc_DN({ADC4_DB1M, ADC4_DB0M}),
     .discr_out(DISCR_OUT17),
     .lclk(lclk),
-    .discr_fclk(discr_fclk_100MHz),
+    .discr_fclk(discr_fclk_125MHz),
     .adc_dclk(clk_375MHz),
     .discr_dclk(clk_500MHz),
     .in_delay_reset({in_delay_reset, in_delay_reset}),
@@ -919,15 +1045,22 @@ adc_discr_channel ADC_DISCR_4B
     .delay_tap_out_1()
   );
 
-(* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_18;
-(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_18;
+wire[11:0] adc_bits_18;
+reg[11:0] prev_adc_bits_18;
+wire[7:0] discr_bits_18;
+reg[7:0] prev_discr_bits_18;
+// register discr and adc bits
+always @(posedge lclk) begin
+  prev_adc_bits_18 <= adc_bits_18;
+  prev_discr_bits_18 <= discr_bits_18;
+end
 adc_discr_channel ADC_DISCR_4C
   (
     .adc_DP({ADC4_DC1P, ADC4_DC0P}),
     .adc_DN({ADC4_DC1M, ADC4_DC0M}),
     .discr_out(DISCR_OUT18),
     .lclk(lclk),
-    .discr_fclk(discr_fclk_100MHz),
+    .discr_fclk(discr_fclk_125MHz),
     .adc_dclk(clk_375MHz),
     .discr_dclk(clk_500MHz),
     .in_delay_reset({in_delay_reset, in_delay_reset}),
@@ -945,15 +1078,22 @@ adc_discr_channel ADC_DISCR_4C
     .delay_tap_out_1()
   );
 
-(* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_19;
-(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_19;
+wire[11:0] adc_bits_19;
+reg[11:0] prev_adc_bits_19;
+wire[7:0] discr_bits_19;
+reg[7:0] prev_discr_bits_19;
+// register discr and adc bits
+always @(posedge lclk) begin
+  prev_adc_bits_19 <= adc_bits_19;
+  prev_discr_bits_19 <= discr_bits_19;
+end
 adc_discr_channel ADC_DISCR_4D
   (
     .adc_DP({ADC4_DD1P, ADC4_DD0P}),
     .adc_DN({ADC4_DD1M, ADC4_DD0M}),
     .discr_out(DISCR_OUT19),
     .lclk(lclk),
-    .discr_fclk(discr_fclk_100MHz),
+    .discr_fclk(discr_fclk_125MHz),
     .adc_dclk(clk_375MHz),
     .discr_dclk(clk_500MHz),
     .in_delay_reset({in_delay_reset, in_delay_reset}),
@@ -973,20 +1113,27 @@ adc_discr_channel ADC_DISCR_4D
 
 // send the outputs somewhere to make sure they are kept
 // the below use all bits of the adc words and the discriminator words  
-assign DDR3_A8 = &adc_bits_16 && &adc_bits_17 && &adc_bits_18 && &adc_bits_19;
-assign DDR3_A9 = &discr_bits_16 && &discr_bits_17 && &discr_bits_18 && &discr_bits_19;
+assign DDR3_A8 = &prev_adc_bits_16 && &prev_adc_bits_17 && &prev_adc_bits_18 && &prev_adc_bits_19;
+assign DDR3_A9 = &prev_discr_bits_16 && &prev_discr_bits_17 && &prev_discr_bits_18 && &prev_discr_bits_19;
 
 // ADC #5; channels 20-23
 
-(* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_20;
-(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_20;
+wire[11:0] adc_bits_20;
+reg[11:0] prev_adc_bits_20;
+wire[7:0] discr_bits_20;
+reg[7:0] prev_discr_bits_20;
+// register discr and adc bits
+always @(posedge lclk) begin
+  prev_adc_bits_20 <= adc_bits_20;
+  prev_discr_bits_20 <= discr_bits_20;
+end
 adc_discr_channel ADC_DISCR_5A
   (
     .adc_DP({ADC5_DA1P, ADC5_DA0P}),
     .adc_DN({ADC5_DA1M, ADC5_DA0M}),
     .discr_out(DISCR_OUT20),
     .lclk(lclk),
-    .discr_fclk(discr_fclk_100MHz),
+    .discr_fclk(discr_fclk_125MHz),
     .adc_dclk(clk_375MHz),
     .discr_dclk(clk_500MHz),
     .in_delay_reset({in_delay_reset, in_delay_reset}),
@@ -1004,15 +1151,22 @@ adc_discr_channel ADC_DISCR_5A
     .delay_tap_out_1()
   );
 
-(* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_21;
-(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_21;
+wire[11:0] adc_bits_21;
+reg[11:0] prev_adc_bits_21;
+wire[7:0] discr_bits_21;
+reg[7:0] prev_discr_bits_21;
+// register discr and adc bits
+always @(posedge lclk) begin
+  prev_adc_bits_21 <= adc_bits_21;
+  prev_discr_bits_21 <= discr_bits_21;
+end
 adc_discr_channel ADC_DISCR_5B
   (
     .adc_DP({ADC5_DB1P, ADC5_DB0P}),
     .adc_DN({ADC5_DB1M, ADC5_DB0M}),
     .discr_out(DISCR_OUT21),
     .lclk(lclk),
-    .discr_fclk(discr_fclk_100MHz),
+    .discr_fclk(discr_fclk_125MHz),
     .adc_dclk(clk_375MHz),
     .discr_dclk(clk_500MHz),
     .in_delay_reset({in_delay_reset, in_delay_reset}),
@@ -1030,15 +1184,22 @@ adc_discr_channel ADC_DISCR_5B
     .delay_tap_out_1()
   );
 
-(* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_22;
-(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_22;
+wire[11:0] adc_bits_22;
+reg[11:0] prev_adc_bits_22;
+wire[7:0] discr_bits_22;
+reg[7:0] prev_discr_bits_22;
+// register discr and adc bits
+always @(posedge lclk) begin
+  prev_adc_bits_22 <= adc_bits_22;
+  prev_discr_bits_22 <= discr_bits_22;
+end
 adc_discr_channel ADC_DISCR_5C
   (
     .adc_DP({ADC5_DC1P, ADC5_DC0P}),
     .adc_DN({ADC5_DC1M, ADC5_DC0M}),
     .discr_out(DISCR_OUT22),
     .lclk(lclk),
-    .discr_fclk(discr_fclk_100MHz),
+    .discr_fclk(discr_fclk_125MHz),
     .adc_dclk(clk_375MHz),
     .discr_dclk(clk_500MHz),
     .in_delay_reset({in_delay_reset, in_delay_reset}),
@@ -1056,15 +1217,22 @@ adc_discr_channel ADC_DISCR_5C
     .delay_tap_out_1()
   );
 
-(* DONT_TOUCH = "TRUE" *) wire[11:0] adc_bits_23;
-(* DONT_TOUCH = "TRUE" *) wire[7:0] discr_bits_23;
+wire[11:0] adc_bits_23;
+reg[11:0] prev_adc_bits_23;
+wire[7:0] discr_bits_23;
+reg[7:0] prev_discr_bits_23;
+// register discr and adc bits
+always @(posedge lclk) begin
+  prev_adc_bits_23 <= adc_bits_23;
+  prev_discr_bits_23 <= discr_bits_23;
+end
 adc_discr_channel ADC_DISCR_5D
   (
     .adc_DP({ADC5_DD1P, ADC5_DD0P}),
     .adc_DN({ADC5_DD1M, ADC5_DD0M}),
     .discr_out(DISCR_OUT23),
     .lclk(lclk),
-    .discr_fclk(discr_fclk_100MHz),
+    .discr_fclk(discr_fclk_125MHz),
     .adc_dclk(clk_375MHz),
     .discr_dclk(clk_500MHz),
     .in_delay_reset({in_delay_reset, in_delay_reset}),
@@ -1084,8 +1252,7 @@ adc_discr_channel ADC_DISCR_5D
 
 // send the outputs somewhere to make sure they are kept
 // the below use all bits of the adc words and the discriminator words  
-assign DDR3_A10 = &adc_bits_20 && &adc_bits_21 && &adc_bits_22 && &adc_bits_23;
-assign DDR3_A11 = &discr_bits_20 && &discr_bits_21 && &discr_bits_22 && &discr_bits_23;
-
+assign DDR3_A10 = &prev_adc_bits_20 && &prev_adc_bits_21 && &prev_adc_bits_22 && &prev_adc_bits_23;
+assign DDR3_A11 = &prev_discr_bits_20 && &prev_discr_bits_21 && &prev_discr_bits_22 && &prev_discr_bits_23;
 
 endmodule

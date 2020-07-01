@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Wed Jul  1 15:58:32 2020
+| Date         : Wed Jul  1 17:11:09 2020
 | Host         : LAPTOP-GBOUD091 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file mDOM_pin_verification_top_utilization_synth.rpt -pb mDOM_pin_verification_top_utilization_synth.pb
 | Design       : mDOM_pin_verification_top
@@ -33,8 +33,8 @@ Table of Contents
 | Slice LUTs*             |  103 |     0 |     64000 |  0.16 |
 |   LUT as Logic          |  103 |     0 |     64000 |  0.16 |
 |   LUT as Memory         |    0 |     0 |     17600 |  0.00 |
-| Slice Registers         |    0 |     0 |    128000 |  0.00 |
-|   Register as Flip Flop |    0 |     0 |    128000 |  0.00 |
+| Slice Registers         |  480 |     0 |    128000 |  0.38 |
+|   Register as Flip Flop |  480 |     0 |    128000 |  0.38 |
 |   Register as Latch     |    0 |     0 |    128000 |  0.00 |
 | F7 Muxes                |    0 |     0 |     32000 |  0.00 |
 | F8 Muxes                |    0 |     0 |     16000 |  0.00 |
@@ -57,7 +57,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 0     |          Yes |       Reset |            - |
+| 480   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -145,6 +145,7 @@ Table of Contents
 +------------+------+---------------------+
 |  Ref Name  | Used | Functional Category |
 +------------+------+---------------------+
+| FDRE       |  480 |        Flop & Latch |
 | LUT6       |   90 |                 LUT |
 | OBUFT      |   86 |                  IO |
 | OBUF       |   14 |                  IO |

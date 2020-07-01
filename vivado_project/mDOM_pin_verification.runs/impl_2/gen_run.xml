@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_2" LaunchPart="xc7s100fgga676-2" LaunchTime="1593633476">
+<GenRun Id="impl_2" LaunchPart="xc7s100fgga676-2" LaunchTime="1593637831">
   <File Type="BITSTR-BMM" Name="mDOM_pin_verification_top_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="mDOM_pin_verification_top_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="mDOM_pin_verification_top_timing_summary_init.rpt"/>
