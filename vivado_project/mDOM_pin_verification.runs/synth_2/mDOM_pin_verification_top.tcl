@@ -63,14 +63,14 @@ set_property used_in_implementation false [get_files -all c:/Users/atfie/IceCube
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/mDOM_mb_1_jun29.xdc
-set_property used_in_implementation false [get_files C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/mDOM_mb_1_jun29.xdc]
-
 read_xdc C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/clocks.xdc
 set_property used_in_implementation false [get_files C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/clocks.xdc]
 
 read_xdc C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/io_standards.xdc
 set_property used_in_implementation false [get_files C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/io_standards.xdc]
+
+read_xdc C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/mDOM_mb_7_6_2020.xdc
+set_property used_in_implementation false [get_files C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/mDOM_mb_7_6_2020.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

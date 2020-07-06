@@ -1,7 +1,7 @@
 # clocks and timing constraints
 
 create_clock -name fpga_clk -period 50.000 [get_ports {FPGA_CLOCK_P}]
-create_clock -name qosc_clk -period 50.000 [get_ports {QOSC_CLK}]
+create_clock -name qosc_clk -period 50.000 [get_ports {QOSC_CLK_P1V8}]
 
 # DDR input constraints are described in the following Xilinx forum thread
 # https://forums.xilinx.com/t5/Timing-Analysis/How-to-constraint-Same-Edge-capture-edge-aligned-DDR-input/m-p/646009#M8411
@@ -33,5 +33,5 @@ set_input_delay -clock virt_clk -0.253 -min [get_ports ADC*_D*] -clock_fall -add
 set_max_delay 5 -from [get_clocks virt_clk] -to [get_clocks clk_out2_lclk_adcclk_wiz] -datapath_only
 set_max_delay 5 -to [get_clocks virt_clk] -from [get_clocks clk_out2_lclk_adcclk_wiz] -datapath_only
 
-set_max_delay 5 -from [get_clocks virt_clk] -to [get_clocks clk_out2_lclk_adcclk_wiz_1] -datapath_only
-set_max_delay 5 -to [get_clocks virt_clk] -from [get_clocks clk_out2_lclk_adcclk_wiz_1] -datapath_only
+#set_max_delay 5 -from [get_clocks virt_clk] -to [get_clocks clk_out2_lclk_adcclk_wiz_1] -datapath_only
+#set_max_delay 5 -to [get_clocks virt_clk] -from [get_clocks clk_out2_lclk_adcclk_wiz_1] -datapath_only

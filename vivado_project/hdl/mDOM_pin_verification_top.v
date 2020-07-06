@@ -218,18 +218,22 @@ module mDOM_pin_verification_top
   inout DDR3_DQ13,
   inout DDR3_DQ14,
   inout DDR3_DQ15,
-  output DDR3_LDM,
-  inout DDR3_LDQS_P,
-  inout DDR3_LDQS_N,
+  output DDR3_DM0,
+  inout DDR3_DQS0_P,
+  inout DDR3_DQS0_N,
   output DDR3_nCAS,
   output DDR3_nCS,
   output DDR3_nRAS,
   output DDR3_nRESET,
   output DDR3_nWE,
   output DDR3_ODT,
-  output DDR3_UDM,
-  inout DDR3_UDQS_P,
-  inout DDR3_UDQS_N,
+  output DDR3_DM1,
+  inout DDR3_DQS1_P,
+  inout DDR3_DQS1_N,
+
+  input DDR3_CLK100,
+  output DDR3_CLK100_OUT,
+
   output DDR3_VTT_S3,
   output DDR3_VTT_S5,
   //
@@ -350,12 +354,24 @@ module mDOM_pin_verification_top
   //
   // QOSC
   //
-  input QOSC_CLK,
+  input QOSC_CLK_P1V8,
   inout QOSC_SCL, 
   inout QOSC_SDA, 
   output QOSC_VC_ENA,
   input TRIG_IN,
-  output TRIG_OUT
+  output TRIG_OUT,
+
+  // LEDs
+  output LED_GREEN,
+  output LED_ORANGE,
+  output LED_YELLOW,
+ 
+  // MCU CAL
+  output MCU_AFE_SEL,
+  output MCU_CAL_A0,
+  output MCU_CAL_SS,
+  output MCU_CAL_MOSI,
+  input MCU_CAL_MISO
   );
 
 // test 0: send QOSC to ADC_CLOCK 0
@@ -369,8 +385,10 @@ OBUFDS OBUF_ADC_CLOCK(.I(i_adc_clock), .O(ADC0_CLOCK_P), .OB(ADC0_CLOCK_M));
 
 // multiplex FPGA clock and QOSC clock
 // select based on adc_sdout for
-wire clk_mux;
-BUFGMUX BUFGMUX_0(.I0(QOSC_CLK),.I1(i_fpga_clock),.S(ADC0_SDOUT),.O(clk_mux));
+// wire clk_mux;
+// BUFGMUX BUFGMUX_0(.I0(QOSC_CLK_P1V8),.I1(i_fpga_clock),.S(ADC0_SDOUT),.O(clk_mux));
+// assign clk_mux = QOSC_CLK_P1V8;
+assign clk_mux = i_fpga_clock;
 
 // ADC_SDATAR gets i_fpga_clock
 assign ADC_SDATAR = i_fpga_clock;
@@ -415,13 +433,32 @@ wire in_delay_reset = TRIG_IN;
 wire in_delay_data_ce = FPGA_UART_RX;
 wire in_delay_data_inc = FPGA_UART_CTS;
 wire bitslip = FMC_WEn;
-wire io_reset = FMC_OEn;
+
+reg io_reset = 0;
+reg[31:0] io_reset_counter = 0;
+always @(posedge lclk) begin
+  io_reset <= 1;
+  if (!lclk_adcclk_locked || !idelay_discrclk_locked || !idelayctrl_rdy) begin
+    io_reset_counter <= 0;
+  end
+  else if (io_reset_counter < 100) begin
+    io_reset_counter <= io_reset_counter + 1;
+  end
+  else if (io_reset_counter == 100) begin
+    io_reset <= 0;
+  end
+end
 
 //
 // ADC and discriminator inputs
 //
 
 // ADC #0: channels 0-3
+
+reg ADC_0_io_reset = 0;
+always @(posedge lclk) begin
+  ADC_0_io_reset <= io_reset;
+end
 
 wire[11:0] adc_bits_0;
 reg[11:0] prev_adc_bits_0;
@@ -445,9 +482,9 @@ adc_discr_channel ADC_DISCR_0A
     .in_delay_data_ce({in_delay_data_ce, in_delay_data_ce}),
     .in_delay_data_inc({in_delay_data_inc, in_delay_data_inc}),
     .adc_bitslip({bitslip, bitslip}),
-    .adc_io_reset({io_reset, io_reset}),
+    .adc_io_reset({ADC_0_io_reset, io_reset}),
     .discr_bitslip(bitslip),
-    .discr_io_reset(io_reset),
+    .discr_io_reset(ADC_0_io_reset),
     .adc_bits(adc_bits_0),
     .discr_bits(discr_bits_0),
     .delay_tap_in_0(5'd11),
@@ -478,9 +515,9 @@ adc_discr_channel ADC_DISCR_0B
     .in_delay_data_ce({in_delay_data_ce, in_delay_data_ce}),
     .in_delay_data_inc({in_delay_data_inc, in_delay_data_inc}),
     .adc_bitslip({bitslip, bitslip}),
-    .adc_io_reset({io_reset, io_reset}),
+    .adc_io_reset({ADC_0_io_reset, io_reset}),
     .discr_bitslip(bitslip),
-    .discr_io_reset(io_reset),
+    .discr_io_reset(ADC_0_io_reset),
     .adc_bits(adc_bits_1),
     .discr_bits(discr_bits_1),
     .delay_tap_in_0(5'd11),
@@ -511,9 +548,9 @@ adc_discr_channel ADC_DISCR_0C
     .in_delay_data_ce({in_delay_data_ce, in_delay_data_ce}),
     .in_delay_data_inc({in_delay_data_inc, in_delay_data_inc}),
     .adc_bitslip({bitslip, bitslip}),
-    .adc_io_reset({io_reset, io_reset}),
+    .adc_io_reset({ADC_0_io_reset, io_reset}),
     .discr_bitslip(bitslip),
-    .discr_io_reset(io_reset),
+    .discr_io_reset(ADC_0_io_reset),
     .adc_bits(adc_bits_2),
     .discr_bits(discr_bits_2),
     .delay_tap_in_0(5'd11),
@@ -544,9 +581,9 @@ adc_discr_channel ADC_DISCR_0D
     .in_delay_data_ce({in_delay_data_ce, in_delay_data_ce}),
     .in_delay_data_inc({in_delay_data_inc, in_delay_data_inc}),
     .adc_bitslip({bitslip, bitslip}),
-    .adc_io_reset({io_reset, io_reset}),
+    .adc_io_reset({ADC_0_io_reset, io_reset}),
     .discr_bitslip(bitslip),
-    .discr_io_reset(io_reset),
+    .discr_io_reset(ADC_0_io_reset),
     .adc_bits(adc_bits_3),
     .discr_bits(discr_bits_3),
     .delay_tap_in_0(5'd11),
@@ -561,6 +598,11 @@ assign DDR3_A0 = &prev_adc_bits_0 && &prev_adc_bits_1 && &prev_adc_bits_2 && &pr
 assign DDR3_A1 = &prev_discr_bits_0 && &prev_discr_bits_1 && &prev_discr_bits_2 && &prev_discr_bits_3;
 
 // ADC #1; channels 4-7
+
+(* DONT_TOUCH = "TRUE" *) reg ADC_1_io_reset = 0;
+always @(posedge lclk) begin
+  ADC_1_io_reset <= io_reset;
+end
 
 wire[11:0] adc_bits_4;
 reg[11:0] prev_adc_bits_4;
@@ -584,9 +626,9 @@ adc_discr_channel ADC_DISCR_1A
     .in_delay_data_ce({in_delay_data_ce, in_delay_data_ce}),
     .in_delay_data_inc({in_delay_data_inc, in_delay_data_inc}),
     .adc_bitslip({bitslip, bitslip}),
-    .adc_io_reset({io_reset, io_reset}),
+    .adc_io_reset({ADC_1_io_reset, ADC_1_io_reset}),
     .discr_bitslip(bitslip),
-    .discr_io_reset(io_reset),
+    .discr_io_reset(ADC_1_io_reset),
     .adc_bits(adc_bits_4),
     .discr_bits(discr_bits_4),
     .delay_tap_in_0(5'd11),
@@ -617,9 +659,9 @@ adc_discr_channel ADC_DISCR_1B
     .in_delay_data_ce({in_delay_data_ce, in_delay_data_ce}),
     .in_delay_data_inc({in_delay_data_inc, in_delay_data_inc}),
     .adc_bitslip({bitslip, bitslip}),
-    .adc_io_reset({io_reset, io_reset}),
+    .adc_io_reset({ADC_1_io_reset, ADC_1_io_reset}),
     .discr_bitslip(bitslip),
-    .discr_io_reset(io_reset),
+    .discr_io_reset(ADC_1_io_reset),
     .adc_bits(adc_bits_5),
     .discr_bits(discr_bits_5),
     .delay_tap_in_0(5'd11),
@@ -650,9 +692,9 @@ adc_discr_channel ADC_DISCR_1C
     .in_delay_data_ce({in_delay_data_ce, in_delay_data_ce}),
     .in_delay_data_inc({in_delay_data_inc, in_delay_data_inc}),
     .adc_bitslip({bitslip, bitslip}),
-    .adc_io_reset({io_reset, io_reset}),
+    .adc_io_reset({ADC_1_io_reset, ADC_1_io_reset}),
     .discr_bitslip(bitslip),
-    .discr_io_reset(io_reset),
+    .discr_io_reset(ADC_1_io_reset),
     .adc_bits(adc_bits_6),
     .discr_bits(discr_bits_6),
     .delay_tap_in_0(5'd11),
@@ -683,9 +725,9 @@ adc_discr_channel ADC_DISCR_1D
     .in_delay_data_ce({in_delay_data_ce, in_delay_data_ce}),
     .in_delay_data_inc({in_delay_data_inc, in_delay_data_inc}),
     .adc_bitslip({bitslip, bitslip}),
-    .adc_io_reset({io_reset, io_reset}),
+    .adc_io_reset({ADC_1_io_reset, ADC_1_io_reset}),
     .discr_bitslip(bitslip),
-    .discr_io_reset(io_reset),
+    .discr_io_reset(ADC_1_io_reset),
     .adc_bits(adc_bits_7),
     .discr_bits(discr_bits_7),
     .delay_tap_in_0(5'd11),
@@ -700,6 +742,10 @@ assign DDR3_A2 = &prev_adc_bits_4 && &prev_adc_bits_5 && &prev_adc_bits_6 && &pr
 assign DDR3_A3 = &prev_discr_bits_4 && &prev_discr_bits_5 && &prev_discr_bits_6 && &prev_discr_bits_7;
 
 // ADC #2; channels 8-11
+(* DONT_TOUCH = "TRUE" *) reg ADC_2_io_reset = 0;
+always @(posedge lclk) begin
+  ADC_2_io_reset <= io_reset;
+end
 
 wire[11:0] adc_bits_8;
 reg[11:0] prev_adc_bits_8;
@@ -723,9 +769,9 @@ adc_discr_channel ADC_DISCR_2A
     .in_delay_data_ce({in_delay_data_ce, in_delay_data_ce}),
     .in_delay_data_inc({in_delay_data_inc, in_delay_data_inc}),
     .adc_bitslip({bitslip, bitslip}),
-    .adc_io_reset({io_reset, io_reset}),
+    .adc_io_reset({ADC_2_io_reset, ADC_2_io_reset}),
     .discr_bitslip(bitslip),
-    .discr_io_reset(io_reset),
+    .discr_io_reset(ADC_2_io_reset),
     .adc_bits(adc_bits_8),
     .discr_bits(discr_bits_8),
     .delay_tap_in_0(5'd11),
@@ -756,9 +802,9 @@ adc_discr_channel ADC_DISCR_2B
     .in_delay_data_ce({in_delay_data_ce, in_delay_data_ce}),
     .in_delay_data_inc({in_delay_data_inc, in_delay_data_inc}),
     .adc_bitslip({bitslip, bitslip}),
-    .adc_io_reset({io_reset, io_reset}),
+    .adc_io_reset({ADC_2_io_reset, ADC_2_io_reset}),
     .discr_bitslip(bitslip),
-    .discr_io_reset(io_reset),
+    .discr_io_reset(ADC_2_io_reset),
     .adc_bits(adc_bits_9),
     .discr_bits(discr_bits_9),
     .delay_tap_in_0(5'd11),
@@ -789,9 +835,9 @@ adc_discr_channel ADC_DISCR_2C
     .in_delay_data_ce({in_delay_data_ce, in_delay_data_ce}),
     .in_delay_data_inc({in_delay_data_inc, in_delay_data_inc}),
     .adc_bitslip({bitslip, bitslip}),
-    .adc_io_reset({io_reset, io_reset}),
+    .adc_io_reset({ADC_2_io_reset, ADC_2_io_reset}),
     .discr_bitslip(bitslip),
-    .discr_io_reset(io_reset),
+    .discr_io_reset(ADC_2_io_reset),
     .adc_bits(adc_bits_10),
     .discr_bits(discr_bits_10),
     .delay_tap_in_0(5'd11),
@@ -822,9 +868,9 @@ adc_discr_channel ADC_DISCR_2D
     .in_delay_data_ce({in_delay_data_ce, in_delay_data_ce}),
     .in_delay_data_inc({in_delay_data_inc, in_delay_data_inc}),
     .adc_bitslip({bitslip, bitslip}),
-    .adc_io_reset({io_reset, io_reset}),
+    .adc_io_reset({ADC_2_io_reset, ADC_2_io_reset}),
     .discr_bitslip(bitslip),
-    .discr_io_reset(io_reset),
+    .discr_io_reset(ADC_2_io_reset),
     .adc_bits(adc_bits_11),
     .discr_bits(discr_bits_11),
     .delay_tap_in_0(5'd11),
@@ -839,6 +885,10 @@ assign DDR3_A4 = &prev_adc_bits_8 && &prev_adc_bits_9 && &prev_adc_bits_10 && &p
 assign DDR3_A5 = &prev_discr_bits_8 && &prev_discr_bits_9 && &prev_discr_bits_10 && &prev_discr_bits_11;
 
 // ADC #3: channels 12-15
+(* DONT_TOUCH = "TRUE" *) reg ADC_3_io_reset = 0;
+always @(posedge lclk) begin
+  ADC_3_io_reset <= io_reset;
+end
 
 wire[11:0] adc_bits_12;
 reg[11:0] prev_adc_bits_12;
@@ -862,9 +912,9 @@ adc_discr_channel ADC_DISCR_3A
     .in_delay_data_ce({in_delay_data_ce, in_delay_data_ce}),
     .in_delay_data_inc({in_delay_data_inc, in_delay_data_inc}),
     .adc_bitslip({bitslip, bitslip}),
-    .adc_io_reset({io_reset, io_reset}),
+    .adc_io_reset({ADC_3_io_reset, ADC_3_io_reset}),
     .discr_bitslip(bitslip),
-    .discr_io_reset(io_reset),
+    .discr_io_reset(ADC_3_io_reset),
     .adc_bits(adc_bits_12),
     .discr_bits(discr_bits_12),
     .delay_tap_in_0(5'd11),
@@ -895,9 +945,9 @@ adc_discr_channel ADC_DISCR_3B
     .in_delay_data_ce({in_delay_data_ce, in_delay_data_ce}),
     .in_delay_data_inc({in_delay_data_inc, in_delay_data_inc}),
     .adc_bitslip({bitslip, bitslip}),
-    .adc_io_reset({io_reset, io_reset}),
+    .adc_io_reset({ADC_3_io_reset, ADC_3_io_reset}),
     .discr_bitslip(bitslip),
-    .discr_io_reset(io_reset),
+    .discr_io_reset(ADC_3_io_reset),
     .adc_bits(adc_bits_13),
     .discr_bits(discr_bits_13),
     .delay_tap_in_0(5'd11),
@@ -928,9 +978,9 @@ adc_discr_channel ADC_DISCR_3C
     .in_delay_data_ce({in_delay_data_ce, in_delay_data_ce}),
     .in_delay_data_inc({in_delay_data_inc, in_delay_data_inc}),
     .adc_bitslip({bitslip, bitslip}),
-    .adc_io_reset({io_reset, io_reset}),
+    .adc_io_reset({ADC_3_io_reset, ADC_3_io_reset}),
     .discr_bitslip(bitslip),
-    .discr_io_reset(io_reset),
+    .discr_io_reset(ADC_3_io_reset),
     .adc_bits(adc_bits_14),
     .discr_bits(discr_bits_14),
     .delay_tap_in_0(5'd11),
@@ -961,9 +1011,9 @@ adc_discr_channel ADC_DISCR_3D
     .in_delay_data_ce({in_delay_data_ce, in_delay_data_ce}),
     .in_delay_data_inc({in_delay_data_inc, in_delay_data_inc}),
     .adc_bitslip({bitslip, bitslip}),
-    .adc_io_reset({io_reset, io_reset}),
+    .adc_io_reset({ADC_3_io_reset, ADC_3_io_reset}),
     .discr_bitslip(bitslip),
-    .discr_io_reset(io_reset),
+    .discr_io_reset(ADC_3_io_reset),
     .adc_bits(adc_bits_15),
     .discr_bits(discr_bits_15),
     .delay_tap_in_0(5'd11),
@@ -978,6 +1028,10 @@ assign DDR3_A6 = &prev_adc_bits_12 && &prev_adc_bits_13 && &prev_adc_bits_14 && 
 assign DDR3_A7 = &prev_discr_bits_12 && &prev_discr_bits_13 && &prev_discr_bits_14 && &prev_discr_bits_15;
 
 // ADC #4; channels 16-19
+(* DONT_TOUCH = "TRUE" *) reg ADC_4_io_reset = 0;
+always @(posedge lclk) begin
+  ADC_4_io_reset <= io_reset;
+end
 
 wire[11:0] adc_bits_16;
 reg[11:0] prev_adc_bits_16;
@@ -1001,9 +1055,9 @@ adc_discr_channel ADC_DISCR_4A
     .in_delay_data_ce({in_delay_data_ce, in_delay_data_ce}),
     .in_delay_data_inc({in_delay_data_inc, in_delay_data_inc}),
     .adc_bitslip({bitslip, bitslip}),
-    .adc_io_reset({io_reset, io_reset}),
+    .adc_io_reset({ADC_4_io_reset, ADC_4_io_reset}),
     .discr_bitslip(bitslip),
-    .discr_io_reset(io_reset),
+    .discr_io_reset(ADC_4_io_reset),
     .adc_bits(adc_bits_16),
     .discr_bits(discr_bits_16),
     .delay_tap_in_0(5'd11),
@@ -1034,9 +1088,9 @@ adc_discr_channel ADC_DISCR_4B
     .in_delay_data_ce({in_delay_data_ce, in_delay_data_ce}),
     .in_delay_data_inc({in_delay_data_inc, in_delay_data_inc}),
     .adc_bitslip({bitslip, bitslip}),
-    .adc_io_reset({io_reset, io_reset}),
+    .adc_io_reset({ADC_4_io_reset, ADC_4_io_reset}),
     .discr_bitslip(bitslip),
-    .discr_io_reset(io_reset),
+    .discr_io_reset(ADC_4_io_reset),
     .adc_bits(adc_bits_17),
     .discr_bits(discr_bits_17),
     .delay_tap_in_0(5'd11),
@@ -1067,9 +1121,9 @@ adc_discr_channel ADC_DISCR_4C
     .in_delay_data_ce({in_delay_data_ce, in_delay_data_ce}),
     .in_delay_data_inc({in_delay_data_inc, in_delay_data_inc}),
     .adc_bitslip({bitslip, bitslip}),
-    .adc_io_reset({io_reset, io_reset}),
+    .adc_io_reset({ADC_4_io_reset, ADC_4_io_reset}),
     .discr_bitslip(bitslip),
-    .discr_io_reset(io_reset),
+    .discr_io_reset(ADC_4_io_reset),
     .adc_bits(adc_bits_18),
     .discr_bits(discr_bits_18),
     .delay_tap_in_0(5'd11),
@@ -1100,9 +1154,9 @@ adc_discr_channel ADC_DISCR_4D
     .in_delay_data_ce({in_delay_data_ce, in_delay_data_ce}),
     .in_delay_data_inc({in_delay_data_inc, in_delay_data_inc}),
     .adc_bitslip({bitslip, bitslip}),
-    .adc_io_reset({io_reset, io_reset}),
+    .adc_io_reset({ADC_4_io_reset, ADC_4_io_reset}),
     .discr_bitslip(bitslip),
-    .discr_io_reset(io_reset),
+    .discr_io_reset(ADC_4_io_reset),
     .adc_bits(adc_bits_19),
     .discr_bits(discr_bits_19),
     .delay_tap_in_0(5'd11),
@@ -1117,6 +1171,10 @@ assign DDR3_A8 = &prev_adc_bits_16 && &prev_adc_bits_17 && &prev_adc_bits_18 && 
 assign DDR3_A9 = &prev_discr_bits_16 && &prev_discr_bits_17 && &prev_discr_bits_18 && &prev_discr_bits_19;
 
 // ADC #5; channels 20-23
+(* DONT_TOUCH = "TRUE" *) reg ADC_5_io_reset = 0;
+always @(posedge lclk) begin
+  ADC_5_io_reset <= io_reset;
+end
 
 wire[11:0] adc_bits_20;
 reg[11:0] prev_adc_bits_20;
@@ -1140,9 +1198,9 @@ adc_discr_channel ADC_DISCR_5A
     .in_delay_data_ce({in_delay_data_ce, in_delay_data_ce}),
     .in_delay_data_inc({in_delay_data_inc, in_delay_data_inc}),
     .adc_bitslip({bitslip, bitslip}),
-    .adc_io_reset({io_reset, io_reset}),
+    .adc_io_reset({ADC_5_io_reset, ADC_5_io_reset}),
     .discr_bitslip(bitslip),
-    .discr_io_reset(io_reset),
+    .discr_io_reset(ADC_5_io_reset),
     .adc_bits(adc_bits_20),
     .discr_bits(discr_bits_20),
     .delay_tap_in_0(5'd11),
@@ -1173,9 +1231,9 @@ adc_discr_channel ADC_DISCR_5B
     .in_delay_data_ce({in_delay_data_ce, in_delay_data_ce}),
     .in_delay_data_inc({in_delay_data_inc, in_delay_data_inc}),
     .adc_bitslip({bitslip, bitslip}),
-    .adc_io_reset({io_reset, io_reset}),
+    .adc_io_reset({ADC_5_io_reset, ADC_5_io_reset}),
     .discr_bitslip(bitslip),
-    .discr_io_reset(io_reset),
+    .discr_io_reset(ADC_5_io_reset),
     .adc_bits(adc_bits_21),
     .discr_bits(discr_bits_21),
     .delay_tap_in_0(5'd11),
@@ -1206,9 +1264,9 @@ adc_discr_channel ADC_DISCR_5C
     .in_delay_data_ce({in_delay_data_ce, in_delay_data_ce}),
     .in_delay_data_inc({in_delay_data_inc, in_delay_data_inc}),
     .adc_bitslip({bitslip, bitslip}),
-    .adc_io_reset({io_reset, io_reset}),
+    .adc_io_reset({ADC_5_io_reset, ADC_5_io_reset}),
     .discr_bitslip(bitslip),
-    .discr_io_reset(io_reset),
+    .discr_io_reset(ADC_5_io_reset),
     .adc_bits(adc_bits_22),
     .discr_bits(discr_bits_22),
     .delay_tap_in_0(5'd11),
@@ -1239,9 +1297,9 @@ adc_discr_channel ADC_DISCR_5D
     .in_delay_data_ce({in_delay_data_ce, in_delay_data_ce}),
     .in_delay_data_inc({in_delay_data_inc, in_delay_data_inc}),
     .adc_bitslip({bitslip, bitslip}),
-    .adc_io_reset({io_reset, io_reset}),
+    .adc_io_reset({ADC_5_io_reset, ADC_5_io_reset}),
     .discr_bitslip(bitslip),
-    .discr_io_reset(io_reset),
+    .discr_io_reset(ADC_5_io_reset),
     .adc_bits(adc_bits_23),
     .discr_bits(discr_bits_23),
     .delay_tap_in_0(5'd11),

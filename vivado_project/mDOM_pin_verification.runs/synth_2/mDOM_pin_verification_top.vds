@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Wed Jul  1 17:10:34 2020
-# Process ID: 10128
+# Start of session at: Mon Jul  6 17:38:19 2020
+# Process ID: 7608
 # Current directory: C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2
 # Command line: vivado.exe -log mDOM_pin_verification_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mDOM_pin_verification_top.tcl
 # Log file: C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/mDOM_pin_verification_top.vds
@@ -16,11 +16,16 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7s100'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s100'
 INFO: [Device 21-403] Loading part xc7s100fgga676-2
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 7696 
+INFO: Helper process launched with PID 15924 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 717.574 ; gain = 177.672
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 715.883 ; gain = 177.016
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'mDOM_pin_verification_top' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:5]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:609]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:752]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:895]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:1038]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "TRUE" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:1181]
 INFO: [Synth 8-6157] synthesizing module 'IBUFGDS' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:33335]
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
 	Parameter DIFF_TERM bound to: FALSE - type: string 
@@ -33,9 +38,6 @@ INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [C:/Xilinx/Vivado/2019.1/scrip
 	Parameter IOSTANDARD bound to: DEFAULT - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
 INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (2#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:46012]
-INFO: [Synth 8-6157] synthesizing module 'BUFGMUX' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1175]
-	Parameter CLK_SEL_TYPE bound to: SYNC - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'BUFGMUX' (3#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1175]
 INFO: [Synth 8-6157] synthesizing module 'lclk_adcclk_wiz' [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz.v:71]
 INFO: [Synth 8-6157] synthesizing module 'lclk_adcclk_wiz_clk_wiz' [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz_clk_wiz.v:69]
 INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39813]
@@ -87,22 +89,24 @@ INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2019.1/s
 	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
 	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
 	Parameter STARTUP_WAIT bound to: FALSE - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (4#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39813]
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (3#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39813]
 INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
-INFO: [Synth 8-6155] done synthesizing module 'BUFG' (5#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
-INFO: [Synth 8-6155] done synthesizing module 'lclk_adcclk_wiz_clk_wiz' (6#1) [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz_clk_wiz.v:69]
-INFO: [Synth 8-6155] done synthesizing module 'lclk_adcclk_wiz' (7#1) [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz.v:71]
-INFO: [Synth 8-6157] synthesizing module 'idelay_discr_clk_wiz' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/.Xil/Vivado-10128-LAPTOP-GBOUD091/realtime/idelay_discr_clk_wiz_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'idelay_discr_clk_wiz' (8#1) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/.Xil/Vivado-10128-LAPTOP-GBOUD091/realtime/idelay_discr_clk_wiz_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (4#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'lclk_adcclk_wiz_clk_wiz' (5#1) [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz_clk_wiz.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'lclk_adcclk_wiz' (6#1) [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz.v:71]
+INFO: [Synth 8-6157] synthesizing module 'idelay_discr_clk_wiz' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/.Xil/Vivado-7608-LAPTOP-GBOUD091/realtime/idelay_discr_clk_wiz_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'idelay_discr_clk_wiz' (7#1) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/.Xil/Vivado-7608-LAPTOP-GBOUD091/realtime/idelay_discr_clk_wiz_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'IDELAYCTRL' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:34933]
 	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'IDELAYCTRL' (9#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:34933]
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYCTRL' (8#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:34933]
 INFO: [Synth 8-6157] synthesizing module 'adc_discr_channel' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/adc_discr_channel.v:5]
-INFO: [Synth 8-6157] synthesizing module 'ADC_SERDES' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/.Xil/Vivado-10128-LAPTOP-GBOUD091/realtime/ADC_SERDES_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'ADC_SERDES' (10#1) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/.Xil/Vivado-10128-LAPTOP-GBOUD091/realtime/ADC_SERDES_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'DISCR_SERDES' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/.Xil/Vivado-10128-LAPTOP-GBOUD091/realtime/DISCR_SERDES_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'DISCR_SERDES' (11#1) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/.Xil/Vivado-10128-LAPTOP-GBOUD091/realtime/DISCR_SERDES_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'adc_discr_channel' (12#1) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/adc_discr_channel.v:5]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "true" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/adc_discr_channel.v:34]
+INFO: [Synth 8-5534] Detected attribute (* DONT_TOUCH = "true" *) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/adc_discr_channel.v:35]
+INFO: [Synth 8-6157] synthesizing module 'ADC_SERDES' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/.Xil/Vivado-7608-LAPTOP-GBOUD091/realtime/ADC_SERDES_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ADC_SERDES' (9#1) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/.Xil/Vivado-7608-LAPTOP-GBOUD091/realtime/ADC_SERDES_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'DISCR_SERDES' [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/.Xil/Vivado-7608-LAPTOP-GBOUD091/realtime/DISCR_SERDES_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'DISCR_SERDES' (10#1) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/.Xil/Vivado-7608-LAPTOP-GBOUD091/realtime/DISCR_SERDES_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'adc_discr_channel' (11#1) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/adc_discr_channel.v:5]
 WARNING: [Synth 8-3848] Net ADC0_SEN in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:33]
 WARNING: [Synth 8-3848] Net ADC0_SYSRF_P in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:34]
 WARNING: [Synth 8-3848] Net ADC0_SYSRF_M in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:35]
@@ -156,40 +160,48 @@ WARNING: [Synth 8-3848] Net DDR3_BA2 in module/entity mDOM_pin_verification_top 
 WARNING: [Synth 8-3848] Net DDR3_CK_P in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:202]
 WARNING: [Synth 8-3848] Net DDR3_CK_N in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:203]
 WARNING: [Synth 8-3848] Net DDR3_CKE in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:204]
-WARNING: [Synth 8-3848] Net DDR3_LDM in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:221]
+WARNING: [Synth 8-3848] Net DDR3_DM0 in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:221]
 WARNING: [Synth 8-3848] Net DDR3_nCAS in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:224]
 WARNING: [Synth 8-3848] Net DDR3_nCS in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:225]
 WARNING: [Synth 8-3848] Net DDR3_nRAS in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:226]
 WARNING: [Synth 8-3848] Net DDR3_nRESET in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:227]
 WARNING: [Synth 8-3848] Net DDR3_nWE in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:228]
 WARNING: [Synth 8-3848] Net DDR3_ODT in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:229]
-WARNING: [Synth 8-3848] Net DDR3_UDM in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:230]
-WARNING: [Synth 8-3848] Net DDR3_VTT_S3 in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:233]
-WARNING: [Synth 8-3848] Net DDR3_VTT_S5 in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:234]
-WARNING: [Synth 8-3848] Net FMC_IRQ0 in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:295]
-WARNING: [Synth 8-3848] Net FMC_IRQ1 in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:296]
-WARNING: [Synth 8-3848] Net FMC_IRQ2 in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:297]
-WARNING: [Synth 8-3848] Net FMC_IRQ3 in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:298]
-WARNING: [Synth 8-3848] Net FPGA_CAL_TRIG_P in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:306]
-WARNING: [Synth 8-3848] Net FPGA_CAL_TRIG_N in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:307]
-WARNING: [Synth 8-3848] Net FPGA_FLASH_CSn in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:311]
-WARNING: [Synth 8-3848] Net FPGA_GPIO_1 in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:313]
-WARNING: [Synth 8-3848] Net FPGA_MOSI in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:322]
-WARNING: [Synth 8-3848] Net FPGA_UART_RTS in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:327]
-WARNING: [Synth 8-3848] Net FPGA_UART_TX in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:329]
-WARNING: [Synth 8-3848] Net FTD_UART_CTSn in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:333]
-WARNING: [Synth 8-3848] Net FTD_UART_RXD in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:335]
-WARNING: [Synth 8-3848] Net MCU_USART6_RX in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:338]
-WARNING: [Synth 8-3848] Net MON_ADC1_CONVn in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:340]
-WARNING: [Synth 8-3848] Net MON_ADC1_CSn in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:341]
-WARNING: [Synth 8-3848] Net MON_ADC1_SCLK in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:342]
-WARNING: [Synth 8-3848] Net MON_ADC1_SDI in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:343]
-WARNING: [Synth 8-3848] Net MON_ADC2_CONVn in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:345]
-WARNING: [Synth 8-3848] Net MON_ADC2_CSn in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:346]
-WARNING: [Synth 8-3848] Net MON_ADC2_SCLK in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:347]
-WARNING: [Synth 8-3848] Net MON_ADC2_SDI in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:348]
-WARNING: [Synth 8-3848] Net QOSC_VC_ENA in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:356]
-INFO: [Synth 8-6155] done synthesizing module 'mDOM_pin_verification_top' (13#1) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:5]
+WARNING: [Synth 8-3848] Net DDR3_DM1 in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:230]
+WARNING: [Synth 8-3848] Net DDR3_CLK100_OUT in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:235]
+WARNING: [Synth 8-3848] Net DDR3_VTT_S3 in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:237]
+WARNING: [Synth 8-3848] Net DDR3_VTT_S5 in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:238]
+WARNING: [Synth 8-3848] Net FMC_IRQ0 in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:299]
+WARNING: [Synth 8-3848] Net FMC_IRQ1 in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:300]
+WARNING: [Synth 8-3848] Net FMC_IRQ2 in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:301]
+WARNING: [Synth 8-3848] Net FMC_IRQ3 in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:302]
+WARNING: [Synth 8-3848] Net FPGA_CAL_TRIG_P in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:310]
+WARNING: [Synth 8-3848] Net FPGA_CAL_TRIG_N in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:311]
+WARNING: [Synth 8-3848] Net FPGA_FLASH_CSn in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:315]
+WARNING: [Synth 8-3848] Net FPGA_GPIO_1 in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:317]
+WARNING: [Synth 8-3848] Net FPGA_MOSI in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:326]
+WARNING: [Synth 8-3848] Net FPGA_UART_RTS in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:331]
+WARNING: [Synth 8-3848] Net FPGA_UART_TX in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:333]
+WARNING: [Synth 8-3848] Net FTD_UART_CTSn in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:337]
+WARNING: [Synth 8-3848] Net FTD_UART_RXD in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:339]
+WARNING: [Synth 8-3848] Net MCU_USART6_RX in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:342]
+WARNING: [Synth 8-3848] Net MON_ADC1_CONVn in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:344]
+WARNING: [Synth 8-3848] Net MON_ADC1_CSn in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:345]
+WARNING: [Synth 8-3848] Net MON_ADC1_SCLK in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:346]
+WARNING: [Synth 8-3848] Net MON_ADC1_SDI in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:347]
+WARNING: [Synth 8-3848] Net MON_ADC2_CONVn in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:349]
+WARNING: [Synth 8-3848] Net MON_ADC2_CSn in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:350]
+WARNING: [Synth 8-3848] Net MON_ADC2_SCLK in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:351]
+WARNING: [Synth 8-3848] Net MON_ADC2_SDI in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:352]
+WARNING: [Synth 8-3848] Net QOSC_VC_ENA in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:360]
+WARNING: [Synth 8-3848] Net LED_GREEN in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:365]
+WARNING: [Synth 8-3848] Net LED_ORANGE in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:366]
+WARNING: [Synth 8-3848] Net LED_YELLOW in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:367]
+WARNING: [Synth 8-3848] Net MCU_AFE_SEL in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:370]
+WARNING: [Synth 8-3848] Net MCU_CAL_A0 in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:371]
+WARNING: [Synth 8-3848] Net MCU_CAL_SS in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:372]
+WARNING: [Synth 8-3848] Net MCU_CAL_MOSI in module/entity mDOM_pin_verification_top does not have driver. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:373]
+INFO: [Synth 8-6155] done synthesizing module 'mDOM_pin_verification_top' (12#1) [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/hdl/mDOM_pin_verification_top.v:5]
 WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port ADC0_SEN
 WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port ADC0_SYSRF_P
 WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port ADC0_SYSRF_M
@@ -243,14 +255,15 @@ WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DD
 WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_CK_P
 WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_CK_N
 WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_CKE
-WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_LDM
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_DM0
 WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_nCAS
 WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_nCS
 WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_nRAS
 WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_nRESET
 WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_nWE
 WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_ODT
-WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_UDM
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_DM1
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_CLK100_OUT
 WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_VTT_S3
 WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_VTT_S5
 WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port FMC_IRQ0
@@ -276,23 +289,22 @@ WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port MO
 WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port MON_ADC2_SCLK
 WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port MON_ADC2_SDI
 WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port QOSC_VC_ENA
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port LED_GREEN
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port LED_ORANGE
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port LED_YELLOW
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port MCU_AFE_SEL
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port MCU_CAL_A0
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port MCU_CAL_SS
+WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port MCU_CAL_MOSI
 WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_DQ0
 WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_DQ1
 WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_DQ2
 WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_DQ3
 WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_DQ4
 WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_DQ5
-WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_DQ6
-WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_DQ7
-WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_DQ8
-WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_DQ9
-WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_DQ10
-WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_DQ11
-WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_DQ12
-WARNING: [Synth 8-3331] design mDOM_pin_verification_top has unconnected port DDR3_DQ13
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 783.305 ; gain = 243.402
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 781.492 ; gain = 242.625
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -305,12 +317,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 783.305 ; gain = 243.402
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 781.492 ; gain = 242.625
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 783.305 ; gain = 243.402
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 781.492 ; gain = 242.625
 ---------------------------------------------------------------------------------
-INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -466,10 +478,6 @@ Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_projec
 Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz_board.xdc] for cell 'LCLK_ADCCLK_WIZ_0/inst'
 Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz.xdc] for cell 'LCLK_ADCCLK_WIZ_0/inst'
 Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz.xdc] for cell 'LCLK_ADCCLK_WIZ_0/inst'
-Parsing XDC File [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/mDOM_mb_1_jun29.xdc]
-Finished Parsing XDC File [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/mDOM_mb_1_jun29.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/mDOM_mb_1_jun29.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mDOM_pin_verification_top_propImpl.xdc].
-Resolution: To avoid this warning, move constraints listed in [.Xil/mDOM_pin_verification_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/clocks.xdc]
 INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'virt_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/clocks.xdc:14]
 Finished Parsing XDC File [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/clocks.xdc]
@@ -477,6 +485,12 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/mDOM_pin_verification_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/io_standards.xdc]
 Finished Parsing XDC File [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/io_standards.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/io_standards.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mDOM_pin_verification_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mDOM_pin_verification_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/mDOM_mb_7_6_2020.xdc]
+Finished Parsing XDC File [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/mDOM_mb_7_6_2020.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/mDOM_mb_7_6_2020.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mDOM_pin_verification_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mDOM_pin_verification_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/dont_touch.xdc]
 Finished Parsing XDC File [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/dont_touch.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mDOM_pin_verification_top_propImpl.xdc].
@@ -486,14 +500,13 @@ Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_projec
 Finished Parsing XDC File [c:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/lclk_adcclk_wiz/lclk_adcclk_wiz_late.xdc] for cell 'LCLK_ADCCLK_WIZ_0/inst'
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 908.461 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 909.574 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 3 instances were transformed.
-  BUFGMUX => BUFGCTRL (inverted pins: CE0): 1 instances
+  A total of 2 instances were transformed.
   IBUFGDS => IBUFDS: 1 instances
   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 1 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 908.461 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 909.574 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_0A/ADC_SERDES_0' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_0A/ADC_SERDES_1' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_0A/DISCR_SERDES' at clock pin 'clk_in' is different from the actual clock period '2.000', this can lead to different synthesis results.
@@ -567,14 +580,14 @@ WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context s
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_5D/ADC_SERDES_1' at clock pin 'clk_in' is different from the actual clock period '2.667', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'ADC_DISCR_5D/DISCR_SERDES' at clock pin 'clk_in' is different from the actual clock period '2.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 908.461 ; gain = 368.559
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 909.574 ; gain = 370.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7s100fgga676-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 908.461 ; gain = 368.559
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 909.574 ; gain = 370.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -895,10 +908,10 @@ Applied set_property DONT_TOUCH = true for ADC_DISCR_5C/DISCR_SERDES. (constrain
 Applied set_property DONT_TOUCH = true for ADC_DISCR_5D/DISCR_SERDES. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for IDELAY_DISCR_CLK_WIZ_0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 908.461 ; gain = 368.559
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 909.574 ; gain = 370.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 908.461 ; gain = 368.559
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 909.574 ; gain = 370.707
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -910,9 +923,16 @@ Report RTL Partitions:
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
 +---Registers : 
-	               12 Bit    Registers := 24    
-	                8 Bit    Registers := 24    
+	               12 Bit    Registers := 72    
+	                8 Bit    Registers := 72    
+	                7 Bit    Registers := 1     
+	                2 Bit    Registers := 24    
+	                1 Bit    Registers := 31    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -922,9 +942,183 @@ Start RTL Hierarchical Component Statistics
 Hierarchical RTL Component report 
 Module mDOM_pin_verification_top 
 Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
 +---Registers : 
 	               12 Bit    Registers := 24    
 	                8 Bit    Registers := 24    
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module adc_discr_channel__xdcDup__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module adc_discr_channel__xdcDup__2 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module adc_discr_channel__xdcDup__3 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module adc_discr_channel__xdcDup__4 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module adc_discr_channel__xdcDup__5 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module adc_discr_channel__xdcDup__6 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module adc_discr_channel__xdcDup__7 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module adc_discr_channel__xdcDup__8 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module adc_discr_channel__xdcDup__9 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module adc_discr_channel__xdcDup__10 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module adc_discr_channel__xdcDup__11 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module adc_discr_channel__xdcDup__12 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module adc_discr_channel__xdcDup__13 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module adc_discr_channel__xdcDup__14 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module adc_discr_channel__xdcDup__15 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module adc_discr_channel__xdcDup__16 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module adc_discr_channel__xdcDup__17 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module adc_discr_channel__xdcDup__18 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module adc_discr_channel__xdcDup__19 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module adc_discr_channel__xdcDup__20 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module adc_discr_channel__xdcDup__21 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module adc_discr_channel__xdcDup__22 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module adc_discr_channel__xdcDup__23 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module adc_discr_channel 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -942,7 +1136,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 908.461 ; gain = 368.559
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 909.574 ; gain = 370.707
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -961,13 +1155,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'IDELAY_DISCR_CLK_WIZ_0/cl
 INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'IDELAY_DISCR_CLK_WIZ_0/clk_in1' to 'LCLK_ADCCLK_WIZ_0/inst/mmcm_adv_inst/CLKIN1'
 INFO: [Synth 8-5819] Moved 4 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 908.461 ; gain = 368.559
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 909.574 ; gain = 370.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 908.461 ; gain = 368.559
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 909.574 ; gain = 370.707
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -979,7 +1173,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 908.461 ; gain = 368.559
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 909.574 ; gain = 370.707
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1003,7 +1197,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 908.461 ; gain = 368.559
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 909.574 ; gain = 370.707
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1016,7 +1210,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 908.461 ; gain = 368.559
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 909.574 ; gain = 370.707
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1028,25 +1222,62 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 908.461 ; gain = 368.559
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 909.574 ; gain = 370.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 908.461 ; gain = 368.559
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 909.574 ; gain = 370.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 908.461 ; gain = 368.559
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 909.574 ; gain = 370.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 908.461 ; gain = 368.559
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 909.574 ; gain = 370.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++--------------------------+--------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name               | RTL Name                 | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++--------------------------+--------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|mDOM_pin_verification_top | prev_adc_bits_1_reg[11]  | 3      | 12    | NO           | NO                 | YES               | 12     | 0       | 
+|mDOM_pin_verification_top | prev_adc_bits_2_reg[11]  | 3      | 12    | NO           | NO                 | YES               | 12     | 0       | 
+|mDOM_pin_verification_top | prev_adc_bits_3_reg[11]  | 3      | 12    | NO           | NO                 | YES               | 12     | 0       | 
+|mDOM_pin_verification_top | prev_adc_bits_0_reg[11]  | 3      | 12    | NO           | NO                 | YES               | 12     | 0       | 
+|mDOM_pin_verification_top | prev_adc_bits_5_reg[11]  | 3      | 12    | NO           | NO                 | YES               | 12     | 0       | 
+|mDOM_pin_verification_top | prev_adc_bits_6_reg[11]  | 3      | 12    | NO           | NO                 | YES               | 12     | 0       | 
+|mDOM_pin_verification_top | prev_adc_bits_7_reg[11]  | 3      | 12    | NO           | NO                 | YES               | 12     | 0       | 
+|mDOM_pin_verification_top | prev_adc_bits_4_reg[11]  | 3      | 12    | NO           | NO                 | YES               | 12     | 0       | 
+|mDOM_pin_verification_top | prev_adc_bits_9_reg[11]  | 3      | 12    | NO           | NO                 | YES               | 12     | 0       | 
+|mDOM_pin_verification_top | prev_adc_bits_10_reg[11] | 3      | 12    | NO           | NO                 | YES               | 12     | 0       | 
+|mDOM_pin_verification_top | prev_adc_bits_11_reg[11] | 3      | 12    | NO           | NO                 | YES               | 12     | 0       | 
+|mDOM_pin_verification_top | prev_adc_bits_8_reg[11]  | 3      | 12    | NO           | NO                 | YES               | 12     | 0       | 
+|mDOM_pin_verification_top | prev_adc_bits_13_reg[11] | 3      | 12    | NO           | NO                 | YES               | 12     | 0       | 
+|mDOM_pin_verification_top | prev_adc_bits_14_reg[11] | 3      | 12    | NO           | NO                 | YES               | 12     | 0       | 
+|mDOM_pin_verification_top | prev_adc_bits_15_reg[11] | 3      | 12    | NO           | NO                 | YES               | 12     | 0       | 
+|mDOM_pin_verification_top | prev_adc_bits_12_reg[11] | 3      | 12    | NO           | NO                 | YES               | 12     | 0       | 
+|mDOM_pin_verification_top | prev_adc_bits_17_reg[11] | 3      | 12    | NO           | NO                 | YES               | 12     | 0       | 
+|mDOM_pin_verification_top | prev_adc_bits_18_reg[11] | 3      | 12    | NO           | NO                 | YES               | 12     | 0       | 
+|mDOM_pin_verification_top | prev_adc_bits_19_reg[11] | 3      | 12    | NO           | NO                 | YES               | 12     | 0       | 
+|mDOM_pin_verification_top | prev_adc_bits_16_reg[11] | 3      | 12    | NO           | NO                 | YES               | 12     | 0       | 
+|mDOM_pin_verification_top | prev_adc_bits_21_reg[11] | 3      | 12    | NO           | NO                 | YES               | 12     | 0       | 
+|mDOM_pin_verification_top | prev_adc_bits_22_reg[11] | 3      | 12    | NO           | NO                 | YES               | 12     | 0       | 
+|mDOM_pin_verification_top | prev_adc_bits_23_reg[11] | 3      | 12    | NO           | NO                 | YES               | 12     | 0       | 
+|mDOM_pin_verification_top | prev_adc_bits_20_reg[11] | 3      | 12    | NO           | NO                 | YES               | 12     | 0       | 
++--------------------------+--------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1139,78 +1370,79 @@ Report Cell Usage:
 |72    |DISCR_SERDES__46     |     1|
 |73    |idelay_discr_clk_wiz |     1|
 |74    |BUFG                 |     3|
-|75    |BUFGMUX              |     1|
-|76    |IDELAYCTRL           |     1|
-|77    |LUT1                 |     1|
-|78    |LUT2                 |     6|
-|79    |LUT3                 |     6|
-|80    |LUT6                 |    90|
-|81    |MMCME2_ADV           |     1|
-|82    |FDRE                 |   480|
-|83    |IBUF                 |     7|
-|84    |IBUFGDS              |     1|
-|85    |OBUF                 |    14|
-|86    |OBUFDS               |     1|
-|87    |OBUFT                |    86|
+|75    |IDELAYCTRL           |     1|
+|76    |LUT1                 |     2|
+|77    |LUT2                 |     7|
+|78    |LUT3                 |     9|
+|79    |LUT4                 |     1|
+|80    |LUT5                 |     4|
+|81    |LUT6                 |    92|
+|82    |MMCME2_ADV           |     1|
+|83    |SRL16E               |   288|
+|84    |FDRE                 |   950|
+|85    |IBUF                 |     4|
+|86    |IBUFGDS              |     1|
+|87    |OBUF                 |    14|
+|88    |OBUFDS               |     1|
+|89    |OBUFT                |    94|
 +------+---------------------+------+
 
 Report Instance Areas: 
 +------+--------------------+------------------------------+------+
 |      |Instance            |Module                        |Cells |
 +------+--------------------+------------------------------+------+
-|1     |top                 |                              |  1422|
+|1     |top                 |                              |  2196|
 |2     |  LCLK_ADCCLK_WIZ_0 |lclk_adcclk_wiz               |     4|
 |3     |    inst            |lclk_adcclk_wiz_clk_wiz       |     4|
-|4     |  ADC_DISCR_0A      |adc_discr_channel__xdcDup__1  |    30|
-|5     |  ADC_DISCR_0B      |adc_discr_channel__xdcDup__2  |    30|
-|6     |  ADC_DISCR_0C      |adc_discr_channel__xdcDup__3  |    30|
-|7     |  ADC_DISCR_0D      |adc_discr_channel__xdcDup__4  |    30|
-|8     |  ADC_DISCR_1A      |adc_discr_channel__xdcDup__5  |    30|
-|9     |  ADC_DISCR_1B      |adc_discr_channel__xdcDup__6  |    30|
-|10    |  ADC_DISCR_1C      |adc_discr_channel__xdcDup__7  |    30|
-|11    |  ADC_DISCR_1D      |adc_discr_channel__xdcDup__8  |    30|
-|12    |  ADC_DISCR_2A      |adc_discr_channel__xdcDup__9  |    30|
-|13    |  ADC_DISCR_2B      |adc_discr_channel__xdcDup__10 |    30|
-|14    |  ADC_DISCR_2C      |adc_discr_channel__xdcDup__11 |    30|
-|15    |  ADC_DISCR_2D      |adc_discr_channel__xdcDup__12 |    30|
-|16    |  ADC_DISCR_3A      |adc_discr_channel__xdcDup__13 |    30|
-|17    |  ADC_DISCR_3B      |adc_discr_channel__xdcDup__14 |    30|
-|18    |  ADC_DISCR_3C      |adc_discr_channel__xdcDup__15 |    30|
-|19    |  ADC_DISCR_3D      |adc_discr_channel__xdcDup__16 |    30|
-|20    |  ADC_DISCR_4A      |adc_discr_channel__xdcDup__17 |    30|
-|21    |  ADC_DISCR_4B      |adc_discr_channel__xdcDup__18 |    30|
-|22    |  ADC_DISCR_4C      |adc_discr_channel__xdcDup__19 |    30|
-|23    |  ADC_DISCR_4D      |adc_discr_channel__xdcDup__20 |    30|
-|24    |  ADC_DISCR_5A      |adc_discr_channel__xdcDup__21 |    30|
-|25    |  ADC_DISCR_5B      |adc_discr_channel__xdcDup__22 |    30|
-|26    |  ADC_DISCR_5C      |adc_discr_channel__xdcDup__23 |    30|
-|27    |  ADC_DISCR_5D      |adc_discr_channel             |    30|
+|4     |  ADC_DISCR_0A      |adc_discr_channel__xdcDup__1  |    61|
+|5     |  ADC_DISCR_0B      |adc_discr_channel__xdcDup__2  |    61|
+|6     |  ADC_DISCR_0C      |adc_discr_channel__xdcDup__3  |    61|
+|7     |  ADC_DISCR_0D      |adc_discr_channel__xdcDup__4  |    61|
+|8     |  ADC_DISCR_1A      |adc_discr_channel__xdcDup__5  |    61|
+|9     |  ADC_DISCR_1B      |adc_discr_channel__xdcDup__6  |    61|
+|10    |  ADC_DISCR_1C      |adc_discr_channel__xdcDup__7  |    61|
+|11    |  ADC_DISCR_1D      |adc_discr_channel__xdcDup__8  |    61|
+|12    |  ADC_DISCR_2A      |adc_discr_channel__xdcDup__9  |    61|
+|13    |  ADC_DISCR_2B      |adc_discr_channel__xdcDup__10 |    61|
+|14    |  ADC_DISCR_2C      |adc_discr_channel__xdcDup__11 |    61|
+|15    |  ADC_DISCR_2D      |adc_discr_channel__xdcDup__12 |    61|
+|16    |  ADC_DISCR_3A      |adc_discr_channel__xdcDup__13 |    61|
+|17    |  ADC_DISCR_3B      |adc_discr_channel__xdcDup__14 |    61|
+|18    |  ADC_DISCR_3C      |adc_discr_channel__xdcDup__15 |    61|
+|19    |  ADC_DISCR_3D      |adc_discr_channel__xdcDup__16 |    61|
+|20    |  ADC_DISCR_4A      |adc_discr_channel__xdcDup__17 |    61|
+|21    |  ADC_DISCR_4B      |adc_discr_channel__xdcDup__18 |    61|
+|22    |  ADC_DISCR_4C      |adc_discr_channel__xdcDup__19 |    61|
+|23    |  ADC_DISCR_4D      |adc_discr_channel__xdcDup__20 |    61|
+|24    |  ADC_DISCR_5A      |adc_discr_channel__xdcDup__21 |    61|
+|25    |  ADC_DISCR_5B      |adc_discr_channel__xdcDup__22 |    61|
+|26    |  ADC_DISCR_5C      |adc_discr_channel__xdcDup__23 |    61|
+|27    |  ADC_DISCR_5D      |adc_discr_channel             |    61|
 +------+--------------------+------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 908.461 ; gain = 368.559
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 909.574 ; gain = 370.707
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 177 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 908.461 ; gain = 243.402
-Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 908.461 ; gain = 368.559
+Synthesis finished with 0 errors, 0 critical warnings and 190 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 909.574 ; gain = 242.625
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 909.574 ; gain = 370.707
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 916.109 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 927.602 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 3 instances were transformed.
-  BUFGMUX => BUFGCTRL (inverted pins: CE0): 1 instances
+  A total of 2 instances were transformed.
   IBUFGDS => IBUFDS: 1 instances
   OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-52 Infos, 258 Warnings, 0 Critical Warnings and 0 Errors encountered.
+58 Infos, 266 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 916.109 ; gain = 622.488
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 916.109 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 927.602 ; gain = 627.102
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 927.602 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/mDOM_pin_verification_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file mDOM_pin_verification_top_utilization_synth.rpt -pb mDOM_pin_verification_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Jul  1 17:11:09 2020...
+INFO: [Common 17-206] Exiting Vivado at Mon Jul  6 17:38:59 2020...

@@ -79,9 +79,9 @@ set rc [catch {
   read_ip -quiet C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/ADC_SERDES/ADC_SERDES.xci
   read_ip -quiet C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/DISCR_SERDES/DISCR_SERDES.xci
   read_ip -quiet C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.srcs/sources_1/ip/idelay_discr_clk_wiz/idelay_discr_clk_wiz.xci
-  read_xdc C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/mDOM_mb_1_jun29.xdc
   read_xdc C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/clocks.xdc
   read_xdc C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/io_standards.xdc
+  read_xdc C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/mDOM_mb_7_6_2020.xdc
   link_design -top mDOM_pin_verification_top -part xc7s100fgga676-2
   close_msg_db -file init_design.pb
 } RESULT]

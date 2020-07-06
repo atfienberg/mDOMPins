@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_2" LaunchPart="xc7s100fgga676-2" LaunchTime="1593637831">
+<GenRun Id="impl_2" LaunchPart="xc7s100fgga676-2" LaunchTime="1594071496">
   <File Type="BITSTR-BMM" Name="mDOM_pin_verification_top_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="mDOM_pin_verification_top_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="mDOM_pin_verification_top_timing_summary_init.rpt"/>
@@ -99,12 +99,6 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PPRDIR/../mDOM_mb_1_jun29.xdc">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-      </FileInfo>
-    </File>
     <File Path="$PPRDIR/../clocks.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -112,6 +106,12 @@
       </FileInfo>
     </File>
     <File Path="$PPRDIR/../io_standards.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../mDOM_mb_7_6_2020.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
