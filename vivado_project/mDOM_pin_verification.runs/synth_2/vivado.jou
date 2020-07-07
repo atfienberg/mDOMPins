@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Mon Jul  6 17:38:19 2020
-# Process ID: 7608
+# Start of session at: Tue Jul  7 15:48:11 2020
+# Process ID: 4776
 # Current directory: C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2
 # Command line: vivado.exe -log mDOM_pin_verification_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mDOM_pin_verification_top.tcl
 # Log file: C:/Users/atfie/IceCube/mDOMDevelopment/pinAssign/vivado_project/mDOM_pin_verification.runs/synth_2/mDOM_pin_verification_top.vds

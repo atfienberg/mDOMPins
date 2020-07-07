@@ -380,8 +380,120 @@ wire i_fpga_clock;
 wire i_adc_clock;
 IBUFGDS IBUFGDS_FPGA_CLOCK(.I(FPGA_CLOCK_P),.IB(FPGA_CLOCK_N),.O(i_fpga_clock)); 
 
-// output ADC clock
-OBUFDS OBUF_ADC_CLOCK(.I(i_adc_clock), .O(ADC0_CLOCK_P), .OB(ADC0_CLOCK_M));
+//
+// ADC output clocks
+//
+// Handled with ODDR -> OBUFDS
+// see page 128 of https://www.xilinx.com/support/documentation/user_guides/ug471_7Series_SelectIO.pdf
+// also https://forums.xilinx.com/t5/Other-FPGA-Architecture/drive-clock-out-from-FPGA/td-p/838391
+
+wire adc_clk_out_0;
+ODDR #(
+       .DDR_CLK_EDGE("SAME_EDGE"),
+       .INIT(1'b0),    
+       .SRTYPE("SYNC") 
+     ) 
+ clk_forward_0 
+ (
+   .Q(adc_clk_out_0),   
+   .C(i_adc_clock), 
+   .D1(1'b1),
+   .D2(1'b0),
+   .CE(1'b1),
+   .R(1'b0),
+   .S(1'b0)
+ );
+OBUFDS OBUF_ADC_CLOCK_0(.I(adc_clk_out_0), .O(ADC0_CLOCK_P), .OB(ADC0_CLOCK_M));
+
+wire adc_clk_out_1;
+ODDR #(
+       .DDR_CLK_EDGE("SAME_EDGE"),
+       .INIT(1'b0),    
+       .SRTYPE("SYNC") 
+     ) 
+ clk_forward_1 
+ (
+   .Q(adc_clk_out_1),   
+   .C(i_adc_clock), 
+   .D1(1'b1),
+   .D2(1'b0),
+   .CE(1'b1),
+   .R(1'b0),
+   .S(1'b0)
+ );
+OBUFDS OBUF_ADC_CLOCK_1(.I(adc_clk_out_1), .O(ADC1_CLOCK_P), .OB(ADC1_CLOCK_M));
+
+wire adc_clk_out_2;
+ODDR #(
+       .DDR_CLK_EDGE("SAME_EDGE"),
+       .INIT(1'b0),    
+       .SRTYPE("SYNC") 
+     ) 
+ clk_forward_2 
+ (
+   .Q(adc_clk_out_2),   
+   .C(i_adc_clock), 
+   .D1(1'b1),
+   .D2(1'b0),
+   .CE(1'b1),
+   .R(1'b0),
+   .S(1'b0)
+ );
+OBUFDS OBUF_ADC_CLOCK_2(.I(adc_clk_out_2), .O(ADC2_CLOCK_P), .OB(ADC2_CLOCK_M));
+
+wire adc_clk_out_3;
+ODDR #(
+       .DDR_CLK_EDGE("SAME_EDGE"),
+       .INIT(1'b0),    
+       .SRTYPE("SYNC") 
+     ) 
+ clk_forward_3 
+ (
+   .Q(adc_clk_out_3),   
+   .C(i_adc_clock), 
+   .D1(1'b1),
+   .D2(1'b0),
+   .CE(1'b1),
+   .R(1'b0),
+   .S(1'b0)
+ );
+OBUFDS OBUF_ADC_CLOCK_3(.I(adc_clk_out_3), .O(ADC3_CLOCK_P), .OB(ADC3_CLOCK_M));
+
+wire adc_clk_out_4;
+ODDR #(
+       .DDR_CLK_EDGE("SAME_EDGE"),
+       .INIT(1'b0),    
+       .SRTYPE("SYNC") 
+     ) 
+ clk_forward_4 
+ (
+   .Q(adc_clk_out_4),   
+   .C(i_adc_clock), 
+   .D1(1'b1),
+   .D2(1'b0),
+   .CE(1'b1),
+   .R(1'b0),
+   .S(1'b0)
+ );
+OBUFDS OBUF_ADC_CLOCK_4(.I(adc_clk_out_4), .O(ADC4_CLOCK_P), .OB(ADC4_CLOCK_M));
+
+wire adc_clk_out_5;
+ODDR #(
+       .DDR_CLK_EDGE("SAME_EDGE"),
+       .INIT(1'b0),    
+       .SRTYPE("SYNC") 
+     ) 
+ clk_forward_5 
+ (
+   .Q(adc_clk_out_5),   
+   .C(i_adc_clock), 
+   .D1(1'b1),
+   .D2(1'b0),
+   .CE(1'b1),
+   .R(1'b0),
+   .S(1'b0)
+ );
+OBUFDS OBUF_ADC_CLOCK_5(.I(adc_clk_out_5), .O(ADC5_CLOCK_P), .OB(ADC5_CLOCK_M));
 
 // multiplex FPGA clock and QOSC clock
 // select based on adc_sdout for
